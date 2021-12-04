@@ -1,0 +1,170 @@
+#opacity_dn{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    position:absolute;
+    display: none;
+    z-index: 5;
+}
+#opacity_dn:target{
+    display: block;
+}
+
+#dangnhap {
+    height: 490px;
+    width: 480px;
+    left: 500px;
+    top: 100px;
+    opacity: 1;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 10;
+    display: block;
+    background: #18222D;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+      .cancel {
+            display: block;
+            position: absolute;
+            top: 3px;
+            right: 10px;
+            color: #787E85;
+            height: 30px;
+            width: 35px;
+            font-size: 45px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+        }
+
+
+h3{
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+hr {    
+    background: none;
+    border: none;
+    border-top: 1px solid #28313C;
+}
+
+.username{
+    background-color: #18212C;
+    border: 1px solid #28313C;
+    height: 38px;
+    width: 350px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 35px;
+}
+.password{
+    background-color: #18212C;
+    border: 1px solid #28313C;
+    height: 38px;
+    width: 350px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 10px;
+}
+.icon{
+    float:left;
+    width:28px;
+    line-height:38px;
+    margin-top: 10px;
+    margin-left:10px;
+    border-right: 1px solid #28313C ;
+}
+.input_DN input {
+    background-color: #18212C;
+    border: none;
+    color: #787E85;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 280px;
+}
+input:focus {
+    outline: none;
+}
+
+.username:focus-within {
+    border-color: #2ca8ea;
+}
+.password:focus-within {
+    border-color: #2ca8ea;
+}
+
+.check{
+    margin:20px 0 0 65px;
+}
+
+label{
+    font-size: 15px;
+    color: #CFD3D6;
+}
+.myinput[type="checkbox"]:not(:disabled):hover:after {
+    background-image: linear-gradient(135deg, #8BB0C2 0%, #FFF 100%);
+    border-color: #85A9BB #92C2DA #92C2DA #85A9BB;
+  }
+
+.bnt{
+    background-image: linear-gradient(to right, #2F80ED , #01ACEF);
+    border: none;
+    height: 38px;
+    width: 350px;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+.align{
+    text-align: center;
+}
+.account{
+    width: 100%;
+    height: 50px;
+    background-color: #1D2631;
+    margin-top: 25px;
+    text-align: center;
+    padding-top: 30px;
+}
+.logo{
+    display: inline;
+    background-color: #28313C;
+    padding: 10px 18px;
+    color: #3B5998;
+    margin-left: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+span{
+    color: #CFD3D6;
+}
+.logo img{
+    height: 13px;
+}
+.footer_Dn  {
+    text-align: center;
+    margin-top: 40px;
+}
+.dkn{
+    color: #2a7dad;
+    text-decoration: none;
+}

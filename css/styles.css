@@ -1,0 +1,295 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body{
+    width:100%;
+    height:100%;
+}
+body{
+    color:#B6BBBF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container {
+	width:100%;
+    height: 100%;
+    display:flex;
+}
+
+#left {
+	float: left;
+	width:170px;
+    height: 100%;
+    background-color: #1D2631;
+    position: fixed;
+    padding: 15px;
+    color: #B6BBBF;
+}
+
+#content {
+	width:994;
+    position: absolute;
+    left: 200px;
+    background-color: #1D2631;
+    border: 3px #202933 solid;
+    height: fit-content;
+}
+
+#right {
+	float: right;
+	width:270px;
+    right: 0px;
+    height: 100%;
+    background-color: #1D2631;
+    position: fixed;
+    padding: 15px 25px;
+}
+
+.nangcap{
+    width: 97px;
+    height: 25px;
+    float: right;
+    border: 1px #3b434b solid;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 25px;
+    color: #B6BBBF;
+}
+.nangcap:hover{
+    cursor: pointer;
+    color: #29ACF3;
+    border: 1px #29ACF3 solid;
+}
+.dn_dk{
+    clear: both;
+    font-size: 13px;
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: #212A35;
+    height: 20px;
+    padding: 20px;
+    width: 94%;
+    position: relative;
+    left: -15px;
+}
+.dn_dk a:hover{
+    color: #29ACF3;
+    cursor: pointer;
+}
+.dn_dk i{
+    float: right;
+}
+.dn_dk i:hover{
+    float: right;
+    color: #29ACF3;
+    cursor: pointer;
+}
+.navi{
+    height: fit-content;
+    line-height: 32px;
+    width: 108%;
+    position: relative;
+    left: -15px;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    border-left: 3px solid #202933;
+    font-size: 15px;
+}
+.here{
+    border-left: 3px solid #29ACF3;
+    background-color: #28313C;
+}
+.navi:hover{
+    border-left: 3px solid #29ACF3;
+    cursor: pointer;
+}
+.collapse a{
+    text-decoration: none;
+    color: #878c91 ;
+}
+.dn_dk a{
+    text-decoration: none;
+    color: #B6BBBF;
+}
+.navi .fa-search{
+    color: greenyellow;
+    margin-right: 15px;
+}
+.fa-home{
+    color: #29ACF3;
+    margin-right: 15px;
+}
+.fa-compass{
+    color: #FFC339;
+    margin-right: 15px;
+}
+.fa-headphones-alt{
+    color: #7B42CA;
+    margin-right: 15px;
+}
+.fa-chart-bar{
+    color: #F97643;
+    margin-right: 15px;
+}
+.fa-thumbs-up{
+    color: #1C5F68;
+    margin-right: 15px;
+}
+.fa-chevron-down{
+    color: #676a6d;
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.contact{
+    position: relative;
+    top: 600px;
+    position: fixed;
+}
+.contact:hover{
+    cursor: pointer;
+}
+.collapse{
+    font-size: 13px;
+    margin-left: 60px;
+    line-height: 30px;
+    color: #878c91;
+    display: none;
+}
+.collapse a{
+    padding-left: 5px;
+    border-left: 3px solid #1D2631;
+}
+.collapse a:hover{
+    cursor: pointer;
+    border-left: 3px solid #29ACF3;
+}
+
+.play_img{
+    height: 290px;
+    width: 241px;
+    background-color: #262F39;
+    border-radius: 3px;
+    padding: 16px;
+    margin-bottom: 15px;
+}
+.play_img img{
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.play_img img{
+    cursor: pointer;
+}
+.play_img a{
+    font-size: 15px;
+    color: white;
+}
+.play_img a:hover{
+    color: #29ACF3;
+    cursor: pointer;
+}
+.fa-microphone{
+    float: right;
+}
+.fa-microphone:hover{
+    color: #29ACF3;
+    cursor: pointer;
+}
+.play_img p{
+    font-size: 13px;
+    color: #878c91;
+    font-weight: bold;
+    padding-top: 5px;
+}
+.play_img p:hover{
+    color: #29ACF3;
+    cursor: pointer;
+}
+.playlist{
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+.playlist:hover{
+    color: #29ACF3;
+    cursor: pointer;
+}
+
+.control_play{
+    margin-top: 180px;
+}
+.fa-volume-up{
+    float: left;
+    margin-top: 10px;
+}
+.danhsachphat{
+    height: 30px;
+    width: 167px;   
+    background-color: #262F39;
+    border-radius: 20px;
+    margin-left: 55px;
+    text-align: center;
+    padding-top: 10px;
+}
+.danhsachphat:hover{
+    color: #29ACF3;
+    cursor: pointer;
+}
+.fa-ellipsis-v{
+    float: right;
+    margin-top: -28px;
+}
+.fa-ellipsis-v:hover{
+    cursor: pointer;
+}
+.fa-volume-up:hover{
+    cursor: pointer;
+}
+
+.media{
+    height: 2px;
+    width: 133px;
+    background-color: #676a6d;
+    margin-left: 45px;
+    margin-top: -7px;
+    border-left: 50px solid white;
+}
+.start{
+    font-size: 13px;
+    float: left;
+}
+.end{
+    font-size: 13px;
+    float: right;
+    margin-top: -9px;
+}
+
+.dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 45px;
+    margin-top: 3px;
+}
+.fa-play{
+    font-size: 30px;
+}
+
+.control_media .fas{
+    margin: 16px;
+}
+.control_media .fas:hover{
+    cursor: pointer;
+}
+.quality{
+    font-size: 12px;
+    text-align: center;
+}
+
+hr{
+    background: none;
+    border: none;
+    border-top: 1px solid #28313C;
+}
