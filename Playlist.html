@@ -1,0 +1,804 @@
+<html><!-- InstanceBegin template="/Templates/NTC Template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Screenshot 2021-11-25 153205</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/Footer.css">
+<link rel="stylesheet" href="css/MH_DangNhap.css">
+<link rel="stylesheet" href="css/MH_DangKy.css">
+<link rel="stylesheet" href="fontawesome/css/all.min.css">
+<link rel="stylesheet" href="css/MH_Playlist.css">
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<body>
+	<!-- Màn hình đăng nhập -->
+	<div id="opacity_dn">
+		<div class="container animate" id="dangnhap">
+			<a href="#" class="cancel">×</a>
+			<h3>Đăng nhập</h3> 
+			<hr>
+			<form>
+				<div class="username">
+					<div class="icon">
+						<i class="far fa-user"></i>
+					</div>
+					<div class="input_DN">
+						<input type="text" placeholder="Nhập tên đăng nhập" >
+					</div>
+				</div>
+				<div class="password">
+					<div class="icon">
+						<i class="far fa-keyboard"></i>
+					</div>
+					<div class="input_DN">
+						<input type="password" placeholder="Nhập mật khẩu" >
+					</div>
+				</div>
+				<input type="checkbox" id="check" class="check">
+				<label for="check"> Ghi nhớ</label>
+				<div class="align">
+					<input type="button" class="bnt" value="Đăng nhập">
+				</div>
+				<div class="account">
+					<span>Hoặc đăng nhập bằng: </span>
+					<div class="logo"><i class="fab fa-facebook-f"></i></div>
+					<div class="logo"><img src="images/logogoogle.png">
+					</div>
+				</div>
+				<div class="footer_Dn">
+					Bạn chưa có tài khoản NCT ID? <a class="dkn" href="#">Đăng ký ngay</a>   
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- Màn hình đăng ký -->
+	<div id="opacity_dk">
+		<div class="animate" id="dangky">
+			<a href="#" class="cancel">×</a>
+			<h3>Đăng ký</h3> 
+			<hr>
+			<form>
+				<div class="username">
+					<div class="icon">
+						<i class="far fa-user"></i>
+					</div>
+					<div class="input_DN">
+						<input type="text" placeholder="Nhập tên đăng nhập" >
+					</div>
+					<div class="popup infor" onmouseover="PopUp()" onmouseout="Hide()">
+						<i class="far fa-question-circle"></i>
+						<span class="popuptext" id="myPopup">Bạn có thể sử dụng chữ số, chữ cái, gạch dưới và dấu chấm. Chiều dài từ 6-30 ký tự</span>
+					</div>
+				</div>
+				<div class="password">
+					<div class="icon">
+						<i class="far fa-keyboard"></i>
+					</div>
+					<div class="input_DN">
+						<input type="password" placeholder="Nhập mật khẩu" >
+					</div>
+					<div class="popup infor" onmouseover="PopUp_1()" onmouseout="Hide_1()">
+						<i class="far fa-question-circle"></i>
+						<span class="popuptext" id="myPopup_1">Chiều dài từ 6-30 ký tự. Không sử dụng tiếng Việt có dấu</span>
+					</div>
+				</div>
+				<div class="password">
+					<div class="icon">
+						<i class="far fa-keyboard"></i>
+					</div>
+					<div class="input_DN">
+						<input type="password" placeholder="Nhập lại mật khẩu" >
+					</div>
+					<div class="popup infor" onmouseover="PopUp_2()" onmouseout="Hide_2()">
+						<i class="far fa-question-circle"></i>
+						<span class="popuptext" id="myPopup_2">Nhập lại mật khẩu giống như bên trên một lần nữa</span>
+					</div>
+				</div>
+				<div class="password">
+					<div class="icon">
+						<i class="far fa-envelope"></i>
+					</div>
+					<div class="input_DN">
+						<input type="password" placeholder="Nhập email" >
+					</div>
+					<div class="popup infor" onmouseover="PopUp_3()" onmouseout="Hide_3()">
+						<i class="far fa-question-circle"></i>
+						<span class="popuptext" id="myPopup_3">Điền vào email bạn muốn sử dụng cho tài khoản này</span>
+					</div>
+				</div>
+				<input type="checkbox" id="check" class="check">
+				<label for="check"> Tôi đã đọc và đồng ý các <a href="#" class="dieukhoan">THỎA THUẬN SỬ DỤNG</a></label>
+				<div class="align">
+					<input type="button" class="bnt" value="Đăng ký">
+				</div>
+				<div class="account">
+					<span>Đăng nhập NCT ID: </span>
+					<div class="logo"><img src="images/NCT_logo.png"></div>
+					<span>  &#160 Hoặc </span>
+					<div class="logo"><i class="fab fa-facebook-f"></i></div>
+					<div class="logo"><img src="images/logogoogle.png"></div>
+					
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="container">
+		<div id="left">
+			<img src="images/logo_NCT.png" height="25" width="50">
+			<a href="https://www.nhaccuatui.com/nhaccuatui-vip/mua-vip"><div class="nangcap">Nâng cấp</div></a>
+			<div class="dn_dk"><a href="#opacity_dn">Đăng nhập</a> | <a href="#opacity_dk">Đăng ký</a> <a> <i class="fas fa-cog"></i></a></div>
+			
+			<br>
+			<div class="navi" onclick="Open_Page('TimKiem.html');">
+				<i class="fas fa-search"></i> <a> Tìm kiếm</a>
+			</div>
+			<div class="navi" onclick="Open_Page('TrangChu.html');">
+				<i class="fas fa-home"></i> <a>Trang chủ</a>
+			</div>
+			<div class="navi here" id="khampha">
+				<i class="fas fa-compass"></i> <a> Khám phá</a> <i class="fas fa-chevron-down" id="icon_khampha" style="transform: rotate(180deg);"></i>
+			</div>
+			<div class="collapse collapse_khampha" id="dropkhampha">
+				<a href="BaiHat.html">Bài hát</a><br>
+				<a style="border-left: 3px solid #29ACF3;" href="Playlist.html">Playlist</a><br>
+				<a href="Video.html">Video</a><br>
+				<a href="NgheSi.html">Nghệ sĩ</a>
+			</div>
+			<div class="navi" id="homnay">
+				<i class="fas fa-headphones-alt"></i> <a> Nghe gì hôm nay</a> <i class="fas fa-chevron-down" id="icon_homnay"></i>
+			</div>
+			<div class="collapse" id="drophomnay">
+				<a href="ChuDe.html">Chủ đề</a><br>
+				<a href="TuyenTap.html">Tuyển tập</a><br>
+				<a href="Top100.html">Top 100</a>
+			</div>
+			<div class="navi" onclick="Open_Page('BXHNCT.html');">
+				<i class="fas fa-chart-bar"></i> <a> BXH NCT</a>
+			</div>
+			<div class="navi" onclick="Open_Page('Music4U.html');">
+				<i class="fas fa-thumbs-up"></i> <a> Music 4U</a>
+			</div>
+			<img class="contact" src="images/contact.png" height="100px">
+		</div>
+		<div id="content"><!-- InstanceBeginEditable name="Content" -->
+			
+			<div class="heading">
+				<p class="heading_here">Mới & Hot</p>
+				<p>Việt Nam</p>
+				<p>Âu Mỹ</p>
+				<p>Châu Á</p>
+				<p>Khác</p>
+			</div>
+			<div class="list_nhac">
+				<h2>Mới & Hot</h2>
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_1.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">Wild Dreams</p>
+					<p class="tencasi">Westlife</p>
+				</div>  
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/easyonme.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">30</p>
+					<p class="tencasi">Adele</p>
+				</div> 
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_3.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">The Taylor Swift Holiday</p>
+					<p class="tencasi">Taylor Swift</p>
+				</div> 
+				<div class="inline end_content">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_4.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">"TO INFINITY."</p>
+					<p class="tencasi">MINO</p>
+				</div> 
+
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_5.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">XOXO</p>
+					<p class="tencasi">JEON SOMI</p>
+				</div>  
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/iamdiva.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">I Am Diva Showcase</p>
+					<p class="tencasi">Thu Minh</p>
+				</div> 
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_7.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">World Of Walker</p>
+					<p class="tencasi">Alan Walker</p>
+				</div> 
+				<div class="inline end_content">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_8.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">LALISA</p>
+					<p class="tencasi">LISA</p>
+				</div> 
+
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_9.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">Bay Đi Trong Ban Mai</p>
+					<p class="tencasi">OPlus Band</p>
+				</div>  
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_10.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">CIRCUS (EP)</p>
+					<p class="tencasi">KIM JAE HYUNG</p>
+				</div> 
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_11.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">nhạc liu riu (EP)</p>
+					<p class="tencasi">Bích Phương</p>
+				</div> 
+				<div class="inline end_content">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_12.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">An Evening With Silk Sonic</p>
+					<p class="tencasi">Bruno Mars, Anderson Paak</p>
+				</div> 
+
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_13.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">Between Us (Super Deluxe)</p>
+					<p class="tencasi">Little Mix</p>
+				</div>  
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_14.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">Hometown Cha-Cha-Cha OST</p>
+					<p class="tencasi">V.A</p>
+				</div> 
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_15.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">= (Equals)</p>
+					<p class="tencasi">Ed Sheeran</p>
+				</div> 
+				<div class="inline end_content">
+					<div class="behind_playlist_1">Savage - The 1st Mini Album</div>
+					<div class="behind_playlist_2">aespa</div>
+					<div class="zoom_img">
+						<img src="./images/playlist_16.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">MONTERO</p>
+					<p class="tencasi">Lil Nas X</p>
+				</div> 
+
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_17.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">Savage - The 1st Mini Album</p>
+					<p class="tencasi">aespa</p>
+				</div>  
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_18.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">MONTERO</p>
+					<p class="tencasi">Lil Nas X</p>
+				</div> 
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_19.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">Christmas, With Love Always</p>
+					<p class="tencasi">Leona Lewis</p>
+				</div> 
+				<div class="inline end_content">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_20.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">RED (Taylor's Version)</p>
+					<p class="tencasi">Taylor Swift</p>
+				</div> 
+
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_21.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">Sour</p>
+					<p class="tencasi">Olivia Rodrigo</p>
+				</div>  
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_22.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">Nhạc Piano Vol. 2</p>
+					<p class="tencasi">Bằng Cường</p>
+				</div> 
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_23.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">Voyage</p>
+					<p class="tencasi">ABBA</p>
+				</div> 
+				<div class="inline end_content">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_24.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">It'll All Make Sense In The End</p>
+					<p class="tencasi">James Arthur</p>
+				</div> 
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_25.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">My Universe</p>
+					<p class="tencasi">Coldplay, BTS (Bangtan Boys)</p>
+				</div>  
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_26.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">A Very Trainor Christmas</p>
+					<p class="tencasi">Meghan Trainor</p>
+				</div> 
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_27.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">Sticker - The 3rd Album</p>
+					<p class="tencasi">NCT 127</p>
+				</div> 
+				<div class="inline end_content">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_28.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">Scenic Drive</p>
+					<p class="tencasi">Khalid</p>
+				</div> 
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_29.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">Blue Banisters</p>
+					<p class="tencasi">Lana Del Rey</p>
+				</div>  
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_30.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">Heartbreak On A Full Moon</p>
+					<p class="tencasi">Chris Brown</p>
+				</div> 
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_31.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">Solar Power (Deluxe Edition)</p>
+					<p class="tencasi">Lorde</p>
+				</div> 
+				<div class="inline end_content">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_32.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">The Lockdown Sessions</p>
+					<p class="tencasi">Elton John</p>
+				</div> 
+
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_33.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">Happier Than Ever</p>
+					<p class="tencasi">Billie Eilish</p>
+				</div> 
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_34.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">Music Of The Spheres</p>
+					<p class="tencasi">Coldplay</p>
+				</div>  
+				<div class="inline">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_35.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">evermore (Deluxe Edition)</p>
+					<p class="tencasi">Taylor Swift</p>
+				</div> 
+				<div class="inline end_content">
+					<div class="behind_playlist_1"></div>
+					<div class="behind_playlist_2"></div>
+					<div class="zoom_img">
+						<img src="./images/playlist_36.jpg" class="img_nhac"></img>
+						<div class="for_hover">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play"><i class="fas fa-play"></i></button>
+						</div>    
+					</div>
+					<br>
+					<p class="tenbaihat">Pokémon 25: The Album</p>
+					<p class="tencasi">V.A</p>
+				</div> 
+			</div>
+			
+			<br>
+			<div class="page">
+				<i class="fas fa-chevron-left"></i>
+				<p class="here_page">1</p>
+				<p>2</p>
+				<p>3</p>
+				<p>4</p>
+				<p>5</p>
+				<p>6</p>
+				<i class="fas fa-chevron-right"></i>
+			</div>
+			
+			<!-- InstanceEndEditable -->
+				
+
+			<hr>
+			<div class="footer-margin">
+				<div class="footer-menu">
+					<ul>
+						<li style="border-right: 3px solid #252F39;">
+							<a  class="footer-a" href="#">Giới thiệu</a>
+						</li>
+						<li style="border-right: 3px solid #252F39;">
+							<a  class="footer-a" href="#">SP-DV</a>
+						</li>
+						<li style="border-right: 3px solid #252F39;">
+							<a  class="footer-a" href="#">Hỗ trợ</a>
+						</li>
+						<li class="end">
+							<a  class="footer-a" href="#">Thỏa thuận sử dụng</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="footer-mxh">
+					<ul>
+						<li>
+							<a  class="fb_ins" href="#">
+								<i class="fab fa-facebook-square"></i>
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a  class="footer-a" href="#"><img src="images/appstore.png" /></a>
+						</li>
+						<li>
+							<a  class="footer-a" href="#"><img src="images/chplay.png" /></a>
+						</li>
+						<li>
+							<a  class="footer-a" href="#"><img src="images/appgallery.png" /></a>
+						</li>
+					</ul>
+				</div>
+				<br class="footer-br" />
+				<hr class="footer-hr" />
+				<img class="footer-logo" src="images/logo-nctc.svg"/>
+				<img class="congthuong" src="images/Cong_Thuong.svg" />
+				<img class="dmca" src="images/DMCA.svg" />
+				<h5 class="footer-h5">
+					CÔNG TY CỔ PHẦN N C T
+				</h5>
+				<ul class="li_foot">
+					<li>Chủ sở hữu website: <strong>Ông Nhan Thế Luân</strong></li>
+					<li>Giấy phép MXH số 499/GP-BTTTT do Bộ Thông Tin và Truyền thông cấp ngày 28/09/2015.</li>
+					<li>Giấy Chứng nhận Đăng ký Kinh doanh số 0305535715 do Sở kế hoạch và Đầu tư Tp.Hồ Chí Minh cấp ngày 01/03/2008.</li>
+				</ul> 
+			</div>
+			<br class="footer-br"/>
+			<div class="footer-addr">
+				<a class="footer-a" href="#">
+					<i class="fas fa-map-marker-alt"></i>  Tòa nhà The 678 Tower, 67 Hoàng Văn Thái, P.Tân Phú, Q.7, TP.HCM
+				</a>
+				<a  class="footer-a" href="#">
+					<i class="fas fa-phone-alt"></i> (028) 3868 7979
+				</a>          
+			</div>
+		</div>
+		<div id="right">
+			<div class="play_img">
+				<img src="images/play_img.jpg" height="240px">
+				<a>Angels Like You</a>
+				<i class="fas fa-microphone"></i>
+				<p>Miley Cyrus</p>
+			</div>
+			<p class="playlist">Playlist: Angels Like You</p>
+			<div class="control_play">
+				<i class="fas fa-volume-up"></i>
+				<div class="danhsachphat">
+					Danh sách phát
+				</div>
+				
+				<i class="fas fa-ellipsis-v"></i>
+				<br>
+				<p>
+					<span class="start">0:00</span>
+					<div class="dot"></div><div class="media"></div>
+					<span class="end">3:16</span>
+				</p>
+
+				<br>
+				<div class="control_media">
+					<i class="fas fa-random"></i>
+					<i class="fas fa-fast-backward"></i>
+					<i class="fas fa-play"></i>
+					<i class="fas fa-fast-forward"></i>
+					<i class="fas fa-redo"></i>
+				</div>
+				<p class="quality">128Kps</p>
+			</div>
+		</div>
+	</div>
+	<script src="scripts/NCT_script.js"></script>
+	<script src="scripts/MH_DK.js"></script>
+</body>
+<!-- InstanceEnd --></html>

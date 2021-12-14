@@ -1,0 +1,164 @@
+.collapse_khampha{
+    display: block;
+}
+br{
+    clear: both;
+}
+.trending{
+    height: 290px;
+    width: 100%;
+    background-color: #212A35;
+    padding: 20px;
+}
+h2{
+    margin-top: 20px;
+}
+.floatleft{
+    float: left;
+    margin-right: 20px;
+}
+.dateupdate{
+    margin-top: 30px;
+    font-size: 12px;
+    color: #858B91;
+
+}
+.fa-share-alt{
+    position: absolute;
+    right: 30px;
+}
+.trending img{
+    border-radius: 5px;
+    margin-top: 15px;
+    float: left;
+    margin-right: 50px;
+}
+
+.list{
+
+    height: 40px;
+    width: 300px;
+    line-height: 40px;
+    padding-left: 5px;
+    border-radius: 5px;
+
+}
+.list:hover{
+    background-color: #28313C;
+    cursor: pointer;
+}
+.fa-sort-up{
+    margin: 0 15px;
+    color: #95D96D;
+}
+.fa-sort-down{
+    margin: 0 15px;
+    color: #F44336;
+}
+.listleft{
+    float: left;
+    margin-right: 10px;
+}
+.heading{
+    height: 65px;
+    width: 100%;
+    border-bottom: 1px solid #28313C;
+    text-align: center;
+    padding-left: 200px;
+}
+.heading p{
+    width: 130px;
+    float: left;
+    font-size: smaller;
+    font-weight: bold;
+    line-height: 45px;
+    margin: 10px;
+    margin-top: 18px;
+}
+.heading p:hover{
+    border-bottom: 3px solid #09A5EF;
+    cursor: pointer;
+}
+.heading_here{
+    border-bottom: 3px solid #09A5EF;
+}
+.option{
+    padding-left: 380px;
+}
+.option p{
+    float: left;
+    margin: 0 20px;
+    
+}
+.option p:hover{
+    cursor: pointer;
+    color: #09A5EF;
+}
+.chose{
+    color: #09A5EF;
+}
+.option select{
+    float: right;
+    margin-right: 50px;
+    height: 23px;
+    width: 45px;
+    border-radius: 10px;
+    background-color: #1D2631;
+    color: #A8ACB2;
+}
+.option select:focus{
+    border-color: #09A5EF;
+}
+.listcasi{
+    padding: 30px 0 30px 30px;
+}
+figure{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+figure img{
+    border-radius: 50%;
+}
+figure img:hover{
+    cursor: pointer;
+}
+figure figcaption{
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+figcaption:hover{
+    cursor: pointer;
+    color: #09A5EF;
+}
+
+.page{
+    width: 325px;
+    height: 43px;
+    margin: auto;
+    border: 1px solid #404b58;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.page p{
+    float: left;
+    width: 42px;
+    line-height: 40px;
+
+}
+.page p:hover{  
+    color: #2DAAED;
+    cursor: pointer;
+}
+.fa-chevron-left , .fa-chevron-right{
+    float: left;
+    width: 35px;
+    line-height: 40px;
+}
+.here_page{
+    border-bottom: 2px solid #2DAAED;
+    color: #2DAAED;
+}

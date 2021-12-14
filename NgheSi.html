@@ -1,0 +1,446 @@
+<html><!-- InstanceBegin template="/Templates/NTC Template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Screenshot 2021-11-25 153205</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/Footer.css">
+<link rel="stylesheet" href="css/MH_DangNhap.css">
+<link rel="stylesheet" href="css/MH_DangKy.css">
+<link rel="stylesheet" href="fontawesome/css/all.min.css">
+<link rel="stylesheet" href="css/MH_NgheSy.css">
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<body>
+	<!-- Màn hình đăng nhập -->
+	<div id="opacity_dn">
+		<div class="container animate" id="dangnhap">
+			<a href="#" class="cancel">×</a>
+			<h3>Đăng nhập</h3> 
+			<hr>
+			<form>
+				<div class="username">
+					<div class="icon">
+						<i class="far fa-user"></i>
+					</div>
+					<div class="input_DN">
+						<input type="text" placeholder="Nhập tên đăng nhập" >
+					</div>
+				</div>
+				<div class="password">
+					<div class="icon">
+						<i class="far fa-keyboard"></i>
+					</div>
+					<div class="input_DN">
+						<input type="password" placeholder="Nhập mật khẩu" >
+					</div>
+				</div>
+				<input type="checkbox" id="check" class="check">
+				<label for="check"> Ghi nhớ</label>
+				<div class="align">
+					<input type="button" class="bnt" value="Đăng nhập">
+				</div>
+				<div class="account">
+					<span>Hoặc đăng nhập bằng: </span>
+					<div class="logo"><i class="fab fa-facebook-f"></i></div>
+					<div class="logo"><img src="images/logogoogle.png">
+					</div>
+				</div>
+				<div class="footer_Dn">
+					Bạn chưa có tài khoản NCT ID? <a class="dkn" href="#">Đăng ký ngay</a>   
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- Màn hình đăng ký -->
+	<div id="opacity_dk">
+		<div class="animate" id="dangky">
+			<a href="#" class="cancel">×</a>
+			<h3>Đăng ký</h3> 
+			<hr>
+			<form>
+				<div class="username">
+					<div class="icon">
+						<i class="far fa-user"></i>
+					</div>
+					<div class="input_DN">
+						<input type="text" placeholder="Nhập tên đăng nhập" >
+					</div>
+					<div class="popup infor" onmouseover="PopUp()" onmouseout="Hide()">
+						<i class="far fa-question-circle"></i>
+						<span class="popuptext" id="myPopup">Bạn có thể sử dụng chữ số, chữ cái, gạch dưới và dấu chấm. Chiều dài từ 6-30 ký tự</span>
+					</div>
+				</div>
+				<div class="password">
+					<div class="icon">
+						<i class="far fa-keyboard"></i>
+					</div>
+					<div class="input_DN">
+						<input type="password" placeholder="Nhập mật khẩu" >
+					</div>
+					<div class="popup infor" onmouseover="PopUp_1()" onmouseout="Hide_1()">
+						<i class="far fa-question-circle"></i>
+						<span class="popuptext" id="myPopup_1">Chiều dài từ 6-30 ký tự. Không sử dụng tiếng Việt có dấu</span>
+					</div>
+				</div>
+				<div class="password">
+					<div class="icon">
+						<i class="far fa-keyboard"></i>
+					</div>
+					<div class="input_DN">
+						<input type="password" placeholder="Nhập lại mật khẩu" >
+					</div>
+					<div class="popup infor" onmouseover="PopUp_2()" onmouseout="Hide_2()">
+						<i class="far fa-question-circle"></i>
+						<span class="popuptext" id="myPopup_2">Nhập lại mật khẩu giống như bên trên một lần nữa</span>
+					</div>
+				</div>
+				<div class="password">
+					<div class="icon">
+						<i class="far fa-envelope"></i>
+					</div>
+					<div class="input_DN">
+						<input type="password" placeholder="Nhập email" >
+					</div>
+					<div class="popup infor" onmouseover="PopUp_3()" onmouseout="Hide_3()">
+						<i class="far fa-question-circle"></i>
+						<span class="popuptext" id="myPopup_3">Điền vào email bạn muốn sử dụng cho tài khoản này</span>
+					</div>
+				</div>
+				<input type="checkbox" id="check" class="check">
+				<label for="check"> Tôi đã đọc và đồng ý các <a href="#" class="dieukhoan">THỎA THUẬN SỬ DỤNG</a></label>
+				<div class="align">
+					<input type="button" class="bnt" value="Đăng ký">
+				</div>
+				<div class="account">
+					<span>Đăng nhập NCT ID: </span>
+					<div class="logo"><img src="images/NCT_logo.png"></div>
+					<span>  &#160 Hoặc </span>
+					<div class="logo"><i class="fab fa-facebook-f"></i></div>
+					<div class="logo"><img src="images/logogoogle.png"></div>
+					
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="container">
+		<div id="left">
+			<img src="images/logo_NCT.png" height="25" width="50">
+			<a href="https://www.nhaccuatui.com/nhaccuatui-vip/mua-vip"><div class="nangcap">Nâng cấp</div></a>
+			<div class="dn_dk"><a href="#opacity_dn">Đăng nhập</a> | <a href="#opacity_dk">Đăng ký</a> <a> <i class="fas fa-cog"></i></a></div>
+			
+			<br>
+			<div class="navi" onclick="Open_Page('TimKiem.html');">
+				<i class="fas fa-search"></i> <a> Tìm kiếm</a>
+			</div>
+			<div class="navi" onclick="Open_Page('TrangChu.html');">
+				<i class="fas fa-home"></i> <a>Trang chủ</a>
+			</div>
+			<div class="navi here" id="khampha">
+				<i class="fas fa-compass"></i> <a> Khám phá</a> <i class="fas fa-chevron-down" id="icon_khampha" style="transform: rotate(180deg);"></i>
+			</div>
+			<div class="collapse collapse_khampha" id="dropkhampha">
+				<a href="BaiHat.html">Bài hát</a><br>
+				<a href="Playlist.html">Playlist</a><br>
+				<a href="Video.html">Video</a><br>
+				<a style="border-left: 3px solid #29ACF3;" href="NgheSi.html">Nghệ sĩ</a>
+			</div>
+			<div class="navi" id="homnay">
+				<i class="fas fa-headphones-alt"></i> <a> Nghe gì hôm nay</a> <i class="fas fa-chevron-down" id="icon_homnay"></i>
+			</div>
+			<div class="collapse" id="drophomnay">
+				<a href="ChuDe.html">Chủ đề</a><br>
+				<a href="TuyenTap.html">Tuyển tập</a><br>
+				<a href="Top100.html">Top 100</a>
+			</div>
+			<div class="navi" onclick="Open_Page('BXHNCT.html');">
+				<i class="fas fa-chart-bar"></i> <a> BXH NCT</a>
+			</div>
+			<div class="navi" onclick="Open_Page('Music4U.html');">
+				<i class="fas fa-thumbs-up"></i> <a> Music 4U</a>
+			</div>
+			<img class="contact" src="images/contact.png" height="100px">
+		</div>
+		<div id="content"><!-- InstanceBeginEditable name="Content" -->
+			<div class="trending">
+				<h2 class="floatleft">Nghệ Sỹ Trending</h2> 
+				<p class="dateupdate">Cập nhật ngày: 22/11/2021</p>
+				<i class="fas fa-share-alt"></i>
+				<br>
+				<img src="./images/kaleehoang.jpg" width="200px" height="200px">
+				<div class="listleft">
+					<p class="list" style="margin-top: 10px;"> 1 <i class="fas fa-sort-up">1</i> Kalee Hoàng</p>
+					<p class="list"> 2 <i class="fas fa-sort-up">2</i> Cao Nam Thành</p>
+					<p class="list"> 3 <i class="fas fa-sort-up">2</i> Bích Phương</p>
+					<p class="list"> 4 <i class="fas fa-sort-down">7</i> Phát Huy T4</p>
+					<p class="list"> 5 <i class="fas fa-sort-up">3</i> Thành Tar</p>
+				</div>
+				<div class="listleft">
+					<p class="list" style="margin-top: 10px;"> 6 <i class="fas fa-sort-up">3</i> Gemini Band</p>
+					<p class="list"> 7 <i class="fas fa-sort-up">1</i> Masew</p>
+					<p class="list"> 8 <i class="fas fa-sort-down">3</i> DTAP</p>
+					<p class="list"> 9  <i class="fas fa-sort-down">3</i> SON2M</p>
+					<p class="list" style="margin-left: -5px;"> 10 <i class="fas fa-sort-down">1</i>Thảo Wendy</p>
+				</div>
+				<br>		
+			</div>
+			<div class="heading">
+				<p class="heading_here">Hot</p>
+				<p>Việt Nam</p>
+				<p>Âu Mỹ</p>
+				<p>Hàn Quốc</p>
+			</div>
+			<br>	
+			<div class="option">
+				<p class="chose">Nam</p>
+				<p>Nữ</p>
+				<p>Nhóm nhạc</p>
+				<select>
+					<option>All</option>
+					<option>A</option>
+					<option>B</option>
+					<option>C</option>
+					<option>D</option>
+					<option>E</option>
+					<option>F</option>
+					<option>G</option>
+					<option>H</option>
+					<option>I</option>
+					<option>J</option>
+					<option>K</option>
+					<option>L</option>
+					<option>M</option>
+					<option>N</option>
+					<option>O</option>
+					<option>P</option>
+					<option>Q</option>
+					<option>R</option>
+					<option>S</option>
+					<option>T</option>
+					<option>U</option>
+					<option>V</option>
+					<option>W</option>
+					<option>X</option>
+					<option>Y</option>
+					<option>Z</option>
+				</select>
+			</div>
+			<br>
+			<div class="listcasi">
+				<figure>
+					<img src="./images/casi_1.jpg" width="220px" height="220px">
+					<figcaption>Jackson Wang (Vương Gia Nhĩ)</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/casi_2.jpg" width="220px" height="220px">
+					<figcaption>Châu Thâm (Zhou Shen)</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/casi_3.jpg" width="220px" height="220px">
+					<figcaption>Hồ Hạ (Hu Xia)</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/casi_4.jpg" width="220px" height="220px">
+					<figcaption>Lâm Tuấn Kiệt (JJ Lin)</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/casi_5.jpg" width="220px" height="220px">
+					<figcaption>Châu Kiệt Luân (Jay Chou)</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/casi_6.jpg" width="220px" height="220px">
+					<figcaption>Lộc Hàm (Lu Han)</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/casi_7.jpg" width="220px" height="220px">
+					<figcaption>Ngô Diệc Phàm (Kris Wu)</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/casi_8.jpg" width="220px" height="220px">
+					<figcaption>Dịch Dương Thiên Tỷ</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/casi_9.jpg" width="220px" height="220px">
+					<figcaption>Hoàng Tử Thao (Z.TAO)</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/casi_10.jpg" width="220px" height="220px">
+					<figcaption>Vương Nguyên (Roy Wang)</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/casi_11.jpg" width="220px" height="220px">
+					<figcaption>Uông Tô Lang (Silence Wang)</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/casi_12.jpg" width="220px" height="220px">
+					<figcaption>Hoắc Tôn (Henry Huo)</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/casi_13.jpg" width="220px" height="220px">
+					<figcaption>Lay</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/casi_14.jpg" width="220px" height="220px">
+					<figcaption>Trương Kiệt (Jason Zhang)</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/casi_15.jpg" width="220px" height="220px">
+					<figcaption>Kang Daniel</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/casi_16.jpg" width="220px" height="220px">
+					<figcaption>San E</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/casi_17.jpg" width="220px" height="220px">
+					<figcaption>Taeyang</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/casi_18.jpg" width="220px" height="220px">
+					<figcaption>JYP</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/casi_19.jpg" width="220px" height="220px">
+					<figcaption>Bi (Rain)</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/casi_20.jpg" width="220px" height="220px">
+					<figcaption>Zion.T</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/casi_21.jpg" width="220px" height="220px">
+					<figcaption>Yiruma</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/casi_22.jpg" width="220px" height="220px">
+					<figcaption>Epik High</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/casi_23.jpg" width="220px" height="220px">
+					<figcaption>Tae Min (SHINee)</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/casi_24.jpg" width="220px" height="220px">
+					<figcaption>Chan Yeol</figcaption>
+				</figure>
+			</div>
+
+			<br>
+			<div class="page">
+				<i class="fas fa-chevron-left"></i>
+				<p class="here_page">1</p>
+				<p>2</p>
+				<p>3</p>
+				<p>4</p>
+				<p>5</p>
+				<p>6</p>
+				<i class="fas fa-chevron-right"></i>
+			</div>
+			
+			<br>
+			<!-- InstanceEndEditable -->
+				
+
+			<hr>
+			<div class="footer-margin">
+				<div class="footer-menu">
+					<ul>
+						<li style="border-right: 3px solid #252F39;">
+							<a  class="footer-a" href="#">Giới thiệu</a>
+						</li>
+						<li style="border-right: 3px solid #252F39;">
+							<a  class="footer-a" href="#">SP-DV</a>
+						</li>
+						<li style="border-right: 3px solid #252F39;">
+							<a  class="footer-a" href="#">Hỗ trợ</a>
+						</li>
+						<li class="end">
+							<a  class="footer-a" href="#">Thỏa thuận sử dụng</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="footer-mxh">
+					<ul>
+						<li>
+							<a  class="fb_ins" href="#">
+								<i class="fab fa-facebook-square"></i>
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a  class="footer-a" href="#"><img src="images/appstore.png" /></a>
+						</li>
+						<li>
+							<a  class="footer-a" href="#"><img src="images/chplay.png" /></a>
+						</li>
+						<li>
+							<a  class="footer-a" href="#"><img src="images/appgallery.png" /></a>
+						</li>
+					</ul>
+				</div>
+				<br class="footer-br" />
+				<hr class="footer-hr" />
+				<img class="footer-logo" src="images/logo-nctc.svg"/>
+				<img class="congthuong" src="images/Cong_Thuong.svg" />
+				<img class="dmca" src="images/DMCA.svg" />
+				<h5 class="footer-h5">
+					CÔNG TY CỔ PHẦN N C T
+				</h5>
+				<ul class="li_foot">
+					<li>Chủ sở hữu website: <strong>Ông Nhan Thế Luân</strong></li>
+					<li>Giấy phép MXH số 499/GP-BTTTT do Bộ Thông Tin và Truyền thông cấp ngày 28/09/2015.</li>
+					<li>Giấy Chứng nhận Đăng ký Kinh doanh số 0305535715 do Sở kế hoạch và Đầu tư Tp.Hồ Chí Minh cấp ngày 01/03/2008.</li>
+				</ul> 
+			</div>
+			<br class="footer-br"/>
+			<div class="footer-addr">
+				<a class="footer-a" href="#">
+					<i class="fas fa-map-marker-alt"></i>  Tòa nhà The 678 Tower, 67 Hoàng Văn Thái, P.Tân Phú, Q.7, TP.HCM
+				</a>
+				<a  class="footer-a" href="#">
+					<i class="fas fa-phone-alt"></i> (028) 3868 7979
+				</a>          
+			</div>
+		</div>
+		<div id="right">
+			<div class="play_img">
+				<img src="images/play_img.jpg" height="240px">
+				<a>Angels Like You</a>
+				<i class="fas fa-microphone"></i>
+				<p>Miley Cyrus</p>
+			</div>
+			<p class="playlist">Playlist: Angels Like You</p>
+			<div class="control_play">
+				<i class="fas fa-volume-up"></i>
+				<div class="danhsachphat">
+					Danh sách phát
+				</div>
+				
+				<i class="fas fa-ellipsis-v"></i>
+				<br>
+				<p>
+					<span class="start">0:00</span>
+					<div class="dot"></div><div class="media"></div>
+					<span class="end">3:16</span>
+				</p>
+
+				<br>
+				<div class="control_media">
+					<i class="fas fa-random"></i>
+					<i class="fas fa-fast-backward"></i>
+					<i class="fas fa-play"></i>
+					<i class="fas fa-fast-forward"></i>
+					<i class="fas fa-redo"></i>
+				</div>
+				<p class="quality">128Kps</p>
+			</div>
+		</div>
+	</div>
+	<script src="scripts/NCT_script.js"></script>
+	<script src="scripts/MH_DK.js"></script>
+</body>
+<!-- InstanceEnd --></html>

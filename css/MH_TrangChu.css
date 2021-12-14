@@ -1,0 +1,710 @@
+
+.container_content{
+    background-color: #1D2631;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.slideshow_Behind{
+    width: 100%;
+    text-align: left;
+    margin: auto;
+    margin-left: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.slideshow{
+    width: 101%;
+    text-align: center;
+    overflow: hidden;
+    top: 20px;
+    left: -5px;
+    position: absolute;
+    z-index: 10;
+}
+.slideshow_Next{
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    top: 20px;
+    left: 940px;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+}
+
+.bnt_slideshow{
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    height: 70px;
+    width: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button i{
+    color: white;
+    font-size: 30px;
+}
+.display_left{
+    position:absolute;
+    top:150px;
+    left:50px;
+    display: none;
+}
+.display_right{
+    position:absolute;
+    top:150px;
+    right:50px;
+    display: none;
+}
+
+.my_slide_behind img, .my_slide img, .my_slide_next img{
+    height: 376px;
+    width: 930px;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+.index_slide{
+    width: 90px;
+    margin: auto;
+    text-align: center;
+}
+.shape{
+    background-color: #333B45;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    float: left;
+    margin: 3px;
+}
+.changeshape{
+    background-color: #2DAAED;
+    width: 20px;
+    border-radius: 45px;
+}
+
+/* to left animation */
+.animation {
+    position:relative;
+    animation:animateright 1.5s
+}
+@keyframes animateright{
+    from{right:-900px; opacity:1} 
+    to{right:0; opacity:1}
+}
+
+.animationtoright {
+    position:relative;
+    animation:animateleft 1.5s
+}
+@keyframes animateleft{
+    from{left:10px; opacity:1} 
+    to{left:950px; opacity:1}
+}
+
+
+.animation_behind{
+    animation:fading 1s
+}
+@keyframes fading{
+    from{opacity:0.4}
+    to{opacity:1}
+}
+
+.list_nhac{
+    margin: 30px;
+    color: #DADDE0;
+    
+}
+
+h2{
+    margin-top: 30px;
+}
+.zoom_img{
+    overflow: hidden;
+    height:220px;
+    width:220px;
+    border-radius: 5px;
+}
+
+.casi_zoom_img{
+    height:260px;
+    width:220px;
+    border-radius: 5px;
+
+}
+
+.new{
+    width: 100%;
+    height: 200px;
+    background-color: #212A35;
+    margin-top: 15px;
+}
+.image_new{
+    border-radius: 8px;
+    margin: 25px;
+    box-shadow: 5px 5px 5px #171b20;
+    float: left;
+}
+#TenBaiHat{
+    text-align: left;
+    color: #c0c7d1;
+    padding-top: 25px;
+}
+
+.circle_image{
+    border-radius: 50%;
+    margin-top: 5px;
+    border: 1px solid white;
+    float: left;
+    margin-right: 15px;
+}
+
+#TenCaSi{
+    font-size: 12px;
+    margin: 10px;
+}
+
+.fa-calendar-alt{
+    font-size: large;
+    margin-top: 10px;
+    float: left;
+}
+#NgayPhatHanh{
+    font-size: 12px;
+    margin-top: 23px;
+}
+
+.new hr{
+    margin-top: 20px;
+    margin-right: 25px;
+  
+}
+
+.hover_new{
+    height: 80px;
+    width: 80px;
+    float: left;
+    margin: 10px;
+}
+.hover_list_new{
+    border-radius: 5px;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    top: -80px;
+
+}
+.hover_list_new .play .fa-play{
+    font-size: smaller;
+    margin-top: 2px;
+}
+.hover_list_new .play{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;  
+    margin-top: 30px; 
+    margin-left: 30px;
+    visibility: hidden;
+    text-align: center;
+}
+.hover_list_new:hover .play{
+    visibility: visible;
+}
+.hover_list_new:hover{
+    background: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.list_new{
+    width: 51%;
+    margin: auto;
+}
+.image_list_new{
+
+    border-radius: 5px;
+}
+
+
+.img_casi{
+    height:260px;
+    width:220px;
+    border-radius: 5px;
+    transition: transform .5s ease;
+}
+.for_hover_casi:hover{
+    background: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.for_hover_casi{
+    height:260px;
+    width:222px;
+    border-radius: 5px;
+    position: relative;
+    top: -260px;
+    text-align: center;
+}
+.img_nhac{
+    height:222px;
+    width:222px;
+    border-radius: 5px;
+    transition: transform .5s ease;
+}
+.zoom_img:hover img{
+    transform: scale(1.2); 
+}
+.for_hover{
+    height:220px;
+    width:220px;
+    border-radius: 5px;
+    position: relative;
+    top: -222px;
+    text-align: center;
+}
+
+.for_hover:hover{
+    background: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.for_hover .fa-ellipsis-v{
+    position:absolute;
+    right: 10px;
+    top: 40px;
+    color: white;
+    visibility: hidden;
+}
+
+.play{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;  
+    margin-top: 90px; 
+    visibility: hidden;
+    text-align: center;
+}
+
+.zoom_img:hover .for_hover .fa-ellipsis-v{
+    visibility:visible;
+}
+.zoom_img:hover .for_hover .play{
+    visibility:visible;
+    cursor: pointer;
+}
+.play:hover{
+    transform: scale(1.2);
+}
+.play .fa-play{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+    margin-left: 3px;
+}
+.inline a{
+    margin-top: 10px;
+    color: #DADDE0;
+    text-decoration: none;
+}
+
+.inline a:hover{
+    color: #2DAAED;
+}
+
+.inline{
+    float: left;
+    margin-right: 17px;
+    margin-top: 15px;
+}
+.end_content{
+    margin-right: 0;
+}
+h2 .fa-chevron-left{
+    float: right;
+    color: #757B83;
+    font-size: 20px;
+}
+h2 .fa-chevron-right{
+    float: right;
+    margin-left: 15px;
+    color: #c0c7d1;
+    font-size: 20px;
+}
+h2 .fa-chevron-right:hover, h2 .fa-chevron-left:hover{
+
+    cursor: pointer;
+}
+br{
+    clear: both;
+}
+.Name-case{
+    font-size: 14px;
+    color: #787E85;
+    line-height: 30px;
+}
+.frame_new{
+    width: 300px;
+    height: 125px;
+    background-color:#333B45 ;
+    border-radius: 5px;
+}
+.img_new{
+    height: 105px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.for_hover_new{
+    height:105px;
+    width:105px;
+    border-radius: 5px;
+    position: relative;
+    top: -109px;
+    left: 10px;
+    text-align: center;
+}
+
+.for_hover_new:hover{
+    background: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.frame_new:hover .for_hover .fa-ellipsis-v{
+    visibility:visible;
+}
+.frame_new:hover .for_hover .play{
+    visibility:visible;
+    cursor: pointer;
+}
+
+.play_new{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;  
+    margin-top: 90px; 
+    visibility: hidden;
+    text-align: center;
+    
+}
+.play_new:hover{
+    transform: scale(1.2);
+}
+.faplay_new{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+    margin: 5px;
+}
+.BXH{
+    height: 320px;
+    width: 295px;
+    background-color: #212A35;
+    margin-top: 15px;
+    border-radius: 5px;
+    float: left;
+    margin: 8px;
+}
+.background{
+    background-image: linear-gradient( to right,#5BCFFA, #F2AEE3, #9F77F2);
+    height: 50%;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: -10px;
+}
+.background p{
+    margin: 15px;
+    font-size: 30px;
+    padding-top: 15px;
+
+}
+.background img{
+    border-radius: 5px;
+    position: relative;
+    bottom: -20px;
+    transition: 0.5s;
+}
+.background img:hover{
+    transform: scale(1.2);
+}
+.background .img1{
+    left: 20px;
+    z-index: 6;
+}
+.background .img2{
+    left: -20px;
+    z-index: 5;
+}
+.background .img3{
+    left: -60px;
+    z-index: 4;
+}
+#img2_vn:hover, #img3_vn:hover, #img2_AM:hover, #img3_AM:hover, #img2_HQ:hover, #img3_HQ:hover{
+    z-index: 7;
+}
+.background .img1:hover, .background .img2:hover, .background .img3:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.tenbaihat{
+    margin-left: 15px;
+    margin-top: 15px;
+    width: fit-content;
+}
+.tencasi_BXH{
+    color: #757B83;
+    margin-left: 15px;
+    margin-top: 5px;
+    width: fit-content;
+}
+.BXH button{
+    background-color: #212A35;
+    border: 1px solid #DADDE0;
+    border-radius: 5px;
+    height: 34;
+    width: 120px;
+    color: #DADDE0;
+    margin: 15px;
+}
+.tenbaihat:hover, .tencasi_BXH:hover, .BXH button:hover{
+    color: #28B5F5;
+    border-color: #28B5F5;
+    cursor: pointer;
+}
+.rank{
+    font-size: 60px;
+    font-weight: bold;
+    opacity: 0.1;
+    position: relative;
+    top: -100px;
+    right: -200px;
+    width: fit-content;
+}
+
+
+.video{
+    margin-top: 15px;
+    float: left;
+}
+.zoom_vd{
+    height: 260px;
+    width: 460px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.zoom_vd img{
+    border-radius: 5px;
+    transition: 1s;
+}
+.zoom_vd:hover{
+    cursor: pointer;
+}
+.zoom_vd:hover img{
+    transform: scale(1.2);
+}
+.for_hover_vd{
+    height: 260px;
+    width: 460px;
+    border-radius: 5px; 
+    position: relative;
+    top: -260px;
+
+}
+.for_hover_vd:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.play_vd{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;  
+    margin-top: 110px; 
+    visibility: hidden;
+    text-align: center;
+    margin-left: 215px;
+}
+.zoom_vd:hover .for_hover_vd .play_vd{
+    visibility: visible;
+    cursor: pointer;
+}
+.zoom_vd:hover .for_hover_vd .fa-ellipsis-v{
+    visibility: visible;
+}
+
+.zoom_vd:hover .for_hover_vd .play_vd .fa-play{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+    margin-left: 3px;
+}
+.play_vd:hover{
+    transform: scale(1.2);
+}
+
+.for_hover_vd .fa-ellipsis-v{
+    position:absolute;
+    right: 10px;
+    top: 40px;
+    color: white;
+    visibility: hidden;
+}
+.time_vd{
+    position: absolute; 
+    right: 0px;
+    bottom: 0px;
+    visibility: visible;
+    text-align: right;
+    width: 40px;
+    font-size: smaller;
+    background-image: linear-gradient(to left, rgba(0,0,0,0.8), rgba(255,255,255,0));
+}
+.video a{
+    color: silver;
+    font-weight: bold;
+    text-decoration: none;
+}
+.video a:hover{
+    color: #2DAAED;
+}
+.video .Name-case{
+    font-size: 14px;
+    font-weight:initial;
+}
+
+/* Video mini */
+.video_mini{
+    margin-top: 15px;
+    float: left;
+}
+.zoom_vd_mini{
+    height: 125px;
+    width: 223px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.zoom_vd_mini img{
+    border-radius: 5px;
+    transition: 1s;
+}
+.zoom_vd:hover{
+    cursor: pointer;
+}
+.zoom_vd_mini:hover img{
+    transform: scale(1.2);
+}
+.for_hover_vd_mini{
+    height: 125px;
+    width: 223px;
+    border-radius: 5px; 
+    position: relative;
+    top: -125px;
+
+}
+.for_hover_vd_mini:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.play_vd_mini{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;  
+    margin-top: 45px; 
+    visibility: hidden;
+    text-align: center;
+    margin-left: 100px;
+}
+.zoom_vd_mini:hover .for_hover_vd_mini .play_vd_mini{
+    visibility: visible;
+    cursor: pointer;
+}
+.zoom_vd_mini:hover .for_hover_vd_mini .fa-ellipsis-v{
+    visibility: visible;
+}
+
+.zoom_vd_mini:hover .for_hover_vd_mini .play_vd_mini .fa-play{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 13px;
+    margin-left: 3px;
+}
+.play_vd_mini:hover{
+    transform: scale(1.2);
+}
+
+.for_hover_vd_mini .fa-ellipsis-v{
+    position:absolute;
+    right: 10px;
+    top: 35px;
+    color: white;
+    visibility: hidden;
+    font-size: 14px;
+}
+.time_vd_mini{
+    position: absolute; 
+    right: 0px;
+    bottom: 0px;
+    visibility: visible;
+    text-align: right;
+    width: 40px;
+    font-size: 12px;
+    background-image: linear-gradient(to left, rgba(0,0,0,0.8), rgba(255,255,255,0));
+}
+.video_mini a{
+    color: silver;
+    font-weight: bold;
+    text-decoration: none;
+}
+.video_mini a:hover{
+    color: #2DAAED;
+}
+.video_mini .Name-case{
+    font-size: 14px;
+    font-weight:initial;
+}
+
+/* Bài hát */
+.baihat{
+    width: 435px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #28313C;
+    padding: 10px;
+    margin-bottom: 5px;
+    float: left;
+}
+.baihat img{
+
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px;
+}
+.baihat h4{
+    line-height: 30px;
+}
+
+.baihat a{
+    padding-top: 20px;
+    font-size: 14px;
+    color: #757B83;
+    line-height: 30px;
+}
+.baihat a:hover{
+    color: #2DAAED;
+    cursor: pointer;
+}
+.baihat .fa-headphones-alt{
+    position:relative;
+    color: #c0c7d1;
+    right: -350px;
+    top: -30px;
+    font-size: smaller;
+}
+.baihat:hover{
+    background-color: #4d4d4d;
+    cursor: pointer;
+}
+

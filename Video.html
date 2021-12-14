@@ -1,0 +1,792 @@
+<html><!-- InstanceBegin template="/Templates/NTC Template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Screenshot 2021-11-25 153205</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/Footer.css">
+<link rel="stylesheet" href="css/MH_DangNhap.css">
+<link rel="stylesheet" href="css/MH_DangKy.css">
+<link rel="stylesheet" href="fontawesome/css/all.min.css">
+<link rel="stylesheet" href="css/MH_Video.css">
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<body>
+	<!-- Màn hình đăng nhập -->
+	<div id="opacity_dn">
+		<div class="container animate" id="dangnhap">
+			<a href="#" class="cancel">×</a>
+			<h3>Đăng nhập</h3> 
+			<hr>
+			<form>
+				<div class="username">
+					<div class="icon">
+						<i class="far fa-user"></i>
+					</div>
+					<div class="input_DN">
+						<input type="text" placeholder="Nhập tên đăng nhập" >
+					</div>
+				</div>
+				<div class="password">
+					<div class="icon">
+						<i class="far fa-keyboard"></i>
+					</div>
+					<div class="input_DN">
+						<input type="password" placeholder="Nhập mật khẩu" >
+					</div>
+				</div>
+				<input type="checkbox" id="check" class="check">
+				<label for="check"> Ghi nhớ</label>
+				<div class="align">
+					<input type="button" class="bnt" value="Đăng nhập">
+				</div>
+				<div class="account">
+					<span>Hoặc đăng nhập bằng: </span>
+					<div class="logo"><i class="fab fa-facebook-f"></i></div>
+					<div class="logo"><img src="images/logogoogle.png">
+					</div>
+				</div>
+				<div class="footer_Dn">
+					Bạn chưa có tài khoản NCT ID? <a class="dkn" href="#">Đăng ký ngay</a>   
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- Màn hình đăng ký -->
+	<div id="opacity_dk">
+		<div class="animate" id="dangky">
+			<a href="#" class="cancel">×</a>
+			<h3>Đăng ký</h3> 
+			<hr>
+			<form>
+				<div class="username">
+					<div class="icon">
+						<i class="far fa-user"></i>
+					</div>
+					<div class="input_DN">
+						<input type="text" placeholder="Nhập tên đăng nhập" >
+					</div>
+					<div class="popup infor" onmouseover="PopUp()" onmouseout="Hide()">
+						<i class="far fa-question-circle"></i>
+						<span class="popuptext" id="myPopup">Bạn có thể sử dụng chữ số, chữ cái, gạch dưới và dấu chấm. Chiều dài từ 6-30 ký tự</span>
+					</div>
+				</div>
+				<div class="password">
+					<div class="icon">
+						<i class="far fa-keyboard"></i>
+					</div>
+					<div class="input_DN">
+						<input type="password" placeholder="Nhập mật khẩu" >
+					</div>
+					<div class="popup infor" onmouseover="PopUp_1()" onmouseout="Hide_1()">
+						<i class="far fa-question-circle"></i>
+						<span class="popuptext" id="myPopup_1">Chiều dài từ 6-30 ký tự. Không sử dụng tiếng Việt có dấu</span>
+					</div>
+				</div>
+				<div class="password">
+					<div class="icon">
+						<i class="far fa-keyboard"></i>
+					</div>
+					<div class="input_DN">
+						<input type="password" placeholder="Nhập lại mật khẩu" >
+					</div>
+					<div class="popup infor" onmouseover="PopUp_2()" onmouseout="Hide_2()">
+						<i class="far fa-question-circle"></i>
+						<span class="popuptext" id="myPopup_2">Nhập lại mật khẩu giống như bên trên một lần nữa</span>
+					</div>
+				</div>
+				<div class="password">
+					<div class="icon">
+						<i class="far fa-envelope"></i>
+					</div>
+					<div class="input_DN">
+						<input type="password" placeholder="Nhập email" >
+					</div>
+					<div class="popup infor" onmouseover="PopUp_3()" onmouseout="Hide_3()">
+						<i class="far fa-question-circle"></i>
+						<span class="popuptext" id="myPopup_3">Điền vào email bạn muốn sử dụng cho tài khoản này</span>
+					</div>
+				</div>
+				<input type="checkbox" id="check" class="check">
+				<label for="check"> Tôi đã đọc và đồng ý các <a href="#" class="dieukhoan">THỎA THUẬN SỬ DỤNG</a></label>
+				<div class="align">
+					<input type="button" class="bnt" value="Đăng ký">
+				</div>
+				<div class="account">
+					<span>Đăng nhập NCT ID: </span>
+					<div class="logo"><img src="images/NCT_logo.png"></div>
+					<span>  &#160 Hoặc </span>
+					<div class="logo"><i class="fab fa-facebook-f"></i></div>
+					<div class="logo"><img src="images/logogoogle.png"></div>
+					
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="container">
+		<div id="left">
+			<img src="images/logo_NCT.png" height="25" width="50">
+			<a href="https://www.nhaccuatui.com/nhaccuatui-vip/mua-vip"><div class="nangcap">Nâng cấp</div></a>
+			<div class="dn_dk"><a href="#opacity_dn">Đăng nhập</a> | <a href="#opacity_dk">Đăng ký</a> <a> <i class="fas fa-cog"></i></a></div>
+			
+			<br>
+			<div class="navi" onclick="Open_Page('TimKiem.html');">
+				<i class="fas fa-search"></i> <a> Tìm kiếm</a>
+			</div>
+			<div class="navi" onclick="Open_Page('TrangChu.html');">
+				<i class="fas fa-home"></i> <a>Trang chủ</a>
+			</div>
+			<div class="navi here" id="khampha">
+				<i class="fas fa-compass"></i> <a> Khám phá</a> <i class="fas fa-chevron-down" id="icon_khampha" style="transform: rotate(180deg);"></i>
+			</div>
+			<div class="collapse collapse_khampha" id="dropkhampha">
+				<a href="BaiHat.html">Bài hát</a><br>
+				<a href="Playlist.html">Playlist</a><br>
+				<a style="border-left: 3px solid #29ACF3;" href="Video.html">Video</a><br>
+				<a href="NgheSi.html">Nghệ sĩ</a>
+			</div>
+			<div class="navi" id="homnay">
+				<i class="fas fa-headphones-alt"></i> <a> Nghe gì hôm nay</a> <i class="fas fa-chevron-down" id="icon_homnay"></i>
+			</div>
+			<div class="collapse" id="drophomnay">
+				<a href="ChuDe.html">Chủ đề</a><br>
+				<a href="TuyenTap.html">Tuyển tập</a><br>
+				<a href="Top100.html">Top 100</a>
+			</div>
+			<div class="navi" onclick="Open_Page('BXHNCT.html');">
+				<i class="fas fa-chart-bar"></i> <a> BXH NCT</a>
+			</div>
+			<div class="navi" onclick="Open_Page('Music4U.html');">
+				<i class="fas fa-thumbs-up"></i> <a> Music 4U</a>
+			</div>
+			<img class="contact" src="images/contact.png" height="100px">
+		</div>
+		<div id="content"><!-- InstanceBeginEditable name="Content" -->
+			<div class="heading">
+				<p class="heading_here">Mới & Hot</p>
+				<p>Việt Nam</p>
+				<p>Âu Mỹ</p>
+				<p>Châu Á</p>
+				<p>Khác</p>
+			</div>
+			<div class="list_nhac">
+				<h2>Mới & Hot</h2>
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_1.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">3:34</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Yêu Em Làm Chó</p>
+					<p class="tencasi">Tuấn Cry</p>
+				</div>
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/videohot_4.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:34</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">nằm ngủ emru</p>
+					<p class="tencasi">Bích Phương</p>
+				</div>
+				<div class="video end_content">
+					<div class="zoom_vd">
+						<img src="./images/video_3.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">5:56</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Mắt Nai Cha Cha Cha</p>
+					<p class="tencasi">Bảo Anh</p>
+				</div>
+
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_4.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">5:44</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">từ chối nhẹ nhàng thôi (liu riu version)</p>
+					<p class="tencasi">Bích Phương, Phúc Du</p>
+				</div>
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_5.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:34</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Tìm Thấy Anh</p>
+					<p class="tencasi">Gemini Band</p>
+				</div>
+				<div class="video end_content">
+					<div class="zoom_vd">
+						<img src="./images/video_6.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:09</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Em Là Cô Giáo Vùng Cao (Lyric Video)</p>
+					<p class="tencasi">Sèn Hoàng Mỹ Lam</p>
+				</div>
+
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_7.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">5:44</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Phù Hoa (Lyric Video)</p>
+					<p class="tencasi">Quý-P</p>
+				</div>
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_8.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:34</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Duyên Định (Lyric Video)</p>
+					<p class="tencasi">TiTo, Ruby</p>
+				</div>
+				<div class="video end_content">
+					<div class="zoom_vd">
+						<img src="./images/video_9.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:09</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Wannabe</p>
+					<p class="tencasi">Spice Girls</p>
+				</div>
+
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_10.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">5:44</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Easy On Me</p>
+					<p class="tencasi">Adele</p>
+				</div>
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_11.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:34</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">SG</p>
+					<p class="tencasi">DJ Snake, Ozuna, Megan Thee Stallion, LISA</p>
+				</div>
+				<div class="video end_content">
+					<div class="zoom_vd">
+						<img src="./images/video_12.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:09</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">I Don't Want You</p>
+					<p class="tencasi">Riton, Raye</p>
+				</div>
+
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_13.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">5:44</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Does He Love You</p>
+					<p class="tencasi">Reba McEntire, Dolly Parton</p>
+				</div>
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_14.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:34</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Camera Roll</p>
+					<p class="tencasi">Kacey Musgraves</p>
+				</div>
+				<div class="video end_content">
+					<div class="zoom_vd">
+						<img src="./images/video_15.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:09</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Beggin</p>
+					<p class="tencasi">Maneskin</p>
+				</div>
+
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_16.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">5:44</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Fallen Fruit</p>
+					<p class="tencasi">Lorde</p>
+				</div>
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_17.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:34</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Wannabe (Japanese Ver.)</p>
+					<p class="tencasi">ITZY</p>
+				</div>
+				<div class="video end_content">
+					<div class="zoom_vd">
+						<img src="./images/video_18.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:09</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">XOXO</p>
+					<p class="tencasi">JEON SOMI</p>
+				</div>
+
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_19.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">5:44</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Would You Run</p>
+					<p class="tencasi">TRI.BE</p>
+				</div>
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_20.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:34</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Lalisa</p>
+					<p class="tencasi">LISA</p>
+				</div>
+				<div class="video end_content">
+					<div class="zoom_vd">
+						<img src="./images/video_21.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:09</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Vivace</p>
+					<p class="tencasi">Lightsum</p>
+				</div>
+
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_22.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">5:44</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Loco (Dance Practice)</p>
+					<p class="tencasi">ITZY</p>
+				</div>
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_23.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:34</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">The Feels</p>
+					<p class="tencasi">TWICE</p>
+				</div>
+				<div class="video end_content">
+					<div class="zoom_vd">
+						<img src="./images/video_24.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:09</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Pretty Savage (By YGX)</p>
+					<p class="tencasi">BlackPink</p>
+				</div>
+
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_25.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">5:44</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Thay Lòng / 变心 (Vietsub, Kara)</p>
+					<p class="tencasi">Lộ Phi Văn (Lu Fei Wen)</p>
+				</div>
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_26.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:34</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Khuynh Thiên Hạ / 倾天下</p>
+					<p class="tencasi">Mao Nhược Quỳnh (CiCi)</p>
+				</div>
+				<div class="video end_content">
+					<div class="zoom_vd">
+						<img src="./images/video_27.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:09</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Sinh Thế / 生世 </p>
+					<p class="tencasi">Diệp Huyền Thanh</p>
+				</div>
+
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_28.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">5:44</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Gặp Được Nữ Đệ Tử / 遇见女弟子</p>
+					<p class="tencasi">Trương Nguyệt (YueZhang)</p>
+				</div>
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_29.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:34</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Anh Có Thể Nào Đừng Rời Xa Em</p>
+					<p class="tencasi">Mạc Khiếu Tỷ Tỷ</p>
+				</div>
+				<div class="video end_content">
+					<div class="zoom_vd">
+						<img src="./images/video_30.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:09</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Bách Niên Cô Tịch / 百年孤寂</p>
+					<p class="tencasi">Tô Vỹ (Su Wei)</p>
+				</div>
+
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_31.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">5:44</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Mây Và Biển / 云与海</p>
+					<p class="tencasi">Hoàng Lệ Linh (A-Lin)</p>
+				</div>
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_32.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:34</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Tình Yêu Năm Ấý / 当年情</p>
+					<p class="tencasi">Jordan Chan (Trần Tiểu Xuân)</p>
+				</div>
+				<div class="video end_content">
+					<div class="zoom_vd">
+						<img src="./images/video_33.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:09</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Cuội Không Về</p>
+					<p class="tencasi">Kiều My</p>
+				</div>
+
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_34.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">5:44</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Vầng Trăng Mơ Ước</p>
+					<p class="tencasi">Khả My</p>
+				</div>
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_35.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:34</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Bé Ngoan Đến Trường</p>
+					<p class="tencasi">Bé Bào Ngư</p>
+				</div>
+				<div class="video end_content">
+					<div class="zoom_vd">
+						<img src="./images/video_36.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:09</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Bé Phòng Dịch Corona</p>
+					<p class="tencasi">Bé Hồng Ân</p>
+				</div>
+
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_37.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">5:44</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">How You Like That (Japan Version)</p>
+					<p class="tencasi">BlackPink</p>
+				</div>
+				<div class="video">
+					<div class="zoom_vd">
+						<img src="./images/video_38.jpg" height="170" width="300">
+						<div class="for_hover_vd">
+							<i class="fas fa-ellipsis-v"></i>
+							<button class="play_vd"><i class="fas fa-play"></i></button>
+							<p class="time_vd">4:34</p>
+						</div>
+					</div>
+					<br>
+					<p class="tenbaihat">Perfect World</p>
+					<p class="tencasi">TWICE</p>
+				</div>
+				
+			</div>	
+			
+			<br>
+			<br>
+			<br>
+			<br>
+			<!-- InstanceEndEditable -->
+				
+
+			<hr>
+			<div class="footer-margin">
+				<div class="footer-menu">
+					<ul>
+						<li style="border-right: 3px solid #252F39;">
+							<a  class="footer-a" href="#">Giới thiệu</a>
+						</li>
+						<li style="border-right: 3px solid #252F39;">
+							<a  class="footer-a" href="#">SP-DV</a>
+						</li>
+						<li style="border-right: 3px solid #252F39;">
+							<a  class="footer-a" href="#">Hỗ trợ</a>
+						</li>
+						<li class="end">
+							<a  class="footer-a" href="#">Thỏa thuận sử dụng</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="footer-mxh">
+					<ul>
+						<li>
+							<a  class="fb_ins" href="#">
+								<i class="fab fa-facebook-square"></i>
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a  class="footer-a" href="#"><img src="images/appstore.png" /></a>
+						</li>
+						<li>
+							<a  class="footer-a" href="#"><img src="images/chplay.png" /></a>
+						</li>
+						<li>
+							<a  class="footer-a" href="#"><img src="images/appgallery.png" /></a>
+						</li>
+					</ul>
+				</div>
+				<br class="footer-br" />
+				<hr class="footer-hr" />
+				<img class="footer-logo" src="images/logo-nctc.svg"/>
+				<img class="congthuong" src="images/Cong_Thuong.svg" />
+				<img class="dmca" src="images/DMCA.svg" />
+				<h5 class="footer-h5">
+					CÔNG TY CỔ PHẦN N C T
+				</h5>
+				<ul class="li_foot">
+					<li>Chủ sở hữu website: <strong>Ông Nhan Thế Luân</strong></li>
+					<li>Giấy phép MXH số 499/GP-BTTTT do Bộ Thông Tin và Truyền thông cấp ngày 28/09/2015.</li>
+					<li>Giấy Chứng nhận Đăng ký Kinh doanh số 0305535715 do Sở kế hoạch và Đầu tư Tp.Hồ Chí Minh cấp ngày 01/03/2008.</li>
+				</ul> 
+			</div>
+			<br class="footer-br"/>
+			<div class="footer-addr">
+				<a class="footer-a" href="#">
+					<i class="fas fa-map-marker-alt"></i>  Tòa nhà The 678 Tower, 67 Hoàng Văn Thái, P.Tân Phú, Q.7, TP.HCM
+				</a>
+				<a  class="footer-a" href="#">
+					<i class="fas fa-phone-alt"></i> (028) 3868 7979
+				</a>          
+			</div>
+		</div>
+		<div id="right">
+			<div class="play_img">
+				<img src="images/play_img.jpg" height="240px">
+				<a>Angels Like You</a>
+				<i class="fas fa-microphone"></i>
+				<p>Miley Cyrus</p>
+			</div>
+			<p class="playlist">Playlist: Angels Like You</p>
+			<div class="control_play">
+				<i class="fas fa-volume-up"></i>
+				<div class="danhsachphat">
+					Danh sách phát
+				</div>
+				
+				<i class="fas fa-ellipsis-v"></i>
+				<br>
+				<p>
+					<span class="start">0:00</span>
+					<div class="dot"></div><div class="media"></div>
+					<span class="end">3:16</span>
+				</p>
+
+				<br>
+				<div class="control_media">
+					<i class="fas fa-random"></i>
+					<i class="fas fa-fast-backward"></i>
+					<i class="fas fa-play"></i>
+					<i class="fas fa-fast-forward"></i>
+					<i class="fas fa-redo"></i>
+				</div>
+				<p class="quality">128Kps</p>
+			</div>
+		</div>
+	</div>
+	<script src="scripts/NCT_script.js"></script>
+	<script src="scripts/MH_DK.js"></script>
+</body>
+<!-- InstanceEnd --></html>

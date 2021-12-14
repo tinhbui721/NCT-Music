@@ -4,7 +4,7 @@
     background-color: rgba(0,0,0,0.3);
     position:absolute;
     display: none;
-    z-index: 5;
+    z-index: 100;
 }
 #opacity_dk:target{
     display: block;
@@ -17,7 +17,7 @@
     left: 500px;
     top: 100px;
     position: absolute;
-    z-index: 11;
+    z-index: 100;
     display: block;
     background: #18222D;
 }
@@ -46,7 +46,7 @@
     float: right;
     line-height: 38px;
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: -15px;
 }
 input:focus {
     outline: none;
