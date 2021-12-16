@@ -1,0 +1,76 @@
+.music4u{
+	width: 100%;
+	  height: auto;
+	margin-bottom: 150px;
+}
+.imagem4u{
+  width: fit-content;
+  background-color: #1D2631;
+  padding: 15px 20px;
+  margin-top: 30px;
+  position: relative;
+	display: inline-block;
+}
+.imagem4u img {
+	width: 250px;
+	height: 250px;
+	z-index: 3;
+	position: relative;
+	border-radius: 10px;
+}
+.imagem4u img:hover{
+	transform: scale(1.05)
+}
+.music4u .layer1{
+	margin-left: 15%;
+	width: 70%;
+	height: 10px;
+	border-radius: 5px;
+	z-index: 1;
+	background-color: #28313c;
+	position: relative;
+}
+.music4u .layer2{
+	width: 90%;
+	height: 10px;
+	margin-left: 5%;
+	margin-top: -4px;
+	border-radius: 5px;
+	background-color: #333b45;
+	position: relative;
+	z-index: 2;
+}
+.dnm4u{
+	padding: 5px 15px;
+	background-color: inherit;
+	font-size: 15px;
+	color: gray;
+	border-radius: 15px;
+	border: 1px solid gray;
+	display: inline-block;
+	position: absolute;
+	margin-left: 290px;
+	margin-top: -180px;
+
+}
+.titlemusic4u{
+	position: relative;
+    display: inline-block;
+	margin-top: -230px;
+	margin-left: 290px;
+	font-size: 14px;
+}
+.logom4u b{
+	color: white;
+}
+.logom4u{
+	 display: inline-block;
+	position: absolute;
+	margin-left: 0px;
+	margin-top: 50px;
+}
+.dnm4u:hover{
+	color: #2ca9ec;
+	border: 1px solid #2ca9ec;
+	cursor: pointer
+}

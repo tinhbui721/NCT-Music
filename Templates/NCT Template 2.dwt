@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=" UTF-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Music Streaming Website</title>
+<!-- TemplateEndEditable -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="../css/css-template/index.css">
+<link rel="stylesheet" href="../css/css-template/Footer1.css">
+<link rel="stylesheet" href="../css/css-template/musicsidebar.css">
+<link rel="stylesheet" href="../css/css-template/pagecontent.css">
+<link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" >
+<link rel="stylesheet" href="../fontawesome/css/all.css">
+<!-- TemplateBeginEditable name="head" -->
+	
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+
+<div id="page-wrapper">
+    <!-- Header -->
+    <div name="header_frame">
+    </div>
+    <!-- Side Bar -->
+    <div class="sidebar close" target="framebase">
+      <!--Logo-->
+      <div class="logo-details">
+        <img class="logo_img" src="../images/logo_uit.png" alt="LogoUIT">
+        <span class="logo_name">Flawless Website</span>
+      </div>
+      <div class="upgrade logo_name">
+        <a href="#upgrade" class="logo_name up">Upgrade</a>
+      </div>
+      <!-- Userzone -->
+      <div class="userzone">
+        <div class="user">
+          <a href="#signin" class="signin">Đăng nhập</a>
+          <a href="#singup" class="signup">Đăng ký</a>
+          <a href="#setting"><i class="bx bx-cog"></i></a>
+        </div>
+      </div>
+
+      <!--Navigation-->
+      <ul class="nav-links">
+        <li>
+          <a href="#">
+            <i class="bx bx-menu"></i>
+            <span class="link_name">MENU</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">MENU</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-search-alt-2"></i>
+            <span class="link_name">Search</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Search</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-home"></i>
+            <span class="link_name">Dashboard</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Dashboard</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#">
+              <i class="bx bx-compass"></i>
+              <span class="link_name">Explore</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name">Explore</a></li>
+            <li><a href="#">Songs</a></li>
+            <li><a href="#">Playlists</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Artists</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-line-chart"></i>
+            <span class="link_name">Chart</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Chart</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#type">
+              <i class='bx bx-headphone'></i>
+              <span class="link_name">Type</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow'></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Type</a></li>
+            <li><a href="#youth">Youth</a></li>
+            <li><a href="#revolutionary">Revolutionary</a></li>
+            <li><a href="#lovesong">Love Song</a></li>
+            <li><a href="#Folk">Folk</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#music4u">
+            <i class='bx bx-music'></i>
+            <span class="link_name">Music 4U</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Music 4U</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#myplaylist">
+            <i class='bx bxs-playlist'></i>
+            <span class="link_name">My Playlist</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">My Playlist</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#history">
+            <i class='bx bx-history'></i>
+            <span class="link_name">History</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">History</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="profile-details">
+            <div class="profile-content">
+              <img src="../images/logo_uit.png" alt="profileImg">
+            </div>
+            <div class="name-job">
+              <div class="profile_name">Group 7</div>
+              <div class="web">Music Streaming</div>
+            </div>
+            <i class="bx bx-log-out"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Content Page/Frames -->
+    <div id="page-content">
+      <div id="content"><!-- TemplateBeginEditable name="content" -->
+		  
+	<!-- TemplateEndEditable -->
+		  
+      </div>
+      <!-- Footer -->
+      <div id="footer">
+        <div class="footer-margin">
+          <div class="footer-menu">
+            <ul>
+              <li style="border-right: 3px solid #252F39;">
+                <a class="footer-a" href="#">Giới thiệu</a>
+              </li>
+              <li style="border-right: 3px solid #252F39;">
+                <a class="footer-a" href="#">SP-DV</a>
+              </li>
+              <li style="border-right: 3px solid #252F39;">
+                <a class="footer-a" href="#">Hỗ trợ</a>
+              </li>
+              <li class="end">
+                <a class="footer-a" href="#">Thỏa thuận sử dụng</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-mxh">
+            <ul>
+              <li>
+                <a class="footer-a" href="#"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a class="footer-a" href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a class="footer-a" href="#"><img src="../images/appstore.png" /></a>
+              </li>
+              <li>
+                <a class="footer-a" href="#"><img src="../images/chplay.png" /></a>
+              </li>
+              <li>
+                <a class="footer-a" href="#"><img src="../images/appgallery.png" /></a>
+              </li>
+            </ul>
+          </div>
+          <br class="footer-br" />
+          <hr class="footer-hr" />
+          <img class="footer-logo" src="../images/logo-nctc.svg" />
+          <img class="congthuong" src="../images/Cong_Thuong.svg" />
+          <img class="dmca" src="../images/DMCA.svg" />
+          <h5 class="footer-h5">
+            CÔNG TY CỔ PHẦN NCT
+          </h5>
+          <ul class="li_foot">
+            <li>Chủ sở hữu website: <strong>Ông Nhan Thế Luân</strong></li>
+            <li>Giấy phép MXH số 499/GP-BTTTT do Bộ Thông Tin và Truyền thông cấp ngày 28/09/2015.</li>
+            <li>Giấy Chứng nhận Đăng ký Kinh doanh số 0305535715 do Sở kế hoạch và Đầu tư Tp.Hồ Chí Minh cấp ngày
+              01/03/2008.</li>
+          </ul>
+        </div>
+        <br class="footer-br" />
+        <div class="footer-addr">
+          <a class="footer-a" href="#">
+            <i class="fas fa-map-marker-alt"></i> Tòa nhà The 678 Tower, 67 Hoàng Văn Thái, P.Tân Phú, Q.7, TP.HCM
+          </a>
+          <a class="footer-a" href="#">
+            <i class="fas fa-phone-alt"></i> (028) 3868 7979
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="musicsidebar">
+      <!--music poster-->
+      <div class="poster">
+        <img class="posterimg" src="../images/mddv.jpg" alt="LogoUIT">
+        <p class="songname">Máu Đỏ Da Vàng</p>
+        <p class="singername">DTAP, Erik</p>
+        <i class="bx bx-microphone"></i>
+      </div>
+      <!--music control-->
+      <div class="m-control">
+        <i class="bx bx-volume-full"></i>
+        <a href="#playlist">Danh sách phát</a>
+        <i class="bx bx-dots-vertical-rounded"></i>
+        <div class="song-slider">
+          <span class="current-time">00:00</span>
+          <input type="range" value="0" class="seek-bar">
+          <span class="song-duration">03:24</span>
+          <div class="control-btn">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-fast-backward"></i>
+            <i class="fas fa-play"></i>
+            <i class="fas fa-fast-forward"></i>
+            <i class="bx bx-repeat"></i>
+            <select name="quality" id="qualities">
+              <option value="1">128Kbps</option>
+              <option value="2">326Kbps</option>
+              <option value="3">Lossless</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script src="../scripts/scripts-template/index.js"></script>
+    <!-- TemplateBeginEditable name="scripts" -->
+	
+	<!-- TemplateEndEditable -->
+  </div>
+</body>
+
+</html>
