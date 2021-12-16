@@ -245,10 +245,10 @@
           <input type="range" value="0" class="seek-bar">
           <span class="song-duration">03:24</span>
           <div class="control-btn">
-            <i class="fas fa-random"></i>
-            <i class="fas fa-fast-backward"></i>
-            <i class="fas fa-play"></i>
-            <i class="fas fa-fast-forward"></i>
+            <i class="bx bx-transfer"></i>
+            <i class="bx bx-skip-previous"></i>
+            <i class="bx bx-play"></i>
+            <i class="bx bx-skip-next"></i>
             <i class="bx bx-repeat"></i>
             <select name="quality" id="qualities">
               <option value="1">128Kbps</option>
