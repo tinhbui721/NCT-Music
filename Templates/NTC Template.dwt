@@ -5,6 +5,7 @@
 <!-- TemplateEndEditable -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" href="../css/styles.css">
+<link rel="shorcut icon" href="./images/favicon.ico">
 <link rel="stylesheet" href="../css/Footer.css">
 <link rel="stylesheet" href="../css/MH_DangNhap.css">
 <link rel="stylesheet" href="../css/MH_DangKy.css">
@@ -124,12 +125,23 @@
 			</form>
 		</div>
 	</div>
+	
+		<!-- setting -->
+	<div id="opacity_setting">
+		<div id="opacity_setting_in">	
+			<a href="#" class="cancel_setting">×</a><br>
+			<div class="hover_setting"><a> <i class="fas fa-globe-americas"></i> Ngôn ngữ</a></div>
+			<div class="hover_setting"><a> <i class="fas fa-headphones"></i> Hỗ trợ</a></div>
+			<div class="hover_setting"><a> <i class="fas fa-palette"></i> Chủ đề</a></div>
+		</div>
+	
+	</div>
 
 	<div id="container">
 		<div id="left">
 			<img src="../images/logo_NCT.png" height="25" width="50" alt="">
-			<a href="https://www.nhaccuatui.com/nhaccuatui-vip/mua-vip"><div class="nangcap">Nâng cấp</div></a>
-			<div class="dn_dk"><a href="#opacity_dn">Đăng nhập</a> | <a href="#opacity_dk">Đăng ký</a> <a> <i class="fas fa-cog"></i></a></div>
+			<a href="https://www.nhaccuatui.com/nhaccuatui-vip/mua-vip" target="_blank"><div class="nangcap">Nâng cấp</div></a>
+			<div class="dn_dk"><a href="#opacity_dn">Đăng nhập</a> | <a href="#opacity_dk">Đăng ký</a> <a href="#opacity_setting"> <i class="fas fa-cog"></i></a></div>
 			
 			<br>
 			<div class="navi" onclick="Open_Page('TimKiem.html');">
@@ -176,16 +188,16 @@
 				<div class="footer-menu">
 					<ul>
 						<li style="border-right: 3px solid #252F39;">
-							<a  class="footer-a" href="#">Giới thiệu</a>
+							<a  class="footer-a" href="https://nctcorp.vn/" target="_blank">Giới thiệu</a>
 						</li>
 						<li style="border-right: 3px solid #252F39;">
-							<a  class="footer-a" href="#">SP-DV</a>
+							<a  class="footer-a" href="http://apps.nhaccuatui.com/nhaccuatui-for-desktop.html" target="_blank">SP-DV</a>
 						</li>
 						<li style="border-right: 3px solid #252F39;">
-							<a  class="footer-a" href="#">Hỗ trợ</a>
+							<a  class="footer-a" href="https://www.nct.vn/ho-tro" target="_blank">Hỗ trợ</a>
 						</li>
 						<li class="end">
-							<a  class="footer-a" href="#">Thỏa thuận sử dụng</a>
+							<a  class="footer-a" href="https://beta.nhaccuatui.com/thoa-thuan-su-dung" target="_blank">Thỏa thuận sử dụng</a>
 						</li>
 					</ul>
 				</div>

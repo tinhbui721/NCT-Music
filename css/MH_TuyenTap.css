@@ -1,4 +1,6 @@
-
+.collapse_block{ 
+    display: block;
+}
 .tuyentap-tag{
 	width: 100%;
 	height: 100%;

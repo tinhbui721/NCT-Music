@@ -1,3 +1,6 @@
+.collapse_block{ 
+    display: block;
+}
 .top100-tab {
   overflow: hidden;
   text-align: center;

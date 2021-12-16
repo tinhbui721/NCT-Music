@@ -343,3 +343,320 @@ function lalisa(){
     document.getElementById('tencasi_HQ').innerText = 'Lisa';
     document.getElementById('rank_HQ').innerText = '#3';
 }
+
+//BXH
+
+function ChartRun() {
+    var chart = new CanvasJS.Chart("chartContainer", {
+        animationEnabled: true,
+		animationDuration: 2000,
+		backgroundColor: "#79d4f8",
+		zoomEnabled:true,
+		width: 980,
+		
+        title: {
+            text: "NCT Realtime Chart"
+        },
+        axisX: {
+            valueFormatString: "DD/MMM/YY"
+        },
+        axisY: {
+            title: "Lượt nghe (K)",
+            suffix: " K"
+        },
+        legend: {
+            cursor: "pointer",
+            fontSize: 16,
+            itemclick: toggleDataSeries,	
+		},
+        toolTip: {
+            shared: true,
+        },
+        data: [{
+                name: "Top 1",
+                type: "spline",
+                yValueFormatString: "#0.## K",
+                showInLegend: true,
+                dataPoints: [{
+                        x: new Date(2021, 11, 21),
+                        y: 68
+                    },
+                    {
+                        x: new Date(2021, 11, 20),
+                        y: 62
+                    },
+                    {
+                        x: new Date(2021, 11, 19),
+                        y: 64
+                    },
+                    {
+                        x: new Date(2021, 11, 18),
+                        y: 67
+                    },
+                    {
+                        x: new Date(2021, 11, 17),
+                        y: 60
+                    },
+                    {
+                        x: new Date(2021, 11, 16),
+                        y: 62
+                    },
+                    {
+                        x: new Date(2021, 11, 15),
+                        y: 70
+                    },
+                    {
+                        x: new Date(2021, 11, 14),
+                        y: 74
+                    },
+                    {
+                        x: new Date(2021, 11, 13),
+                        y: 68
+                    },
+                    {
+                        x: new Date(2021, 11, 12),
+                        y: 62
+                    },
+                    {
+                        x: new Date(2021, 11, 11),
+                        y: 61
+                    },
+                    {
+                        x: new Date(2021, 11, 10),
+                        y: 59
+                    },
+                    {
+                        x: new Date(2021, 11, 9),
+                        y: 63
+                    },
+                    {
+                        x: new Date(2021, 11, 8),
+                        y: 66
+                    },
+                    {
+                        x: new Date(2021, 11, 7),
+                        y: 74
+                    },
+                    {
+                        x: new Date(2021, 11, 6),
+                        y: 68
+                    },
+                    {
+                        x: new Date(2021, 11, 5),
+                        y: 62
+                    },
+                    {
+                        x: new Date(2021, 11, 4),
+                        y: 61
+                    },
+                    {
+                        x: new Date(2021, 11, 3),
+                        y: 59
+                    },
+                    {
+                        x: new Date(2021, 11, 2),
+                        y: 63
+                    },
+                    {
+                        x: new Date(2021, 11, 1),
+                        y: 66
+                    }
+                ]
+            },
+            {
+                name: "Top 2",
+                type: "spline",
+                yValueFormatString: "#0.## K",
+                showInLegend: true,
+                dataPoints: [{
+                        x: new Date(2021, 11, 21),
+                        y: 45
+                    },
+                    {
+                        x: new Date(2021, 11, 20),
+                        y: 48
+                    },
+                    {
+                        x: new Date(2021, 11, 19),
+                        y: 43
+                    },
+                    {
+                        x: new Date(2021, 11, 18),
+                        y: 44
+                    },
+                    {
+                        x: new Date(2021, 11, 17),
+                        y: 40
+                    },
+                    {
+                        x: new Date(2021, 11, 16),
+                        y: 29
+                    },
+                    {
+                        x: new Date(2021, 11, 15),
+                        y: 25
+                    },
+                    {
+                        x: new Date(2021, 11, 14),
+                        y: 28
+                    },
+                    {
+                        x: new Date(2021, 11, 13),
+                        y: 30
+                    },
+                    {
+                        x: new Date(2021, 11, 12),
+                        y: 36
+                    },
+                    {
+                        x: new Date(2021, 11, 11),
+                        y: 33
+                    },
+                    {
+                        x: new Date(2021, 11, 10),
+                        y: 38
+                    },
+                    {
+                        x: new Date(2021, 11, 9),
+                        y: 40
+                    },
+                    {
+                        x: new Date(2021, 11, 8),
+                        y: 38
+                    },
+                    {
+                        x: new Date(2021, 11, 7),
+                        y: 28
+                    },
+                    {
+                        x: new Date(2021, 11, 6),
+                        y: 30
+                    },
+                    {
+                        x: new Date(2021, 11, 5),
+                        y: 36
+                    },
+                    {
+                        x: new Date(2021, 11, 4),
+                        y: 33
+                    },
+                    {
+                        x: new Date(2021, 11, 3),
+                        y: 38
+                    },
+                    {
+                        x: new Date(2021, 11, 2),
+                        y: 40
+                    },
+                    {
+                        x: new Date(2021, 11, 1),
+                        y: 38
+                    }
+                ]
+            },
+            {
+                name: "Top 3",
+                type: "spline",
+                yValueFormatString: "#0.## K",
+                showInLegend: true,
+                dataPoints: [{
+                        x: new Date(2021, 11, 21),
+                        y: 40
+                    },
+                    {
+                        x: new Date(2021, 11, 20),
+                        y: 45
+                    },
+                    {
+                        x: new Date(2021, 11, 19),
+                        y: 40
+                    },
+                    {
+                        x: new Date(2021, 11, 18),
+                        y: 35
+                    },
+                    {
+                        x: new Date(2021, 11, 17),
+                        y: 33
+                    },
+                    {
+                        x: new Date(2021, 11, 16),
+                        y: 25
+                    },
+                    {
+                        x: new Date(2021, 11, 15),
+                        y: 19
+                    },
+                    {
+                        x: new Date(2021, 11, 14),
+                        y: 20
+                    },
+                    {
+                        x: new Date(2021, 11, 13),
+                        y: 22
+                    },
+                    {
+                        x: new Date(2021, 11, 12),
+                        y: 21
+                    },
+                    {
+                        x: new Date(2021, 11, 11),
+                        y: 22
+                    },
+                    {
+                        x: new Date(2021, 11, 10),
+                        y: 18
+                    },
+                    {
+                        x: new Date(2021, 11, 9),
+                        y: 17
+                    },
+                    {
+                        x: new Date(2021, 11, 8),
+                        y: 16
+                    },
+                    {
+                        x: new Date(2021, 11, 7),
+                        y: 20
+                    },
+                    {
+                        x: new Date(2021, 11, 6),
+                        y: 22
+                    },
+                    {
+                        x: new Date(2021, 11, 5),
+                        y: 21
+                    },
+                    {
+                        x: new Date(2021, 11, 4),
+                        y: 22
+                    },
+                    {
+                        x: new Date(2021, 11, 3),
+                        y: 18
+                    },
+                    {
+                        x: new Date(2021, 11, 2),
+                        y: 17
+                    },
+                    {
+                        x: new Date(2021, 11, 1),
+                        y: 16
+                    }
+                ]
+            }
+        ]
+    });
+    chart.render();
+
+    function toggleDataSeries(e) {
+        if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+            e.dataSeries.visible = false;
+        } else {
+            e.dataSeries.visible = true;
+        }
+        chart.render();
+    }
+
+}
+ChartRun();

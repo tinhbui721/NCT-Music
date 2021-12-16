@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 }
+
 html, body{
     width:100%;
     height:100%;
@@ -100,6 +101,7 @@ body{
     border-left: 3px solid #29ACF3;
     background-color: #28313C;
 }
+
 .navi:hover{
     border-left: 3px solid #29ACF3;
     cursor: pointer;

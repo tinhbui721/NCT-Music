@@ -1,11 +1,11 @@
-<html>
-<!-- InstanceBegin template="/Templates/NTC Template.dwt" codeOutsideHTMLIsLocked="false" -->
+<html><!-- InstanceBegin template="/Templates/NTC Template.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>Screenshot 2021-11-25 153205</title>
 <!-- InstanceEndEditable -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="shorcut icon" href="./images/favicon.ico">
 <link rel="stylesheet" href="css/Footer.css">
 <link rel="stylesheet" href="css/MH_DangNhap.css">
 <link rel="stylesheet" href="css/MH_DangKy.css">
@@ -15,106 +15,168 @@
 <!-- InstanceEndEditable -->
 </head>
 <body>
-<!-- Màn hình đăng nhập -->
-<div id="opacity_dn">
-  <div class="container animate" id="dangnhap"> <a href="#" class="cancel">×</a>
-    <h3>Đăng nhập</h3>
-    <hr>
-    <form>
-      <div class="username">
-        <div class="icon"> <i class="far fa-user"></i> </div>
-        <div class="input_DN">
-          <input type="text" placeholder="Nhập tên đăng nhập" >
-        </div>
-      </div>
-      <div class="password">
-        <div class="icon"> <i class="far fa-keyboard"></i> </div>
-        <div class="input_DN">
-          <input type="password" placeholder="Nhập mật khẩu" >
-        </div>
-      </div>
-      <input type="checkbox" id="check" class="check">
-      <label for="check"> Ghi nhớ</label>
-      <div class="align">
-        <input type="button" class="bnt" value="Đăng nhập">
-      </div>
-      <div class="account"> <span>Hoặc đăng nhập bằng: </span>
-        <div class="logo"><i class="fab fa-facebook-f"></i></div>
-        <div class="logo"><img src="images/logogoogle.png" alt=""> </div>
-      </div>
-      <div class="footer_Dn"> Bạn chưa có tài khoản NCT ID? <a class="dkn" href="#">Đăng ký ngay</a> </div>
-    </form>
-  </div>
-</div>
-<!-- Màn hình đăng ký -->
-<div id="opacity_dk">
-  <div class="animate" id="dangky"> <a href="#" class="cancel">×</a>
-    <h3>Đăng ký</h3>
-    <hr>
-    <form>
-      <div class="username">
-        <div class="icon"> <i class="far fa-user"></i> </div>
-        <div class="input_DN">
-          <input type="text" placeholder="Nhập tên đăng nhập" >
-        </div>
-        <div class="popup infor" onmouseover="PopUp()" onmouseout="Hide()"> <i class="far fa-question-circle"></i> <span class="popuptext" id="myPopup">Bạn có thể sử dụng chữ số, chữ cái, gạch dưới và dấu chấm. Chiều dài từ 6-30 ký tự</span> </div>
-      </div>
-      <div class="password">
-        <div class="icon"> <i class="far fa-keyboard"></i> </div>
-        <div class="input_DN">
-          <input type="password" placeholder="Nhập mật khẩu" >
-        </div>
-        <div class="popup infor" onmouseover="PopUp_1()" onmouseout="Hide_1()"> <i class="far fa-question-circle"></i> <span class="popuptext" id="myPopup_1">Chiều dài từ 6-30 ký tự. Không sử dụng tiếng Việt có dấu</span> </div>
-      </div>
-      <div class="password">
-        <div class="icon"> <i class="far fa-keyboard"></i> </div>
-        <div class="input_DN">
-          <input type="password" placeholder="Nhập lại mật khẩu" >
-        </div>
-        <div class="popup infor" onmouseover="PopUp_2()" onmouseout="Hide_2()"> <i class="far fa-question-circle"></i> <span class="popuptext" id="myPopup_2">Nhập lại mật khẩu giống như bên trên một lần nữa</span> </div>
-      </div>
-      <div class="password">
-        <div class="icon"> <i class="far fa-envelope"></i> </div>
-        <div class="input_DN">
-          <input type="password" placeholder="Nhập email" >
-        </div>
-        <div class="popup infor" onmouseover="PopUp_3()" onmouseout="Hide_3()"> <i class="far fa-question-circle"></i> <span class="popuptext" id="myPopup_3">Điền vào email bạn muốn sử dụng cho tài khoản này</span> </div>
-      </div>
-      <input type="checkbox" id="check" class="check">
-      <label for="check"> Tôi đã đọc và đồng ý các <a href="#" class="dieukhoan">THỎA THUẬN SỬ DỤNG</a></label>
-      <div class="align">
-        <input type="button" class="bnt" value="Đăng ký">
-      </div>
-      <div class="account"> <span>Đăng nhập NCT ID: </span>
-        <div class="logo"><img src="images/NCT_logo.png" alt=""></div>
-        <span> &#160 Hoặc </span>
-        <div class="logo"><i class="fab fa-facebook-f"></i></div>
-        <div class="logo"><img src="images/logogoogle.png" alt=""></div>
-      </div>
-    </form>
-  </div>
-</div>
-<div id="container">
-  <div id="left"> <img src="images/logo_NCT.png" height="25" width="50" alt=""> <a href="https://www.nhaccuatui.com/nhaccuatui-vip/mua-vip">
-    <div class="nangcap">Nâng cấp</div>
-    </a>
-    <div class="dn_dk"><a href="#opacity_dn">Đăng nhập</a> | <a href="#opacity_dk">Đăng ký</a> <a> <i class="fas fa-cog"></i></a></div>
-    <br>
-    <div class="navi" onclick="Open_Page('TimKiem.html');"> <i class="fas fa-search"></i> <a> Tìm kiếm</a> </div>
-    <div class="navi" onclick="Open_Page('TrangChu.html');"> <i class="fas fa-home"></i> <a>Trang chủ</a> </div>
-    <div class="navi" id="khampha"> <i class="fas fa-compass"></i> <a> Khám phá</a> <i class="fas fa-chevron-down" id="icon_khampha"></i> </div>
-    <div class="collapse" id="dropkhampha"> <a href="BaiHat.html">Bài hát</a><br>
-      <a href="Playlist.html">Playlist</a><br>
-      <a href="Video.html">Video</a><br>
-      <a href="NgheSi.html">Nghệ sĩ</a> </div>
-    <div class="navi" id="homnay"> <i class="fas fa-headphones-alt"></i> <a> Nghe gì hôm nay</a> <i class="fas fa-chevron-down" id="icon_homnay"></i> </div>
-    <div class="collapse" id="drophomnay"> <a href="ChuDe.html">Chủ đề</a><br>
-      <a href="TuyenTap.html">Tuyển tập</a><br>
-      <a href="Top100.html">Top 100</a> </div>
-    <div class="navi" onclick="Open_Page('BXHNCT.html');"> <i class="fas fa-chart-bar"></i> <a> BXH NCT</a> </div>
-    <div class="navi" onclick="Open_Page('Music4U.html');"> <i class="fas fa-thumbs-up"></i> <a> Music 4U</a> </div>
-    <img class="contact" src="images/contact.png" height="100px" alt=""> </div>
-  <div id="content"><!-- InstanceBeginEditable name="Content" -->
+	<!-- Màn hình đăng nhập -->
+	<div id="opacity_dn">
+		<div class="container animate" id="dangnhap">
+			<a href="#" class="cancel">×</a>
+			<h3>Đăng nhập</h3> 
+			<hr>
+			<form>
+				<div class="username">
+					<div class="icon">
+						<i class="far fa-user"></i>
+					</div>
+					<div class="input_DN">
+						<input type="text" placeholder="Nhập tên đăng nhập" >
+					</div>
+				</div>
+				<div class="password">
+					<div class="icon">
+						<i class="far fa-keyboard"></i>
+					</div>
+					<div class="input_DN">
+						<input type="password" placeholder="Nhập mật khẩu" >
+					</div>
+				</div>
+				<input type="checkbox" id="check" class="check">
+				<label for="check"> Ghi nhớ</label>
+				<div class="align">
+					<input type="button" class="bnt" value="Đăng nhập">
+				</div>
+				<div class="account">
+					<span>Hoặc đăng nhập bằng: </span>
+					<div class="logo"><i class="fab fa-facebook-f"></i></div>
+					<div class="logo"><img src="images/logogoogle.png" alt="">
+					</div>
+				</div>
+				<div class="footer_Dn">
+					Bạn chưa có tài khoản NCT ID? <a class="dkn" href="#">Đăng ký ngay</a>   
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- Màn hình đăng ký -->
+	<div id="opacity_dk">
+		<div class="animate" id="dangky">
+			<a href="#" class="cancel">×</a>
+			<h3>Đăng ký</h3> 
+			<hr>
+			<form>
+				<div class="username">
+					<div class="icon">
+						<i class="far fa-user"></i>
+					</div>
+					<div class="input_DN">
+						<input type="text" placeholder="Nhập tên đăng nhập" >
+					</div>
+					<div class="popup infor" onmouseover="PopUp()" onmouseout="Hide()">
+						<i class="far fa-question-circle"></i>
+						<span class="popuptext" id="myPopup">Bạn có thể sử dụng chữ số, chữ cái, gạch dưới và dấu chấm. Chiều dài từ 6-30 ký tự</span>
+					</div>
+				</div>
+				<div class="password">
+					<div class="icon">
+						<i class="far fa-keyboard"></i>
+					</div>
+					<div class="input_DN">
+						<input type="password" placeholder="Nhập mật khẩu" >
+					</div>
+					<div class="popup infor" onmouseover="PopUp_1()" onmouseout="Hide_1()">
+						<i class="far fa-question-circle"></i>
+						<span class="popuptext" id="myPopup_1">Chiều dài từ 6-30 ký tự. Không sử dụng tiếng Việt có dấu</span>
+					</div>
+				</div>
+				<div class="password">
+					<div class="icon">
+						<i class="far fa-keyboard"></i>
+					</div>
+					<div class="input_DN">
+						<input type="password" placeholder="Nhập lại mật khẩu" >
+					</div>
+					<div class="popup infor" onmouseover="PopUp_2()" onmouseout="Hide_2()">
+						<i class="far fa-question-circle"></i>
+						<span class="popuptext" id="myPopup_2">Nhập lại mật khẩu giống như bên trên một lần nữa</span>
+					</div>
+				</div>
+				<div class="password">
+					<div class="icon">
+						<i class="far fa-envelope"></i>
+					</div>
+					<div class="input_DN">
+						<input type="password" placeholder="Nhập email" >
+					</div>
+					<div class="popup infor" onmouseover="PopUp_3()" onmouseout="Hide_3()">
+						<i class="far fa-question-circle"></i>
+						<span class="popuptext" id="myPopup_3">Điền vào email bạn muốn sử dụng cho tài khoản này</span>
+					</div>
+				</div>
+				<input type="checkbox" id="check" class="check">
+				<label for="check"> Tôi đã đọc và đồng ý các <a href="#" class="dieukhoan">THỎA THUẬN SỬ DỤNG</a></label>
+				<div class="align">
+					<input type="button" class="bnt" value="Đăng ký">
+				</div>
+				<div class="account">
+					<span>Đăng nhập NCT ID: </span>
+					<div class="logo"><img src="images/NCT_logo.png" alt=""></div>
+					<span>  &#160 Hoặc </span>
+					<div class="logo"><i class="fab fa-facebook-f"></i></div>
+					<div class="logo"><img src="images/logogoogle.png" alt=""></div>
+					
+				</div>
+			</form>
+		</div>
+	</div>
+	
+		<!-- setting -->
+	<div id="opacity_setting">
+		<div id="opacity_setting_in">	
+			<a href="#" class="cancel_setting">×</a><br>
+			<div class="hover_setting"><a> <i class="fas fa-globe-americas"></i> Ngôn ngữ</a></div>
+			<div class="hover_setting"><a> <i class="fas fa-headphones"></i> Hỗ trợ</a></div>
+			<div class="hover_setting"><a> <i class="fas fa-palette"></i> Chủ đề</a></div>
+		</div>
+	
+	</div>
+
+	<div id="container">
+		<div id="left">
+			<img src="images/logo_NCT.png" height="25" width="50" alt="">
+			<a href="https://www.nhaccuatui.com/nhaccuatui-vip/mua-vip" target="_blank"><div class="nangcap">Nâng cấp</div></a>
+			<div class="dn_dk"><a href="#opacity_dn">Đăng nhập</a> | <a href="#opacity_dk">Đăng ký</a> <a href="#opacity_setting"> <i class="fas fa-cog"></i></a></div>
+			
+			<br>
+			<div class="navi" onclick="Open_Page('TimKiem.html');">
+				<i class="fas fa-search"></i> <a> Tìm kiếm</a>
+			</div>
+			<div class="navi" onclick="Open_Page('TrangChu.html');">
+				<i class="fas fa-home"></i> <a>Trang chủ</a>
+			</div>
+			<div class="navi" id="khampha">
+				<i class="fas fa-compass"></i> <a> Khám phá</a> <i class="fas fa-chevron-down" id="icon_khampha"></i>
+			</div>
+			<div class="collapse" id="dropkhampha">
+				<a href="BaiHat.html">Bài hát</a><br>
+				<a href="Playlist.html">Playlist</a><br>
+				<a href="Video.html">Video</a><br>
+				<a href="NgheSi.html">Nghệ sĩ</a>
+			</div>
+			<div class="navi" id="homnay">
+				<i class="fas fa-headphones-alt"></i> <a> Nghe gì hôm nay</a> <i class="fas fa-chevron-down" id="icon_homnay"></i>
+			</div>
+			<div class="collapse" id="drophomnay">
+				<a href="ChuDe.html">Chủ đề</a><br>
+				<a href="TuyenTap.html">Tuyển tập</a><br>
+				<a href="Top100.html">Top 100</a>
+			</div>
+			<div class="navi here" onclick="Open_Page('BXHNCT.html');">
+				<i class="fas fa-chart-bar"></i> <a> BXH NCT</a>
+			</div>
+			<div class="navi" onclick="Open_Page('Music4U.html');">
+				<i class="fas fa-thumbs-up"></i> <a> Music 4U</a>
+			</div>
+			<img class="contact" src="images/contact.png" height="100px" alt="">
+		</div>
+		<div id="content"><!-- InstanceBeginEditable name="Content" -->
     <div class="top100-tab">
       <button class="top100-tablinks" onclick="openTAB1(event, 'bxh-tuan')">BXH TUẦN</button>
       <button class="top100-tablinks" onclick="openTAB1(event, 'realtime')">REALTIME</button>
@@ -412,58 +474,105 @@
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script src="scripts/MH_BXHNCT.js"></script> 
     <!-- InstanceEndEditable -->
-    <hr>
-    <div class="footer-margin">
-      <div class="footer-menu">
-        <ul>
-          <li style="border-right: 3px solid #252F39;"> <a  class="footer-a" href="#">Giới thiệu</a> </li>
-          <li style="border-right: 3px solid #252F39;"> <a  class="footer-a" href="#">SP-DV</a> </li>
-          <li style="border-right: 3px solid #252F39;"> <a  class="footer-a" href="#">Hỗ trợ</a> </li>
-          <li class="end"> <a  class="footer-a" href="#">Thỏa thuận sử dụng</a> </li>
-        </ul>
-      </div>
-      <div class="footer-mxh">
-        <ul>
-          <li> <a  class="fb_ins" href="#"> <i class="fab fa-facebook-square"></i> <i class="fab fa-instagram"></i> </a> </li>
-          <li> <a  class="footer-a" href="#"><img src="images/appstore.png" alt=""></a> </li>
-          <li> <a  class="footer-a" href="#"><img src="images/chplay.png" alt=""></a> </li>
-          <li> <a  class="footer-a" href="#"><img src="images/appgallery.png" alt=""></a> </li>
-        </ul>
-      </div>
-      <br class="footer-br" />
-      <hr class="footer-hr" />
-      <img class="footer-logo" src="images/logo-nctc.svg" alt=""/> <img class="congthuong" src="images/Cong_Thuong.svg" alt=""/> <img class="dmca" src="images/DMCA.svg" alt=""/>
-      <h5 class="footer-h5"> CÔNG TY CỔ PHẦN N C T </h5>
-      <ul class="li_foot">
-        <li>Chủ sở hữu website: <strong>Ông Nhan Thế Luân</strong></li>
-        <li>Giấy phép MXH số 499/GP-BTTTT do Bộ Thông Tin và Truyền thông cấp ngày 28/09/2015.</li>
-        <li>Giấy Chứng nhận Đăng ký Kinh doanh số 0305535715 do Sở kế hoạch và Đầu tư Tp.Hồ Chí Minh cấp ngày 01/03/2008.</li>
-      </ul>
-    </div>
-    <br class="footer-br"/>
-    <div class="footer-addr"> <a class="footer-a" href="#"> <i class="fas fa-map-marker-alt"></i> Tòa nhà The 678 Tower, 67 Hoàng Văn Thái, P.Tân Phú, Q.7, TP.HCM </a> <a  class="footer-a" href="#"> <i class="fas fa-phone-alt"></i> (028) 3868 7979 </a> </div>
-  </div>
-  <div id="right">
-    <div class="play_img"> <img src="images/play_img.jpg" height="240px" alt=""> <a>Angels Like You</a> <i class="fas fa-microphone"></i>
-      <p>Miley Cyrus</p>
-    </div>
-    <p class="playlist">Playlist: Angels Like You</p>
-    <div class="control_play"> <i class="fas fa-volume-up"></i>
-      <div class="danhsachphat"> Danh sách phát </div>
-      <i class="fas fa-ellipsis-v"></i> <br>
-      <p> <span class="start">0:00</span>
-      <div class="dot"></div>
-      <div class="media"></div>
-      <span class="end">3:16</span>
-      </p>
-      <br>
-      <div class="control_media"> <i class="fas fa-random"></i> <i class="fas fa-fast-backward"></i> <i class="fas fa-play"></i> <i class="fas fa-fast-forward"></i> <i class="fas fa-redo"></i> </div>
-      <p class="quality">128Kps</p>
-    </div>
-  </div>
-</div>
-<script src="scripts/NCT_script.js"></script> 
-<script src="scripts/MH_DK.js"></script>
+				
+
+			<hr>
+			<div class="footer-margin">
+				<div class="footer-menu">
+					<ul>
+						<li style="border-right: 3px solid #252F39;">
+							<a  class="footer-a" href="https://nctcorp.vn/" target="_blank">Giới thiệu</a>
+						</li>
+						<li style="border-right: 3px solid #252F39;">
+							<a  class="footer-a" href="http://apps.nhaccuatui.com/nhaccuatui-for-desktop.html" target="_blank">SP-DV</a>
+						</li>
+						<li style="border-right: 3px solid #252F39;">
+							<a  class="footer-a" href="https://www.nct.vn/ho-tro" target="_blank">Hỗ trợ</a>
+						</li>
+						<li class="end">
+							<a  class="footer-a" href="https://beta.nhaccuatui.com/thoa-thuan-su-dung" target="_blank">Thỏa thuận sử dụng</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="footer-mxh">
+					<ul>
+						<li>
+							<a  class="fb_ins" href="#">
+								<i class="fab fa-facebook-square"></i>
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a  class="footer-a" href="#"><img src="images/appstore.png" alt=""></a>
+						</li>
+						<li>
+							<a  class="footer-a" href="#"><img src="images/chplay.png" alt=""></a>
+						</li>
+						<li>
+							<a  class="footer-a" href="#"><img src="images/appgallery.png" alt=""></a>
+						</li>
+					</ul>
+				</div>
+				<br class="footer-br" />
+				<hr class="footer-hr" />
+				<img class="footer-logo" src="images/logo-nctc.svg" alt=""/>
+				<img class="congthuong" src="images/Cong_Thuong.svg" alt=""/>
+				<img class="dmca" src="images/DMCA.svg" alt=""/>
+				<h5 class="footer-h5">
+					CÔNG TY CỔ PHẦN N C T
+				</h5>
+				<ul class="li_foot">
+					<li>Chủ sở hữu website: <strong>Ông Nhan Thế Luân</strong></li>
+					<li>Giấy phép MXH số 499/GP-BTTTT do Bộ Thông Tin và Truyền thông cấp ngày 28/09/2015.</li>
+					<li>Giấy Chứng nhận Đăng ký Kinh doanh số 0305535715 do Sở kế hoạch và Đầu tư Tp.Hồ Chí Minh cấp ngày 01/03/2008.</li>
+				</ul> 
+			</div>
+			<br class="footer-br"/>
+			<div class="footer-addr">
+				<a class="footer-a" href="#">
+					<i class="fas fa-map-marker-alt"></i>  Tòa nhà The 678 Tower, 67 Hoàng Văn Thái, P.Tân Phú, Q.7, TP.HCM
+				</a>
+				<a  class="footer-a" href="#">
+					<i class="fas fa-phone-alt"></i> (028) 3868 7979
+				</a>          
+			</div>
+		</div>
+		<div id="right">
+			<div class="play_img">
+				<img src="images/play_img.jpg" height="240px" alt="">
+				<a>Angels Like You</a>
+				<i class="fas fa-microphone"></i>
+				<p>Miley Cyrus</p>
+			</div>
+			<p class="playlist">Playlist: Angels Like You</p>
+			<div class="control_play">
+				<i class="fas fa-volume-up"></i>
+				<div class="danhsachphat">
+					Danh sách phát
+				</div>
+				
+				<i class="fas fa-ellipsis-v"></i>
+				<br>
+				<p>
+					<span class="start">0:00</span>
+					<div class="dot"></div><div class="media"></div>
+					<span class="end">3:16</span>
+				</p>
+
+				<br>
+				<div class="control_media">
+					<i class="fas fa-random"></i>
+					<i class="fas fa-fast-backward"></i>
+					<i class="fas fa-play"></i>
+					<i class="fas fa-fast-forward"></i>
+					<i class="fas fa-redo"></i>
+				</div>
+				<p class="quality">128Kps</p>
+			</div>
+		</div>
+	</div>
+	<script src="scripts/NCT_script.js"></script>
+	<script src="scripts/MH_DK.js"></script>
 </body>
-<!-- InstanceEnd -->
-</html>
+<!-- InstanceEnd --></html>

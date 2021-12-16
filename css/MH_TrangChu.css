@@ -708,3 +708,39 @@ br{
     cursor: pointer;
 }
 
+/* BXH */
+
+.top100-tabcontent {
+    display: block;
+    padding: 6px 12px;
+    border-top: none;
+    margin-top: 20px;
+}
+
+.top100-tabs{
+    overflow: hidden;
+    text-align: center;
+}
+
+.top100-tabs .top100tab-tablinks:hover {
+    color: #2ca9ec;
+}
+
+.top100-tabs .top100tab-tablinks.active{
+    width: auto;
+    height: auto;
+    border-radius: 0px;
+    color: #2ca9ec;
+}
+
+.top100tab-tablinks {
+    background-color: inherit;
+    color: gray;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 16px 16px 0 16px;
+    transition: 0.1s all ease;
+    font-size: 12.5px;
+    font-weight: bold;
+}

@@ -168,3 +168,50 @@ span{
     color: #2a7dad;
     text-decoration: none;
 }
+
+#opacity_setting{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    position:absolute;
+    display: none;
+    z-index: 100;
+}
+
+#opacity_setting_in{
+    height: 135px;
+    width: 180px;
+    position:absolute;
+    background-color: #17202b;
+    top: 100px;
+    left: 100px;
+    z-index: 100;
+    border-radius: 5px;
+    padding:0 10px 10px 10px;
+    line-height: 30px;
+}
+#opacity_setting .fas{
+    margin-right: 15px;
+}
+.hover_setting{
+    padding:3 10px 3 10px;
+    border-radius: 3px;
+}
+
+.hover_setting:hover{
+    background-color: #212A35;
+    cursor: pointer;
+}
+
+#opacity_setting:target{
+    display: block;
+}
+
+.cancel_setting{
+    font-size: 35px;
+    text-decoration: none;
+    color: #787E85;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
