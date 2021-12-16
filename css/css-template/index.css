@@ -1,0 +1,331 @@
+/* Google Fonts Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+}
+
+/*Side bar*/
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 260px;
+  background: black;
+  z-index: 100;
+  transition: all 0.5s ease;
+  border-right: 2px solid rgb(66, 65, 65) ;
+}
+.sidebar.close{
+  width: 90px;
+}
+
+/*Side bar logo&name*/
+.sidebar .logo-details{
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.sidebar .logo-details .logo_name{
+  font-size: 20px;
+  color: #42659f;
+  font-weight: 600;
+  transition: 0.3s ease;
+  transition-delay: 0.1s;
+}
+.sidebar.close .logo-details .logo_name{
+  transition-delay: 0s;
+  opacity: 0;
+  pointer-events: none;
+}
+.sidebar .logo-details .logo_img{
+  width: 70px;
+  margin-left: 10px;
+  height: 60px;
+  text-align: center;
+  position: relative;
+}
+/*updgrade button*/
+.sidebar.close .upgrade{
+  text-align: center;
+  margin-top: 10px;
+}
+.sidebar .upgrade{
+  text-align: center;
+}
+.sidebar .upgrade a{
+  font-size: 14px;
+  margin-right: 3px;
+  color: red;
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.sidebar .upgrade a:hover{
+  background-color: rgb(223, 206, 206);
+}
+/*Side bar userzone */
+.sidebar .userzone{
+  text-align: center;
+  margin: 40px 0 5px 0;
+}
+.sidebar .userzone a{
+  color: white;
+  text-decoration: none;
+  width: auto;
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 10px;
+}
+.sidebar .userzone a:hover{
+  transform: scale(1.02);
+  background-color: black;
+}
+.sidebar.close .userzone a{
+  width: auto;
+  padding: 5px;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px;
+}
+.sidebar.close .userzone a:hover{
+  transform: scale(1.1);
+  background-color: black;
+}
+
+/*Side bar navigation*/
+/*navigation tab*/
+.sidebar .nav-links li:first-child a i, .sidebar .nav-links li:first-child a span{
+  color: red;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.sidebar.close .nav-links li:first-child .sub-menu .link_name, .sidebar.close .nav-links li:first-child .sub-menu .link_name{
+  color: red;
+  font-size: 20px;
+  font-weight: 600;
+}
+.sidebar .nav-links{
+  height: 100%;
+  padding: 30px 0 150px 0;
+  overflow: auto;
+}
+.sidebar.close .nav-links{
+  overflow: visible;
+}
+.sidebar .nav-links li{
+  position: relative;
+  list-style: none;
+  margin-top: 3px;
+  padding: 1px 0 1px 0;
+  transition: all 0.4s ease;
+}
+
+li:focus-within{
+  background-color: whitesmoke;
+  margin-left: 0px;
+  transform: scale(1.1);
+}
+.sidebar .nav-links li:hover{
+  background: #ffffff;
+  transform: scale(1.1);
+}
+.sidebar.close .nav-links li:hover{
+  background: #ffffff;
+  transform: scale(1.1);
+}
+.sidebar .nav-links li .icon-link{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidebar.close .nav-links li .icon-link{
+  display: block;
+}
+.sidebar .nav-links li i{
+  height: 50px;
+  min-width: 75px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.sidebar .nav-links li.showMenu i.arrow{
+  transform: rotate(180deg);
+}
+.sidebar.close .nav-links i.arrow{
+  display: none;
+}
+.sidebar .nav-links li a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.sidebar .nav-links li a .link_name{
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+  transition: all 0.4s ease;
+  pointer-events: none; 
+  cursor: none;
+}
+.sidebar.close .nav-links li a .link_name{
+  opacity: 0;
+  pointer-events: none; 
+  cursor: none;
+}
+.sidebar .nav-links li .sub-menu{
+  padding: 6px 6px 14px 0px;
+  margin-top: -10px;
+  background: black;
+  display: none;
+}
+.sidebar.close .nav-links li .sub-menu li a{
+  padding-left: 0;
+}
+.sidebar .nav-links li .sub-menu li a{
+  padding-left: 80px;
+}
+.sidebar .nav-links li.showMenu .sub-menu{
+  display: block;
+}
+.sidebar .nav-links li .sub-menu a{
+  color: #fff;
+  font-size: 15px;
+  padding: 5px 0;
+  white-space: nowrap;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+.sidebar .nav-links li .sub-menu a:hover{
+  opacity: 1;
+}
+.sidebar.close .nav-links li .sub-menu{
+  position: absolute;
+  left: 100%;
+  top: -10px;
+  margin-top: 0;
+  padding: 3px 20px;
+  border-radius: 0 6px 6px 0;
+  opacity: 0;
+  display: block;
+  pointer-events: none;
+  transition: 0s;
+}
+.sidebar.close .nav-links li:hover .sub-menu{
+  top: 0;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+}
+.sidebar .nav-links li .sub-menu .link_name{
+  display: none;
+}
+.sidebar.close .nav-links li .sub-menu .link_name{
+  font-size: 18px;
+  opacity: 1;
+  display: block;
+}
+.sidebar .nav-links li .sub-menu.blank{
+  opacity: 1;
+  pointer-events: auto;
+  padding: 3px 20px 6px 16px;
+  opacity: 0;
+  pointer-events: none;
+}
+.sidebar .nav-links li:hover .sub-menu.blank{
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*PROFILE DETAILS*/
+.sidebar .profile-details{
+  position: fixed;
+  bottom: 0;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+  transition: all 0.5s ease;
+}
+.sidebar.close .profile-details{
+  background: none;
+  width: 90px;
+}
+.sidebar .profile-details .profile-content{
+  display: flex;
+  align-items: center;
+}
+.sidebar .profile-details img{
+  height: 52px;
+  width: 52px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 0 14px 0 12px;
+  background: black;
+  transition: all 0.3s ease;
+}
+.sidebar.close .profile-details img{
+  padding: 10px;
+}
+.sidebar .profile-details .profile_name,
+.sidebar .profile-details .web{
+  color: red;
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.sidebar.close .profile-details i,
+.sidebar.close .profile-details .profile_name,
+.sidebar.close .profile-details .web{
+  display: none;
+}
+.sidebar .profile-details .web{
+  font-size: 12px;
+}
+.sidebar.close ~{
+  left: 90px;
+  width: calc(100% - 90px);
+}
+
+@media (max-width: 420px) {
+  .sidebar.close .nav-links li .sub-menu{
+    display: none;
+  }
+}
+
+/*Scroll bar adjust*/
+/* Adjust width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+/*End scrollbar adjust*/
+
+/*Page content*/

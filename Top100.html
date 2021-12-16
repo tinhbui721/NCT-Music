@@ -1,0 +1,2047 @@
+<html><!-- InstanceBegin template="/Templates/NTC Template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Screenshot 2021-11-25 153205</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/Footer.css">
+<link rel="stylesheet" href="css/MH_DangNhap.css">
+<link rel="stylesheet" href="css/MH_DangKy.css">
+<link rel="stylesheet" href="fontawesome/css/all.min.css">
+<!-- InstanceBeginEditable name="head" -->
+<link rel="stylesheet" href="css/MH_Top100.css">
+<!-- InstanceEndEditable -->
+</head>
+<body>
+	<!-- Màn hình đăng nhập -->
+	<div id="opacity_dn">
+		<div class="container animate" id="dangnhap">
+			<a href="#" class="cancel">×</a>
+			<h3>Đăng nhập</h3> 
+			<hr>
+			<form>
+				<div class="username">
+					<div class="icon">
+						<i class="far fa-user"></i>
+					</div>
+					<div class="input_DN">
+						<input type="text" placeholder="Nhập tên đăng nhập" >
+					</div>
+				</div>
+				<div class="password">
+					<div class="icon">
+						<i class="far fa-keyboard"></i>
+					</div>
+					<div class="input_DN">
+						<input type="password" placeholder="Nhập mật khẩu" >
+					</div>
+				</div>
+				<input type="checkbox" id="check" class="check">
+				<label for="check"> Ghi nhớ</label>
+				<div class="align">
+					<input type="button" class="bnt" value="Đăng nhập">
+				</div>
+				<div class="account">
+					<span>Hoặc đăng nhập bằng: </span>
+					<div class="logo"><i class="fab fa-facebook-f"></i></div>
+					<div class="logo"><img src="images/logogoogle.png" alt="">
+					</div>
+				</div>
+				<div class="footer_Dn">
+					Bạn chưa có tài khoản NCT ID? <a class="dkn" href="#">Đăng ký ngay</a>   
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- Màn hình đăng ký -->
+	<div id="opacity_dk">
+		<div class="animate" id="dangky">
+			<a href="#" class="cancel">×</a>
+			<h3>Đăng ký</h3> 
+			<hr>
+			<form>
+				<div class="username">
+					<div class="icon">
+						<i class="far fa-user"></i>
+					</div>
+					<div class="input_DN">
+						<input type="text" placeholder="Nhập tên đăng nhập" >
+					</div>
+					<div class="popup infor" onmouseover="PopUp()" onmouseout="Hide()">
+						<i class="far fa-question-circle"></i>
+						<span class="popuptext" id="myPopup">Bạn có thể sử dụng chữ số, chữ cái, gạch dưới và dấu chấm. Chiều dài từ 6-30 ký tự</span>
+					</div>
+				</div>
+				<div class="password">
+					<div class="icon">
+						<i class="far fa-keyboard"></i>
+					</div>
+					<div class="input_DN">
+						<input type="password" placeholder="Nhập mật khẩu" >
+					</div>
+					<div class="popup infor" onmouseover="PopUp_1()" onmouseout="Hide_1()">
+						<i class="far fa-question-circle"></i>
+						<span class="popuptext" id="myPopup_1">Chiều dài từ 6-30 ký tự. Không sử dụng tiếng Việt có dấu</span>
+					</div>
+				</div>
+				<div class="password">
+					<div class="icon">
+						<i class="far fa-keyboard"></i>
+					</div>
+					<div class="input_DN">
+						<input type="password" placeholder="Nhập lại mật khẩu" >
+					</div>
+					<div class="popup infor" onmouseover="PopUp_2()" onmouseout="Hide_2()">
+						<i class="far fa-question-circle"></i>
+						<span class="popuptext" id="myPopup_2">Nhập lại mật khẩu giống như bên trên một lần nữa</span>
+					</div>
+				</div>
+				<div class="password">
+					<div class="icon">
+						<i class="far fa-envelope"></i>
+					</div>
+					<div class="input_DN">
+						<input type="password" placeholder="Nhập email" >
+					</div>
+					<div class="popup infor" onmouseover="PopUp_3()" onmouseout="Hide_3()">
+						<i class="far fa-question-circle"></i>
+						<span class="popuptext" id="myPopup_3">Điền vào email bạn muốn sử dụng cho tài khoản này</span>
+					</div>
+				</div>
+				<input type="checkbox" id="check" class="check">
+				<label for="check"> Tôi đã đọc và đồng ý các <a href="#" class="dieukhoan">THỎA THUẬN SỬ DỤNG</a></label>
+				<div class="align">
+					<input type="button" class="bnt" value="Đăng ký">
+				</div>
+				<div class="account">
+					<span>Đăng nhập NCT ID: </span>
+					<div class="logo"><img src="images/NCT_logo.png" alt=""></div>
+					<span>  &#160 Hoặc </span>
+					<div class="logo"><i class="fab fa-facebook-f"></i></div>
+					<div class="logo"><img src="images/logogoogle.png" alt=""></div>
+					
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="container">
+		<div id="left">
+			<img src="images/logo_NCT.png" height="25" width="50" alt="">
+			<a href="https://www.nhaccuatui.com/nhaccuatui-vip/mua-vip"><div class="nangcap">Nâng cấp</div></a>
+			<div class="dn_dk"><a href="#opacity_dn">Đăng nhập</a> | <a href="#opacity_dk">Đăng ký</a> <a> <i class="fas fa-cog"></i></a></div>
+			
+			<br>
+			<div class="navi" onclick="Open_Page('TimKiem.html');">
+				<i class="fas fa-search"></i> <a> Tìm kiếm</a>
+			</div>
+			<div class="navi" onclick="Open_Page('TrangChu.html');">
+				<i class="fas fa-home"></i> <a>Trang chủ</a>
+			</div>
+			<div class="navi" id="khampha">
+				<i class="fas fa-compass"></i> <a> Khám phá</a> <i class="fas fa-chevron-down" id="icon_khampha"></i>
+			</div>
+			<div class="collapse" id="dropkhampha">
+				<a href="BaiHat.html">Bài hát</a><br>
+				<a href="Playlist.html">Playlist</a><br>
+				<a href="Video.html">Video</a><br>
+				<a href="NgheSi.html">Nghệ sĩ</a>
+			</div>
+			<div class="navi" id="homnay">
+				<i class="fas fa-headphones-alt"></i> <a> Nghe gì hôm nay</a> <i class="fas fa-chevron-down" id="icon_homnay"></i>
+			</div>
+			<div class="collapse" id="drophomnay">
+				<a href="ChuDe.html">Chủ đề</a><br>
+				<a href="TuyenTap.html">Tuyển tập</a><br>
+				<a href="Top100.html">Top 100</a>
+			</div>
+			<div class="navi" onclick="Open_Page('BXHNCT.html');">
+				<i class="fas fa-chart-bar"></i> <a> BXH NCT</a>
+			</div>
+			<div class="navi" onclick="Open_Page('Music4U.html');">
+				<i class="fas fa-thumbs-up"></i> <a> Music 4U</a>
+			</div>
+			<img class="contact" src="images/contact.png" height="100px" alt="">
+		</div>
+		<div id="content"><!-- InstanceBeginEditable name="Content" -->
+			<div class="top100-tab">
+			  <button class="top100-tablinks" onclick="openTAB(event, 'top100-vietnam')">Việt Nam</button>
+			  <button class="top100-tablinks" onclick="openTAB(event, 'top100-chaua')">Châu Á</button>
+			  <button class="top100-tablinks" onclick="openTAB(event, 'top100-aumy')">Âu Mỹ</button>
+			  <button class="top100-tablinks" onclick="openTAB(event, 'top100-khongloi')">Không Lời</button>
+			</div>
+			
+
+			<div id="top100-vietnam" class="top100-tabcontent">
+			  <div class="top100-tabs">
+			 	 <button class="top100tab-tablinks" onclick="openTABchild(event, 'top100-nhactre')">Nhạc Trẻ</button>
+			  	 <button class="top100tab-tablinks" onclick="openTABchild(event, 'top100-trutinh')">Trữ Tình</button>
+			  	 <button class="top100tab-tablinks" onclick="openTABchild(event, 'top100-nhactrinh')">Nhạc Trịnh</button>
+			  	 <button class="top100tab-tablinks" onclick="openTABchild(event, 'top100-tienchien')">Tiền Chiến</button>
+			  	 <button class="top100tab-tablinks" onclick="openTABchild(event, 'top100-rapviet')">Rap Việt</button>
+			  	 <button class="top100tab-tablinks" onclick="openTABchild(event, 'top100-remixviet')">Remix Việt</button>
+			  </div>
+			</div>
+					
+			
+			<div id="top100-chaua" class="top100-tabcontent">
+			  <div class="top100-tabs">
+			 	 <button class="top100tab-tablinks" onclick="openTABchild(event, 'top100-han')">Nhạc Hàn</button>
+			  	 <button class="top100tab-tablinks" onclick="openTABchild(event, 'top100-hoa')">Nhạc Hoa</button>
+			  	 <button class="top100tab-tablinks" onclick="openTABchild(event, 'top100-nhat')">Nhạc Nhật</button>
+			  </div>
+			</div>
+
+			<div id="top100-aumy" class="top100-tabcontent">
+			 <div class="top100-tabs">
+			 	 <button class="top100tab-tablinks" onclick="openTABchild(event, 'top100-pop')">Pop</button>
+			  	 <button class="top100tab-tablinks" onclick="openTABchild(event, 'top100-elec')">Electronic/Dance</button>
+			  	 <button class="top100tab-tablinks" onclick="openTABchild(event, 'top100-rap')">R&B/Hiphop/Rap</button>
+			  	 <button class="top100tab-tablinks" onclick="openTABchild(event, 'top100-blue')">Blues/Jazz</button>
+			  	 <button class="top100tab-tablinks" onclick="openTABchild(event, 'top100-country')">Country</button>
+			  	 <button class="top100tab-tablinks" onclick="openTABchild(event, 'top100-latin')">Latin</button>
+			  </div>
+			</div>
+			
+			<div id="top100-khongloi" class="top100-tabcontent">
+			 <div class="top100-tabs">
+			 	 <button class="top100tab-tablinks" onclick="openTABchild(event, 'top100-kl')">Không Lời</button>
+			  </div>
+			</div>
+			<!--Content for Every Children Tab-->
+			<!--Top100VN-Nhac Tre-->
+				<div id="top100-nhactre" class="top100-childtabcontent">
+					  <div class="top100-nhactre-content">
+						  <div class="lefttitle">
+							<h3>TOP 100</h3>
+							<span>NHẠC TRẺ - Cập nhật vào: </span>
+							<span class="datetime"></span>
+						  </div>
+						  <div class="righttitle">
+							  <button class="playall">Phát tất cả</button>
+						  	  <button><i class="fas fa-download"></i></button>					 
+							  <button><i class="fas fa-share-alt"></i></button>	
+						</div>				
+					  </div>
+						<div class="toplist"> 	
+							<div class="toplistitem">
+								<span class="stt">1</span>
+								<img src="images/pos1_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Đế Vương</div>
+									<div class="top-songsinger">Đình Dũng, ACV</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">2</span>
+								<img src="images/pos2_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Bước Qua Nhau</div>
+									<div class="top-songsinger">Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">3</span>
+								<img src="images/pos3_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Chuyện Tình Facebook</div>
+									<div class="top-songsinger">Nguyễn Tiến Đạt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">4</span>
+								<img src="images/pos4_top100list.jpg"  alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Ái Nộ</div>
+									<div class="top-songsinger">Masew, Khôi Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">5</span>
+								<img src="images/pos5_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Người Thương Em Cả Đời Xua Đuổi</div>
+									<div class="top-songsinger">Như Việt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">6</span>
+								<img src="images/baihat_1.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Yêu Đậm Sâu Có Chắc Bền Lâu</div>
+									<div class="top-songsinger">Cao Nam Thành</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">7</span>
+								<img src="images/baihat_9.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Thời Thanh Xuân Của Cha</div>
+									<div class="top-songsinger">Phi Hùng</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">8</span>
+								<img src="images/baihat_17.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Thói Quen</div>
+									<div class="top-songsinger">Hoàng Dũng</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">9</span>
+								<img src="images/baihat_18.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Câu Hứa Chưa Vẹn Tròn</div>
+									<div class="top-songsinger">Phát Huy T4</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">10</span>
+								<img src="images/baihat_20.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Thế Hệ Tan Vỡ</div>
+									<div class="top-songsinger">Kai Đinh</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">11</span>
+								<img src="images/baihat_8.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Cố Chấp Dù Đau</div>
+									<div class="top-songsinger">Châu Khải Phong</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">12</span>
+								<img src="images/baihat_6.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Vì Một Câu Nói</div>
+									<div class="top-songsinger">Hoàng Dũng</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">13</span>
+								<img src="images/baihat_5.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Liệu Mình Còn Thương Nhau</div>
+									<div class="top-songsinger">Ái Nhi</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">14</span>
+								<img src="images/baihat_36.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Chiếc Hộp</div>
+									<div class="top-songsinger">Bích Phương</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">15</span>
+								<img src="images/baihat_34.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Phi Điểu Và Ve Sầu</div>
+									<div class="top-songsinger">Đan Trường</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">16</span>
+								<img src="images/baihat_32.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Tìm Hành Tinh Khác</div>
+									<div class="top-songsinger">Vũ Cát Tường</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							
+					</div>
+					</div>
+			<!--Top100VN-Tru Tinh-->
+				<div id="top100-trutinh" class="top100-childtabcontent">
+					  <div class="top100-nhactre-content">
+						  <div class="lefttitle">
+							<h3>TOP 100</h3>
+							<span>TRỮ TÌNH - Cập nhật vào: </span>
+							<span class="datetime"></span>
+						  </div>
+						  <div class="righttitle">
+							  <button class="playall">Phát tất cả</button>
+						  	  <button><i class="fas fa-download"></i></button>	
+							  <button><i class="fas fa-share-alt"></i></button>	
+						</div>	
+					  </div>
+						<div class="toplist"> 	
+							<div class="toplistitem">
+								<span class="stt">1</span>
+								<img src="images/bolero_1.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Mấy Nhịp Cầu Tre</div>
+									<div class="top-songsinger">Kim Quang Hải</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">2</span>
+								<img src="images/bolero_2.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Yêu Nhau Từ Thuở Nào</div>
+									<div class="top-songsinger">Đông Dương</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">3</span>
+								<img src="images/bolero_3.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Vừng Lá Me Bay</div>
+									<div class="top-songsinger">Như Quỳnh</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">4</span>
+								<img src="images/pos4_top100list.jpg"  alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Ái Nộ</div>
+									<div class="top-songsinger">Masew, Khôi Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">5</span>
+								<img src="images/bolero_4.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Sầu Tím Thiệp Hồng</div>
+									<div class="top-songsinger">Thanh Thảo</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			<!--Top100VN-Nhac Trinh-->
+				<div id="top100-nhactrinh" class="top100-childtabcontent">
+					  <div class="top100-nhactre-content">
+						  <div class="lefttitle">
+							<h3>TOP 100</h3>
+							<span>NHẠC TRỊNH - Cập nhật vào: </span>
+							<span class="datetime"></span>
+						  </div>
+						  <div class="righttitle">
+							  <button class="playall">Phát tất cả</button>
+						  	  <button><i class="fas fa-download"></i></button>	
+							  <button><i class="fas fa-share-alt"></i></button>	
+						</div>	
+					  </div>
+						<div class="toplist"> 	
+							<div class="toplistitem">
+								<span class="stt">1</span>
+								<img src="images/pos1_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Đế Vương</div>
+									<div class="top-songsinger">Đình Dũng, ACV</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">2</span>
+								<img src="images/pos2_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Bước Qua Nhau</div>
+									<div class="top-songsinger">Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">3</span>
+								<img src="images/pos3_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Chuyện Tình Facebook</div>
+									<div class="top-songsinger">Nguyễn Tiến Đạt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">4</span>
+								<img src="images/pos4_top100list.jpg"  alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Ái Nộ</div>
+									<div class="top-songsinger">Masew, Khôi Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">5</span>
+								<img src="images/pos5_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Người Thương Em Cả Đời Xua Đuổi</div>
+									<div class="top-songsinger">Như Việt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			<!--Top100VN-Nhac Tien Chien-->
+				<div id="top100-tienchien" class="top100-childtabcontent">
+					  <div class="top100-nhactre-content">
+						  <div class="lefttitle">
+							<h3>TOP 100</h3>
+							<span>NHẠC TIỀN CHIẾN - Cập nhật vào: </span>
+							<span class="datetime"></span>
+						  </div>
+						  <div class="righttitle">
+							  <button class="playall">Phát tất cả</button>
+						  	  <button><i class="fas fa-download"></i></button>	
+							  <button><i class="fas fa-share-alt"></i></button>	
+						</div>				
+					  </div>
+						<div class="toplist"> 	
+							<div class="toplistitem">
+								<span class="stt">1</span>
+								<img src="images/pos1_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Đế Vương</div>
+									<div class="top-songsinger">Đình Dũng, ACV</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">2</span>
+								<img src="images/pos2_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Bước Qua Nhau</div>
+									<div class="top-songsinger">Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">3</span>
+								<img src="images/pos3_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Chuyện Tình Facebook</div>
+									<div class="top-songsinger">Nguyễn Tiến Đạt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">4</span>
+								<img src="images/pos4_top100list.jpg"  alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Ái Nộ</div>
+									<div class="top-songsinger">Masew, Khôi Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v" onclick="ShowMore()"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">5</span>
+								<img src="images/pos5_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Người Thương Em Cả Đời Xua Đuổi</div>
+									<div class="top-songsinger">Như Việt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+					</div>
+					</div>
+			<!--Top100VN-Rap Viet-->
+				<div id="top100-rapviet" class="top100-childtabcontent">
+					  <div class="top100-nhactre-content">
+						  <div class="lefttitle">
+							<h3>TOP 100</h3>
+							<span>RAP VIỆT - Cập nhật vào: </span>
+							<span class="datetime"></span>
+						  </div>
+						  <div class="righttitle">
+							  <button class="playall">Phát tất cả</button>
+						  	  <button><i class="fas fa-download"></i></button>	
+							  <button><i class="fas fa-share-alt"></i></button>	
+						</div>	
+					  </div>
+						<div class="toplist"> 	
+							<div class="toplistitem">
+								<span class="stt">1</span>
+								<img src="images/pos1_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Đế Vương</div>
+									<div class="top-songsinger">Đình Dũng, ACV</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v" ></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">2</span>
+								<img src="images/pos2_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Bước Qua Nhau</div>
+									<div class="top-songsinger">Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">3</span>
+								<img src="images/pos3_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Chuyện Tình Facebook</div>
+									<div class="top-songsinger">Nguyễn Tiến Đạt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">4</span>
+								<img src="images/pos4_top100list.jpg"  alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Ái Nộ</div>
+									<div class="top-songsinger">Masew, Khôi Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">5</span>
+								<img src="images/pos5_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Người Thương Em Cả Đời Xua Đuổi</div>
+									<div class="top-songsinger">Như Việt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			<!--Top100VN-Nhac Remix Viet-->
+				<div id="top100-remixviet" class="top100-childtabcontent">
+					  <div class="top100-nhactre-content">
+						  <div class="lefttitle">
+							<h3>TOP 100</h3>
+							<span>REMIX VIỆT - Cập nhật vào: </span>
+							<span class="datetime"></span>
+						  </div>
+						  <div class="righttitle">
+							  <button class="playall">Phát tất cả</button>
+						  	  <button><i class="fas fa-download"></i></button>	
+							  <button><i class="fas fa-share-alt"></i></button>	
+						</div>	
+					  </div>
+						<div class="toplist"> 	
+							<div class="toplistitem">
+								<span class="stt">1</span>
+								<img src="images/pos1_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Đế Vương</div>
+									<div class="top-songsinger">Đình Dũng, ACV</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">2</span>
+								<img src="images/pos2_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Bước Qua Nhau</div>
+									<div class="top-songsinger">Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">3</span>
+								<img src="images/pos3_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Chuyện Tình Facebook</div>
+									<div class="top-songsinger">Nguyễn Tiến Đạt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">4</span>
+								<img src="images/pos4_top100list.jpg"  alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Ái Nộ</div>
+									<div class="top-songsinger">Masew, Khôi Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">5</span>
+								<img src="images/pos5_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Người Thương Em Cả Đời Xua Đuổi</div>
+									<div class="top-songsinger">Như Việt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			<!--Top100VN-Nhac Han-->
+				<div id="top100-han" class="top100-childtabcontent">
+					  <div class="top100-nhactre-content">
+						  <div class="lefttitle">
+							<h3>TOP 100</h3>
+							<span>NHẠC HÀN - Cập nhật vào: </span>
+							<span class="datetime"></span>
+						  </div>
+						  <div class="righttitle">
+							  <button class="playall">Phát tất cả</button>
+						  	  <button><i class="fas fa-download"></i></button>	
+							  <button><i class="fas fa-share-alt"></i></button>	
+						</div>	
+					  </div>
+						<div class="toplist"> 	
+							<div class="toplistitem">
+								<span class="stt">1</span>
+								<img src="images/pos1_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Đế Vương</div>
+									<div class="top-songsinger">Đình Dũng, ACV</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">2</span>
+								<img src="images/pos2_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Bước Qua Nhau</div>
+									<div class="top-songsinger">Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">3</span>
+								<img src="images/pos3_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Chuyện Tình Facebook</div>
+									<div class="top-songsinger">Nguyễn Tiến Đạt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">4</span>
+								<img src="images/pos4_top100list.jpg"  alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Ái Nộ</div>
+									<div class="top-songsinger">Masew, Khôi Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">5</span>
+								<img src="images/pos5_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Người Thương Em Cả Đời Xua Đuổi</div>
+									<div class="top-songsinger">Như Việt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v" ></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			<!--Top100VN-Nhac Hoa-->
+				<div id="top100-hoa" class="top100-childtabcontent">
+					  <div class="top100-nhactre-content">
+						  <div class="lefttitle">
+							<h3>TOP 100</h3>
+							<span>NHẠC HOA - Cập nhật vào: </span>
+							<span class="datetime"></span>
+						  </div>
+						  <div class="righttitle">
+							  <button class="playall">Phát tất cả</button>
+						  	  <button><i class="fas fa-download"></i></button>	
+							  <button><i class="fas fa-share-alt"></i></button>	
+						</div>	
+					  </div>
+						<div class="toplist"> 	
+							<div class="toplistitem">
+								<span class="stt">1</span>
+								<img src="images/pos1_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Đế Vương</div>
+									<div class="top-songsinger">Đình Dũng, ACV</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">2</span>
+								<img src="images/pos2_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Bước Qua Nhau</div>
+									<div class="top-songsinger">Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">3</span>
+								<img src="images/pos3_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Chuyện Tình Facebook</div>
+									<div class="top-songsinger">Nguyễn Tiến Đạt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">4</span>
+								<img src="images/pos4_top100list.jpg"  alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Ái Nộ</div>
+									<div class="top-songsinger">Masew, Khôi Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v" ></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">5</span>
+								<img src="images/pos5_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Người Thương Em Cả Đời Xua Đuổi</div>
+									<div class="top-songsinger">Như Việt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			<!--Top100VN-Nhac Nhat-->
+				<div id="top100-nhat" class="top100-childtabcontent">
+					  <div class="top100-nhactre-content">
+						  <div class="lefttitle">
+							<h3>TOP 100</h3>
+							<span>NHẠC NHẬT - Cập nhật vào: </span>
+							<span class="datetime"></span>
+						  </div>
+						  <div class="righttitle">
+							  <button class="playall">Phát tất cả</button>
+						  	  <button><i class="fas fa-download"></i></button>	
+							  <button><i class="fas fa-share-alt"></i></button>	
+						</div>	
+					  </div>
+						<div class="toplist"> 	
+							<div class="toplistitem">
+								<span class="stt">1</span>
+								<img src="images/pos1_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Đế Vương</div>
+									<div class="top-songsinger">Đình Dũng, ACV</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">2</span>
+								<img src="images/pos2_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Bước Qua Nhau</div>
+									<div class="top-songsinger">Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">3</span>
+								<img src="images/pos3_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Chuyện Tình Facebook</div>
+									<div class="top-songsinger">Nguyễn Tiến Đạt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">4</span>
+								<img src="images/pos4_top100list.jpg"  alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Ái Nộ</div>
+									<div class="top-songsinger">Masew, Khôi Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">5</span>
+								<img src="images/pos5_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Người Thương Em Cả Đời Xua Đuổi</div>
+									<div class="top-songsinger">Như Việt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			<!--Top100VN-Nhac Pop-->
+				<div id="top100-pop" class="top100-childtabcontent">
+					  <div class="top100-nhactre-content">
+						  <div class="lefttitle">
+							<h3>TOP 100</h3>
+							<span>NHẠC POP - Cập nhật vào: </span>
+							<span class="datetime"></span>
+						  </div>
+						  <div class="righttitle">
+							  <button class="playall">Phát tất cả</button>
+						  	  <button><i class="fas fa-download"></i></button>	
+							  <button><i class="fas fa-share-alt"></i></button>	
+						</div>	
+					  </div>
+						<div class="toplist"> 	
+							<div class="toplistitem">
+								<span class="stt">1</span>
+								<img src="images/pos1_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Đế Vương</div>
+									<div class="top-songsinger">Đình Dũng, ACV</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">2</span>
+								<img src="images/pos2_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Bước Qua Nhau</div>
+									<div class="top-songsinger">Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">3</span>
+								<img src="images/pos3_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Chuyện Tình Facebook</div>
+									<div class="top-songsinger">Nguyễn Tiến Đạt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">4</span>
+								<img src="images/pos4_top100list.jpg"  alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Ái Nộ</div>
+									<div class="top-songsinger">Masew, Khôi Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">5</span>
+								<img src="images/pos5_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Người Thương Em Cả Đời Xua Đuổi</div>
+									<div class="top-songsinger">Như Việt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			<!--Top100VN-Nhac Electronic/Dance-->
+				<div id="top100-elec" class="top100-childtabcontent">
+					  <div class="top100-nhactre-content">
+						  <div class="lefttitle">
+							<h3>TOP 100</h3>
+							<span>ELECTRONIC/DANCE - Cập nhật vào: </span>
+							<span class="datetime"></span>
+						  </div>
+						  <div class="righttitle">
+							  <button class="playall">Phát tất cả</button>
+						  	  <button><i class="fas fa-download"></i></button>	
+							  <button><i class="fas fa-share-alt"></i></button>	
+						</div>	
+					  </div>
+						<div class="toplist"> 	
+							<div class="toplistitem">
+								<span class="stt">1</span>
+								<img src="images/pos1_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Đế Vương</div>
+									<div class="top-songsinger">Đình Dũng, ACV</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v" ></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">2</span>
+								<img src="images/pos2_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Bước Qua Nhau</div>
+									<div class="top-songsinger">Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">3</span>
+								<img src="images/pos3_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Chuyện Tình Facebook</div>
+									<div class="top-songsinger">Nguyễn Tiến Đạt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">4</span>
+								<img src="images/pos4_top100list.jpg"  alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Ái Nộ</div>
+									<div class="top-songsinger">Masew, Khôi Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">5</span>
+								<img src="images/pos5_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Người Thương Em Cả Đời Xua Đuổi</div>
+									<div class="top-songsinger">Như Việt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			<!--Top100VN-Nhac R&B-->
+				<div id="top100-rap" class="top100-childtabcontent">
+					  <div class="top100-nhactre-content">
+						  <div class="lefttitle">
+							<h3>TOP 100</h3>
+							<span>R&B/HIPHOP/RAP - Cập nhật vào: </span>
+							<span class="datetime"></span>
+						  </div>
+						  <div class="righttitle">
+							  <button class="playall">Phát tất cả</button>
+						  	  <button><i class="fas fa-download"></i></button>	
+							  <button><i class="fas fa-share-alt"></i></button>	
+						</div>	
+					  </div>
+						<div class="toplist"> 	
+							<div class="toplistitem">
+								<span class="stt">1</span>
+								<img src="images/pos1_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Đế Vương</div>
+									<div class="top-songsinger">Đình Dũng, ACV</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">2</span>
+								<img src="images/pos2_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Bước Qua Nhau</div>
+									<div class="top-songsinger">Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">3</span>
+								<img src="images/pos3_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Chuyện Tình Facebook</div>
+									<div class="top-songsinger">Nguyễn Tiến Đạt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">4</span>
+								<img src="images/pos4_top100list.jpg"  alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Ái Nộ</div>
+									<div class="top-songsinger">Masew, Khôi Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v" onclick="ShowMore()"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">5</span>
+								<img src="images/pos5_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Người Thương Em Cả Đời Xua Đuổi</div>
+									<div class="top-songsinger">Như Việt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v" onclick="ShowMore()"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			<!--Top100VN-Nhac Blues/Jazz-->
+				<div id="top100-blue" class="top100-childtabcontent">
+					  <div class="top100-nhactre-content">
+						  <div class="lefttitle">
+							<h3>TOP 100</h3>
+							<span>BLUES/JAZZ - Cập nhật vào: </span>
+							<span class="datetime"></span>
+						  </div>
+						  <div class="righttitle">
+							  <button class="playall">Phát tất cả</button>
+						  	  <button><i class="fas fa-download"></i></button>	
+							  <button><i class="fas fa-share-alt"></i></button>	
+						</div>	
+					  </div>
+						<div class="toplist"> 	
+							<div class="toplistitem">
+								<span class="stt">1</span>
+								<img src="images/pos1_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Đế Vương</div>
+									<div class="top-songsinger">Đình Dũng, ACV</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v" onclick="ShowMore()"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">2</span>
+								<img src="images/pos2_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Bước Qua Nhau</div>
+									<div class="top-songsinger">Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">3</span>
+								<img src="images/pos3_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Chuyện Tình Facebook</div>
+									<div class="top-songsinger">Nguyễn Tiến Đạt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v" onclick="ShowMore()"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">4</span>
+								<img src="images/pos4_top100list.jpg"  alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Ái Nộ</div>
+									<div class="top-songsinger">Masew, Khôi Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v" onclick="ShowMore()"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">5</span>
+								<img src="images/pos5_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Người Thương Em Cả Đời Xua Đuổi</div>
+									<div class="top-songsinger">Như Việt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v" onclick="ShowMore()"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			<!--Top100VN-Nhac Country-->
+				<div id="top100-country" class="top100-childtabcontent">
+					  <div class="top100-nhactre-content">
+						  <div class="lefttitle">
+							<h3>TOP 100</h3>
+							<span>NHẠC COUNTRY - Cập nhật vào: </span>
+							<span class="datetime"></span>
+						  </div>
+						  <div class="righttitle">
+							  <button class="playall">Phát tất cả</button>
+						  	  <button><i class="fas fa-download"></i></button>	
+							  <button><i class="fas fa-share-alt"></i></button>	
+						</div>	
+					  </div>
+						<div class="toplist"> 	
+							<div class="toplistitem">
+								<span class="stt">1</span>
+								<img src="images/pos1_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Đế Vương</div>
+									<div class="top-songsinger">Đình Dũng, ACV</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v" onclick="ShowMore()"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">2</span>
+								<img src="images/pos2_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Bước Qua Nhau</div>
+									<div class="top-songsinger">Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">3</span>
+								<img src="images/pos3_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Chuyện Tình Facebook</div>
+									<div class="top-songsinger">Nguyễn Tiến Đạt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v" onclick="ShowMore()"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">4</span>
+								<img src="images/pos4_top100list.jpg"  alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Ái Nộ</div>
+									<div class="top-songsinger">Masew, Khôi Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v" onclick="ShowMore()"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">5</span>
+								<img src="images/pos5_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Người Thương Em Cả Đời Xua Đuổi</div>
+									<div class="top-songsinger">Như Việt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v" onclick="ShowMore()"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			<!--Top100VN-Nhac Latin-->
+				<div id="top100-latin" class="top100-childtabcontent">
+					  <div class="top100-nhactre-content">
+						  <div class="lefttitle">
+							<h3>TOP 100</h3>
+							<span>NHẠC LATIN - Cập nhật vào: </span>
+							<span class="datetime"></span>
+						  </div>
+						  <div class="righttitle">
+							  <button class="playall">Phát tất cả</button>
+						  	  <button><i class="fas fa-download"></i></button>	
+							  <button><i class="fas fa-share-alt"></i></button>	
+						</div>	
+					  </div>
+						<div class="toplist"> 	
+							<div class="toplistitem">
+								<span class="stt">1</span>
+								<img src="images/pos1_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Đế Vương</div>
+									<div class="top-songsinger">Đình Dũng, ACV</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v" onclick="ShowMore()"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">2</span>
+								<img src="images/pos2_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Bước Qua Nhau</div>
+									<div class="top-songsinger">Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">3</span>
+								<img src="images/pos3_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Chuyện Tình Facebook</div>
+									<div class="top-songsinger">Nguyễn Tiến Đạt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v" onclick="ShowMore()"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">4</span>
+								<img src="images/pos4_top100list.jpg"  alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Ái Nộ</div>
+									<div class="top-songsinger">Masew, Khôi Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v" onclick="ShowMore()"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">5</span>
+								<img src="images/pos5_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Người Thương Em Cả Đời Xua Đuổi</div>
+									<div class="top-songsinger">Như Việt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v" onclick="ShowMore()"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			<!--Top100VN-Nhac Không Lời-->
+				<div id="top100-kl" class="top100-childtabcontent">
+					  <div class="top100-nhactre-content">
+						  <div class="lefttitle">
+							<h3>TOP 100</h3>
+							<span>NHẠC KHÔNG LỜI - Cập nhật vào: </span>
+							<span class="datetime"></span>
+						  </div>
+						  <div class="righttitle">
+							  <button class="playall">Phát tất cả</button>
+						  	  <button><i class="fas fa-download"></i></button>	
+							  <button><i class="fas fa-share-alt"></i></button>	
+						</div>	
+					  </div>
+						<div class="toplist"> 	
+							<div class="toplistitem">
+								<span class="stt">1</span>
+								<img src="images/pos1_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Đế Vương</div>
+									<div class="top-songsinger">Đình Dũng, ACV</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v" onclick="ShowMore()"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">2</span>
+								<img src="images/pos2_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Bước Qua Nhau</div>
+									<div class="top-songsinger">Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">3</span>
+								<img src="images/pos3_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Chuyện Tình Facebook</div>
+									<div class="top-songsinger">Nguyễn Tiến Đạt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v" onclick="ShowMore()"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">4</span>
+								<img src="images/pos4_top100list.jpg"  alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Ái Nộ</div>
+									<div class="top-songsinger">Masew, Khôi Vũ</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v" onclick="ShowMore()"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+							<div class="toplistitem">
+								<span class="stt">5</span>
+								<img src="images/pos5_top100list.jpg" alt="" width="50" height="50">
+								<div class="topsonginfo">
+									<div class="top-songname">Người Thương Em Cả Đời Xua Đuổi</div>
+									<div class="top-songsinger">Như Việt</div>
+
+								</div>
+								<div class="top100-option"><i class="fas fa-ellipsis-v" onclick="ShowMore()"></i></div>
+								<div class="moreoption moreoption-content">
+									<a href="#"><i class="fas fa-cloud-upload-alt"></i>Thêm vào cloud</a>
+									<a href="#"><i class="fas fa-plus"></i>Thêm vào chờ phát</a>
+									<a href="#"><i class="fas fa-link"></i>Sao chép link</a>
+									<a href="#"><i class="fab fa-itunes-note"></i>Đi đến bài hát</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				<script src="scripts/MH_Top100.js"></script>
+
+			<!-- InstanceEndEditable -->
+				
+
+			<hr>
+			<div class="footer-margin">
+				<div class="footer-menu">
+					<ul>
+						<li style="border-right: 3px solid #252F39;">
+							<a  class="footer-a" href="#">Giới thiệu</a>
+						</li>
+						<li style="border-right: 3px solid #252F39;">
+							<a  class="footer-a" href="#">SP-DV</a>
+						</li>
+						<li style="border-right: 3px solid #252F39;">
+							<a  class="footer-a" href="#">Hỗ trợ</a>
+						</li>
+						<li class="end">
+							<a  class="footer-a" href="#">Thỏa thuận sử dụng</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="footer-mxh">
+					<ul>
+						<li>
+							<a  class="fb_ins" href="#">
+								<i class="fab fa-facebook-square"></i>
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a  class="footer-a" href="#"><img src="images/appstore.png" alt=""></a>
+						</li>
+						<li>
+							<a  class="footer-a" href="#"><img src="images/chplay.png" alt=""></a>
+						</li>
+						<li>
+							<a  class="footer-a" href="#"><img src="images/appgallery.png" alt=""></a>
+						</li>
+					</ul>
+				</div>
+				<br class="footer-br" />
+				<hr class="footer-hr" />
+				<img class="footer-logo" src="images/logo-nctc.svg" alt=""/>
+				<img class="congthuong" src="images/Cong_Thuong.svg" alt=""/>
+				<img class="dmca" src="images/DMCA.svg" alt=""/>
+				<h5 class="footer-h5">
+					CÔNG TY CỔ PHẦN N C T
+				</h5>
+				<ul class="li_foot">
+					<li>Chủ sở hữu website: <strong>Ông Nhan Thế Luân</strong></li>
+					<li>Giấy phép MXH số 499/GP-BTTTT do Bộ Thông Tin và Truyền thông cấp ngày 28/09/2015.</li>
+					<li>Giấy Chứng nhận Đăng ký Kinh doanh số 0305535715 do Sở kế hoạch và Đầu tư Tp.Hồ Chí Minh cấp ngày 01/03/2008.</li>
+				</ul> 
+			</div>
+			<br class="footer-br"/>
+			<div class="footer-addr">
+				<a class="footer-a" href="#">
+					<i class="fas fa-map-marker-alt"></i>  Tòa nhà The 678 Tower, 67 Hoàng Văn Thái, P.Tân Phú, Q.7, TP.HCM
+				</a>
+				<a  class="footer-a" href="#">
+					<i class="fas fa-phone-alt"></i> (028) 3868 7979
+				</a>          
+			</div>
+		</div>
+		<div id="right">
+			<div class="play_img">
+				<img src="images/play_img.jpg" height="240px" alt="">
+				<a>Angels Like You</a>
+				<i class="fas fa-microphone"></i>
+				<p>Miley Cyrus</p>
+			</div>
+			<p class="playlist">Playlist: Angels Like You</p>
+			<div class="control_play">
+				<i class="fas fa-volume-up"></i>
+				<div class="danhsachphat">
+					Danh sách phát
+				</div>
+				
+				<i class="fas fa-ellipsis-v"></i>
+				<br>
+				<p>
+					<span class="start">0:00</span>
+					<div class="dot"></div><div class="media"></div>
+					<span class="end">3:16</span>
+				</p>
+
+				<br>
+				<div class="control_media">
+					<i class="fas fa-random"></i>
+					<i class="fas fa-fast-backward"></i>
+					<i class="fas fa-play"></i>
+					<i class="fas fa-fast-forward"></i>
+					<i class="fas fa-redo"></i>
+				</div>
+				<p class="quality">128Kps</p>
+			</div>
+		</div>
+	</div>
+	<script src="scripts/NCT_script.js"></script>
+	<script src="scripts/MH_DK.js"></script>
+
+</body>
+<!-- InstanceEnd --></html>

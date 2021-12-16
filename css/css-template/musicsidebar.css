@@ -1,0 +1,88 @@
+.musicsidebar {
+    padding: 0 10px;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 400px;
+    background: black;
+    z-index: 100;
+    transition: all 0.5s ease;
+    border-left: 1px solid rgb(66, 65, 65) ;
+    color: white;
+}
+.musicsidebar p, .musicsidebar a{
+    font-size: 18px;
+}
+.musicsidebar .m-control{
+    margin-top: 15vh;
+}
+.musicsidebar a {
+    text-decoration: none;
+    color:white;
+    background-color: rgb(87, 83, 83);
+    opacity: 0.8;
+    border-radius: 15px;
+    padding: 15px;
+}
+.musicsidebar i{
+    font-size: 45px;
+    vertical-align: middle;
+    padding: 15px;
+}
+.poster {
+    background-color: wheat;
+    padding: 5px;
+    border-radius: 15px;
+}
+.bx-microphone{
+    margin-top: 1px;
+    background-color: black;
+    opacity: 0.5;
+}
+.bx-volume-full, .bx-dots-vertical-rounded{
+    opacity: 0.5;
+}
+.song-slider{
+    margin-top: 35px;
+    position: relative;
+}
+.seek-bar{
+    height: 8px;
+    background: white;    
+    cursor: pointer;
+    vertical-align: middle;
+    opacity: 0.5;
+}
+.seek-bar::-webkit-slider-thumb{
+    border-radius: 15px;
+    vertical-align: middle;
+}
+.current-time,
+.song-duration{
+    font-size: 20px;
+    vertical-align: middle;
+    color: lightseagreen;
+}
+.song-duration{
+    position: relative;
+    right: 0;
+}
+.control-btn{
+    text-align: center;
+    margin-top: 35px;
+}
+.control-btn i{
+    font-size: 45px;
+    padding-left: 10px;
+    opacity: 0.5;
+}
+select{
+    color: white;
+    border: none;
+    opacity: 0.5;
+    appearance: none;
+    padding: 5px;
+    outline: none;
+}
