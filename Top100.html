@@ -10,6 +10,26 @@
 <link rel="stylesheet" href="css/MH_DangNhap.css">
 <link rel="stylesheet" href="css/MH_DangKy.css">
 <link rel="stylesheet" href="fontawesome/css/all.min.css">
+	
+<!--HIỆU ỨNG OPEN TỪ GIỮA SANG 2 BÊN, KẾT HỢP JS Ở CUỐI-->
+<!--<style>
+	.intro{
+	position:fixed;
+	left:0;
+	top:0;
+	layer-background-color:red;
+	background-color:red;
+	border:0.1px solid red;
+	z-index:999;
+}
+</style>-->
+<!--HIỆU ỨNG SẤM CHỚP-->
+<!--<style type="text/css"> 
+#frm {position:absolute; left:20; top:10; width:90; height:300; visibility:visible; z-index:951;
+color:blue; overflow:clip; font-style:Times}
+</style>
+<!--HIỆU ỨNG SẤM CHỚP, THAY CHO THẺ BODY-->
+<!--<body onLoad="window.focus();init();" onResize="document.location.href=document.location.href;" bgColor="#000000" text="#FFFFFF" onUnload="halt();" link="#FFFF00" vlink="#00FF00">-->
 <!-- InstanceBeginEditable name="head" -->
 <link rel="stylesheet" href="css/MH_Top100.css">
 <!-- InstanceEndEditable -->
@@ -160,13 +180,13 @@
 				<a href="Video.html">Video</a><br>
 				<a href="NgheSi.html">Nghệ sĩ</a>
 			</div>
-			<div class="navi here" id="homnay">
-				<i class="fas fa-headphones-alt"></i> <a> Nghe gì hôm nay</a> <i style="transform: rotate(180deg);" class="fas fa-chevron-down" id="icon_homnay"></i>
+			<div class="navi" id="homnay">
+				<i class="fas fa-headphones-alt"></i> <a> Nghe gì hôm nay</a> <i class="fas fa-chevron-down" id="icon_homnay"></i>
 			</div>
-			<div class="collapse collapse_block" id="drophomnay">
+			<div class="collapse" id="drophomnay">
 				<a href="ChuDe.html">Chủ đề</a><br>
 				<a href="TuyenTap.html">Tuyển tập</a><br>
-				<a style="border-left: 3px solid #29ACF3;" href="Top100.html">Top 100</a>
+				<a href="Top100.html">Top 100</a>
 			</div>
 			<div class="navi" onclick="Open_Page('BXHNCT.html');">
 				<i class="fas fa-chart-bar"></i> <a> BXH NCT</a>
@@ -1961,7 +1981,7 @@
 				<div class="footer-menu">
 					<ul>
 						<li style="border-right: 3px solid #252F39;">
-							<a  class="footer-a" href="https://nctcorp.vn/" target="_blank">Giới thiệu</a>
+							<a  class="footer-a" href="GioiThieu.html" target="_blank">Giới thiệu</a>
 						</li>
 						<li style="border-right: 3px solid #252F39;">
 							<a  class="footer-a" href="http://apps.nhaccuatui.com/nhaccuatui-for-desktop.html" target="_blank">SP-DV</a>
@@ -2052,6 +2072,797 @@
 			</div>
 		</div>
 	</div>
+	<!--HIỆU ỨNG TUYẾT RƠI-->
+	<!--	<script type="text/javascript">
+  	function openwindow(){
+	  	window.open("autumn_effect.htm","","width=350,height=500")
+	}
+
+  //Configure below to change URL path to the snow image
+  var snowsrc="images/snow.gif"
+  // Configure below to change number of snow to render
+  var no = 20;
+  // Configure whether snow should disappear after x seconds (0=never):
+  var hidesnowtime = 0;
+  // Configure how much snow should drop down before fading ("windowheight" or "pageheight")
+  var snowdistance = "pageheight";
+
+///////////Stop Config//////////////////////////////////
+
+  var ie4up = (document.all) ? 1 : 0;
+  var ns6up = (document.getElementById&&!document.all) ? 1 : 0;
+
+	function iecompattest(){
+	return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+	}
+
+  var dx, xp, yp;    // coordinate and position variables
+  var am, stx, sty;  // amplitude and step variables
+  var i, doc_width = 800, doc_height = 600; 
+  
+  if (ns6up) {
+    doc_width = self.innerWidth;
+    doc_height = self.innerHeight;
+  } else if (ie4up) {
+    doc_width = iecompattest().clientWidth;
+    doc_height = iecompattest().clientHeight;
+  }
+
+  dx = new Array();
+  xp = new Array();
+  yp = new Array();
+  am = new Array();
+  stx = new Array();
+  sty = new Array();
+  snowsrc=(snowsrc.indexOf("dynamicdrive.com")!=-1)? "snow.gif" : snowsrc
+  for (i = 0; i < no; ++ i) {  
+    dx[i] = 0;                        // set coordinate variables
+    xp[i] = Math.random()*(doc_width-50);  // set position variables
+    yp[i] = Math.random()*doc_height;
+    am[i] = Math.random()*20;         // set amplitude variables
+    stx[i] = 0.02 + Math.random()/10; // set step variables
+    sty[i] = 0.7 + Math.random();     // set step variables
+		if (ie4up||ns6up) {
+      if (i == 0) {
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><a href=\"http://dynamicdrive.com\"><img src='"+snowsrc+"' border=\"0\"><\/a><\/div>");
+      } else {
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
+      }
+    }
+  }
+
+  function snowIE_NS6() {  // IE and NS6 main animation function
+    doc_width = ns6up?window.innerWidth-10 : iecompattest().clientWidth-10;
+		doc_height=(window.innerHeight && snowdistance=="windowheight")? window.innerHeight : (ie4up && snowdistance=="windowheight")?  iecompattest().clientHeight : (ie4up && !window.opera && snowdistance=="pageheight")? iecompattest().scrollHeight : iecompattest().offsetHeight;
+	if (snowdistance=="windowheight"){
+		doc_height = window.innerHeight || iecompattest().clientHeight
+	}
+	else{
+		doc_height = iecompattest().scrollHeight
+	}
+    for (i = 0; i < no; ++ i) {  // iterate for every dot
+      yp[i] += sty[i];
+      if (yp[i] > doc_height-50) {
+        xp[i] = Math.random()*(doc_width-am[i]-30);
+        yp[i] = 0;
+        stx[i] = 0.02 + Math.random()/10;
+        sty[i] = 0.7 + Math.random();
+      }
+      dx[i] += stx[i];
+      document.getElementById("dot"+i).style.top=yp[i]+"px";
+      document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i])+"px";  
+    }
+    snowtimer=setTimeout("snowIE_NS6()", 10);
+  }
+
+	function hidesnow(){
+		if (window.snowtimer) clearTimeout(snowtimer)
+		for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden"
+	}
+		
+
+if (ie4up||ns6up){
+    snowIE_NS6();
+		if (hidesnowtime>0)
+		setTimeout("hidesnow()", hidesnowtime*1000)
+		}
+
+</script>-->
+	
+	<!--HIỆU ỨNG TUYẾT RƠI - KHÔNG CÓ SNOW.GIF-->
+	<!--<script>
+		if  ((document.getElementById) && 
+window.addEventListener || window.attachEvent){
+
+(function(){
+
+//Configure here.
+
+var num = 100;   //Number of flakes
+var timer = 10; //setTimeout speed. Varies on different comps
+var enableinNS6 = 1 //Enable script in NS6/Mozilla? Snow animation could be slow in those browsers. (1=yes, 0=no).
+
+//End.
+
+var y = [];
+var x = [];
+var fall = [];
+var theFlakes = [];
+var sfs = [];
+var step = [];
+var currStep = [];
+var h,w,r;
+var d = document;
+var pix = "px";
+var domWw = (typeof window.innerWidth == "number");
+var domSy = (typeof window.pageYOffset == "number");
+var idx = d.getElementsByTagName('div').length;
+
+if (d.documentElement.style && 
+typeof d.documentElement.style.MozOpacity == "string")
+num = 12;
+
+for (i = 0; i < num; i++){
+sfs[i] = Math.round(1 + Math.random() * 1);
+
+document.write('<div id="flake'+(idx+i)+'" style="position:absolute;top:0px;left:0px;width:'
++sfs[i]+'px;height:'+sfs[i]+'px;background-color:#ffffff;font-size:'+sfs[i]+'px"><\/div>');
+
+currStep[i] = 0;
+fall[i] = (sfs[i] == 1)?
+Math.round(2 + Math.random() * 2): Math.round(3 + Math.random() * 2);
+step[i] = (sfs[i] == 1)?
+0.05 + Math.random() * 0.1 : 0.05 + Math.random() * 0.05 ;
+}
+
+
+if (domWw) r = window;
+else{ 
+  if (d.documentElement && 
+  typeof d.documentElement.clientWidth == "number" && 
+  d.documentElement.clientWidth != 0)
+  r = d.documentElement;
+ else{ 
+  if (d.body && 
+  typeof d.body.clientWidth == "number")
+  r = d.body;
+ }
+}
+
+
+function winsize(){
+var oh,sy,ow,sx,rh,rw;
+if (domWw){
+  if (d.documentElement && d.defaultView && 
+  typeof d.defaultView.scrollMaxY == "number"){
+  oh = d.documentElement.offsetHeight;
+  sy = d.defaultView.scrollMaxY;
+  ow = d.documentElement.offsetWidth;
+  sx = d.defaultView.scrollMaxX;
+  rh = oh-sy;
+  rw = ow-sx;
+ }
+ else{
+  rh = r.innerHeight;
+  rw = r.innerWidth;
+ }
+h = rh - 2;  
+w = rw - 2; 
+}
+else{
+h = r.clientHeight - 2; 
+w = r.clientWidth - 2; 
+}
+}
+
+
+function scrl(yx){
+var y,x;
+if (domSy){
+ y = r.pageYOffset;
+ x = r.pageXOffset;
+ }
+else{
+ y = r.scrollTop;
+ x = r.scrollLeft;
+ }
+return (yx == 0)?y:x;
+}
+
+
+function snow(){
+var dy,dx;
+
+for (i = 0; i < num; i++){
+ dy = fall[i];
+ dx = fall[i] * Math.cos(currStep[i]);
+
+ y[i]+=dy;
+ x[i]+=dx; 
+
+ if (x[i] >= w || y[i] >= h){
+  y[i] = -10;
+  x[i] = Math.round(Math.random() * w);
+  fall[i] = (sfs[i] == 1)?
+  Math.round(2 + Math.random() * 2): Math.round(3 + Math.random() * 2);
+  step[i] = (sfs[i] == 1)?
+  0.05 + Math.random() * 0.1 : 0.05 + Math.random() * 0.05 ;
+ }
+ 
+ theFlakes[i].top = y[i] + scrl(0) + pix;
+ theFlakes[i].left = x[i] + scrl(1) + pix;
+
+ currStep[i]+=step[i];
+}
+setTimeout(snow,timer);
+}
+
+
+function init(){
+winsize();
+for (i = 0; i < num; i++){
+ theFlakes[i] = document.getElementById("flake"+(idx+i)).style;
+ y[i] = Math.round(Math.random()*h);
+ x[i] = Math.round(Math.random()*w);
+}
+snow();
+}
+
+
+if (window.addEventListener){
+ window.addEventListener("resize",winsize,false);
+ window.addEventListener("load",init,false);
+}  
+else if (window.attachEvent){
+ window.attachEvent("onresize",winsize);
+ window.attachEvent("onload",init);
+} 
+
+})();
+}
+	</script>-->
+	
+	<!--HIỆU ỨNG LÁ RƠI MÙA THU-->
+	<!--	<script language="JavaScript1.2">
+
+//Pre-load your image below!
+grphcs=new Array(6)
+Image0=new Image();
+Image0.src=grphcs[0]="images/al.gif";
+Image1=new Image();
+Image1.src=grphcs[1]="images/bl.gif"
+Image2=new Image();
+Image2.src=grphcs[2]="images/cl.gif"
+Image3=new Image();
+Image3.src=grphcs[3]="images/dl.gif"
+Image4=new Image();
+Image4.src=grphcs[4]="images/el.gif"
+Image5=new Image();
+Image5.src=grphcs[5]="images/fl.gif" 
+
+Amount=8; //Smoothness depends on image file size, the smaller the size the more you can use!
+Ypos=new Array();
+Xpos=new Array();
+Speed=new Array();
+Step=new Array();
+Cstep=new Array();
+ns=(document.layers)?1:0;
+ns6=(document.getElementById&&!document.all)?1:0;
+
+if (ns){
+for (i = 0; i < Amount; i++){
+var P=Math.floor(Math.random()*grphcs.length);
+rndPic=grphcs[P];
+document.write("<LAYER NAME='sn"+i+"' LEFT=0 TOP=0><img src="+rndPic+"></LAYER>");
+}
+}
+else{
+document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+for (i = 0; i < Amount; i++){
+var P=Math.floor(Math.random()*grphcs.length);
+rndPic=grphcs[P];
+document.write('<img id="si'+i+'" src="'+rndPic+'" style="position:absolute;top:0px;left:0px">');
+}
+document.write('</div></div>');
+}
+WinHeight=(ns||ns6)?window.innerHeight:window.document.body.clientHeight;
+WinWidth=(ns||ns6)?window.innerWidth-70:window.document.body.clientWidth;
+for (i=0; i < Amount; i++){                                                                
+ Ypos[i] = Math.round(Math.random()*WinHeight);
+ Xpos[i] = Math.round(Math.random()*WinWidth);
+ Speed[i]= Math.random()*5+3;
+ Cstep[i]=0;
+ Step[i]=Math.random()*0.1+0.05;
+}
+function fall(){
+var WinHeight=(ns||ns6)?window.innerHeight:window.document.body.clientHeight;
+var WinWidth=(ns||ns6)?window.innerWidth-70:window.document.body.clientWidth;
+var hscrll=(ns||ns6)?window.pageYOffset:document.body.scrollTop;
+var wscrll=(ns||ns6)?window.pageXOffset:document.body.scrollLeft;
+for (i=0; i < Amount; i++){
+sy = Speed[i]*Math.sin(90*Math.PI/180);
+sx = Speed[i]*Math.cos(Cstep[i]);
+Ypos[i]+=sy;
+Xpos[i]+=sx; 
+if (Ypos[i] > WinHeight){
+Ypos[i]=-60;
+Xpos[i]=Math.round(Math.random()*WinWidth);
+Speed[i]=Math.random()*5+3;
+}
+if (ns){
+document.layers['sn'+i].left=Xpos[i];
+document.layers['sn'+i].top=Ypos[i]+hscrll;
+}
+else if (ns6){
+document.getElementById("si"+i).style.left=Math.min(WinWidth,Xpos[i]);
+document.getElementById("si"+i).style.top=Ypos[i]+hscrll;
+}
+else{
+eval("document.all.si"+i).style.left=Xpos[i];
+eval("document.all.si"+i).style.top=Ypos[i]+hscrll;
+} 
+Cstep[i]+=Step[i];
+}
+setTimeout('fall()',20);
+}
+
+window.onload=fall
+</script>-->
+	
+	<!--HIỆU ỨNG SẤM CHỚP-->
+	<!--<script language="Javascript">
+ie4=document.all?1:0;
+ns4=document.layers?1:0;
+ns5=(document.getElementById && !document.all)?1:0;
+
+function init(){
+// Bolt has an aura? (true | false) // takes twice as long to strike
+aura=false;
+bcolor="white";
+acolor="blue";
+
+// Make background color flash? (true | false)
+flash=true;
+skyNorm="black";
+skyFlash="#000050";
+if (flash) document.bgColor=skyNorm;
+
+// nbs = Number of main bolt segments
+nbs = 30;
+ct=0;
+// Font sizes for lightning bolt and aura segments
+fsb=shi*.3;
+fsf=shi*.2;
+fsbi=shi*.2;
+fsfi=shi*.12;
+fsbii=shi*.12;
+fsfii=shi*.07;
+
+xpos=cswi; ypos=0;
+if (ns5) ark = document.getElementById("ark");
+if (ns4) {
+
+ol=document.layers["ark"];
+ol = new Layer(swi);
+ol.left = 0;
+ol.top = 0;
+ol.height = shi;
+ol.zIndex=999;
+ol.visibility = "hide";
+
+ret="<STYLE TYPE='text/css'>";
+for (i=1;i<10;i++){
+ret+="DIV.bolt"+i+" {position:absolute; font-style:'Times New Roman'; font-size:"+(fsf*i/9)+"px; color:"+bcolor+"; visibility:inherit; z-index:999}";
+if (aura) ret+="DIV.bolta"+i+" {position:absolute; font-style:'Times New Roman'; font-size:"+(fsf*1.3*i/9)+"px; color:blue; visibility:inherit; z-index:999}";
+} ret+="</STYLE>";
+
+for (fs=1;fs<10;fs++)
+for (i=1;i<nbs;i++) {
+if (aura) ret+="<DIV id=a"+i+"f"+fs+" class=bolta"+fs+">.</DIV>";
+ret+="<DIV id=s"+i+"f"+fs+" class=bolt"+fs+">.</DIV>";
+}
+
+//ol.document.open();
+ol.document.write(ret);
+ol.document.close();
+}
+Time1=setTimeout("mainplot()",100);
+}
+
+function mainplot()
+{
+lang=0;
+xpos=Math.random()*cswi+cswi/2; ypos=0; fs=9; fsi=8
+deg=Math.random()*30-15+((xpos<cswi)? +15:-15);
+jag=Math.round(Math.random()*100)/100;
+zag=Math.round(Math.random()*100)/100;
+cur=Math.round((.5 * (Math.random()*10-5))*100)/100;
+ion=(Math.random()>.5)? 1:-1;
+//status=" "+ct+" Divs "+format(jag)+" jag "+format(zag)+" zag "+cur+" curve"; ct=0;
+
+if (ns4)
+{
+for (i=1;i<nbs;i++) {
+ang=Math.random()*jag*90-jag*45;
+if (Math.random()+.05>zag) lang=Math.random()*zag*90-zag*45; 
+ang+=lang;
+ct++;
+if (Math.random()*10>9.5 && fsi>1) {fsi--; leg1();}
+xpos+=Math.sin((deg+(ang+i*cur))/57.3)*(fsf*fs/9)*.07;
+ypos+=Math.abs(Math.cos((deg+(ang+i*cur))/57.3)*(fsf*fs/9)*.07); //fsb=fsf*1.5;
+if (aura) { ol.document.layers["a"+i+"f"+fs].moveTo(xpos-(fsf*1.3*fs/9)*.125,ypos-(fsf*1.3*fs/9)*.85); ct++;}
+ol.document.layers["s"+i+"f"+fs].moveTo(xpos-(fsf*fs/9)*.125,ypos-(fsf*fs/9)*.85);
+if (ypos>shi || xpos<0 || xpos>swi) i=nbs;
+}
+//status=" "+ct+" Divs "+format(jag)+" jag "+format(zag)+" zag "+cur+" curve";
+ol.resizeTo(swi,shi);
+Time1=setTimeout("light()",100);
+}
+
+if (ie4 || ns5) { 
+// Rewriting layers can be faster than repositioning in internet explorer
+ret="";
+fsf=shi*.2;
+for (i=1;i<nbs;i++)
+{
+ang=Math.random()*jag*90-jag*45;
+if (Math.random()+.05>zag) lang=Math.random()*zag*90-zag*45; 
+ang+=lang;
+ct++;
+if (Math.random()*10>9.5) {fsfi=fsf*.6; fsf*=.95; leg1();}
+xpos+=Math.sin((deg+(ang+i*cur))/57.3)*fsf*.07;
+ypos+=Math.abs(Math.cos((deg+(ang+i*cur))/57.3)*fsf*.07); fsb=fsf*1.3;
+if (ypos>shi || xpos<0 || xpos>swi) i=nbs;
+if (aura) { ret+="<DIV id='darg"+i+"' style='position:absolute; left:"+(xpos-fsb*.125)+"; top:"+(ypos-fsb*.85)+"; font-size:"+fsb+"px; color:rgb(0,0,255); z-Index:0' >.</DIV>"; ct++;}
+ret+="<DIV style='position:absolute; left:"+(xpos-fsf*.125)+"; top:"+(ypos-fsf*.85)+"; font-size:"+fsf+"px; color:"+bcolor+"; z-Index:1' >.</DIV>";
+}
+//status=" "+ct+" Divs "+format(jag)+" jag "+format(zag)+" zag "+cur+" curve";
+ark.innerHTML=ret;
+Time1=setTimeout("lightie()",100);
+}
+}
+
+function leg1() {
+xpo=xpos; ypo=ypos;
+lang=zag*ion*(30+Math.random()*20-10);
+ion*=-1; lang1=0;
+deg1=deg+ion*50+Math.random()*20-10;
+jlen=Math.random()*nbs*.25+nbs*.25; 
+if(ns4) {
+fsii=fsi-1
+for (j=1;j<jlen;j++) {
+ang1=Math.random()*jag*90-jag*45;
+if (Math.random()+.05>zag) lang1=Math.random()*zag*90-zag*45; 
+ang1-=lang1;
+ct++;
+if (Math.random()*10>9.9 && fsii>1) {fsii--; leg2();}
+xpo+=Math.sin((deg1+(ang1+j*cur))/57.3)*(fsf*fsi/9)*.07;
+ypo+=Math.abs(Math.cos((deg1+(ang1+j*cur))/57.3)*(fsf*fsi/9)*.07);
+if (aura) { ol.document.layers["a"+j+"f"+fsi].moveTo(xpo-(fsf*1.3*fsi/9)*.125,ypo-(fsf*1.3*fsi/9)*.85); ct++;}
+ol.document.layers["s"+j+"f"+fsi].moveTo(xpo-(fsf*fsi/9)*.125,ypo-(fsf*fsi/9)*.85);
+if (ypo>shi || xpo<0 || xpo>swi) j=jlen;
+}
+}
+if (ie4 || ns5) {
+ret+="<DIV id='fork'>"; 
+for (j=1;j<jlen;j++)
+{
+ang1=Math.random()*jag*90-jag*45;
+if (Math.random()+.05>zag) lang1=Math.random()*zag*90-zag*45; 
+ang1-=lang1;
+ct++;
+if (Math.random()*10>9.9) {fsfii=fsfi*.6; fsfi*=.95; leg2();}
+xpo+=Math.sin((deg1+(ang1+j*cur))/57.3)*fsfi*.07;
+ypo+=Math.cos((deg1+(ang1+j*cur))/57.3)*fsfi*.07; fsbi=fsfi*1.3;
+if (ypo>shi || xpo<0 || xpo>swi) j=jlen;
+if (aura) { ret+="<DIV id='arg"+j+"' style='position:absolute; left:"+(xpo-fsbi*.125)+"; top:"+(ypo-fsbi*.85)+"; font-size:"+fsbi+"px; color:rgb(0,0,255); z-Index:0' >.</DIV>"; ct++;}
+ret+="<DIV style='position:absolute; left:"+(xpo-fsfi*.125)+"; top:"+(ypo-fsfi*.85)+"; font-size:"+fsfi+"px; color:"+bcolor+"; z-Index:1' >.</DIV>";
+}ret+="</DIV>";
+}
+}
+
+function leg2() {
+xp=xpo; yp=ypo;
+lang1=zag*ion*(30+Math.random()*20-10);
+//ion*=-1;
+lang2=0;
+deg2=deg1+ion*50+Math.random()*20-10;
+klen=Math.random()*nbs/2+nbs/2; // //
+if (ns4) {
+for (k=nbs/2;k<klen;k++) {
+ang2=Math.random()*jag*90-jag*45;
+if (Math.random()+.05>zag) lang2=Math.random()*zag*90-zag*45; 
+ang2-=lang2;
+ct++;
+xp+=Math.sin((deg2+(ang2+k*cur))/57.3)*(fsf*fsii/9)*.07;
+yp+=Math.cos((deg2+ang2)/57.3)*(fsf*fsii/9)*.07;
+if (aura) { ol.document.layers["a"+k+"f"+fsii].moveTo(xp-(fsf*1.3*fsii/9)*.125,yp-(fsf*1.3*fsii/9)*.85); ct++;}
+ol.document.layers["s"+k+"f"+fsii].moveTo(xp-(fsf*fsii/9)*.125,yp-(fsf*fsii/9)*.85);
+if (yp>shi || xp<0 || xp>swi) k=klen;
+}
+}
+if (ie4 || ns5) {
+ret+="<DIV id='forki'>"; 
+for (k=nbs/2;k<klen;k++)
+{
+ang2=Math.random()*jag*90-jag*45;
+if (Math.random()+.05>zag) lang2=Math.random()*zag*90-zag*45; 
+ang2-=lang2;
+ct++;
+xp+=Math.sin((deg2+(ang2+k*cur))/57.3)*fsfii*.07;
+yp+=Math.cos((deg2+(ang2+k*cur))/57.3)*fsfii*.07; fsbii=fsfii*1.3;
+if (yp>shi || xp<0 || xp>swi) k=klen;
+if (aura) { ret+="<DIV id='arg"+k+"' style='position:absolute; left:"+(xp-fsbii*.125)+"; top:"+(yp-fsbii*.85)+"; font-size:"+fsbii+"px; color:rgb(0,0,255); z-Index:0' >.</DIV>"; ct++;}
+ret+="<DIV style='position:absolute; left:"+(xp-fsfii*.125)+"; top:"+(yp-fsfii*.85)+"; font-size:"+fsfii+"px; color:"+bcolor+"; z-Index:1' >.</DIV>";
+}
+ret+="</DIV>";
+}
+}
+
+function light()
+{ ol.moveTo(pageXOffset,pageYOffset);
+ol.visibility = "show";
+if (flash) document.bgColor=skyFlash;
+Time2=setTimeout("ning()",(Math.random()*1000+1000));
+}
+
+function lightie()
+{ ark.style.left=document.body.scrollLeft;
+ark.style.top=document.body.scrollTop;
+ark.style.visibility = "visible";
+if (flash) document.bgColor=skyFlash;
+Time2=setTimeout("ningie()",(Math.random()*500+100));
+}
+
+function ning()
+{
+if (flash) document.bgColor=skyNorm;
+ol.visibility = "hide";
+if (Math.random()*3>2) Time2=setTimeout("light()",(Math.random()*500+100));
+else {
+for (fs=1;fs<10;fs++)
+for (i=1;i<nbs;i++) {
+if (aura) ol.document.layers["a"+i+"f"+fs].moveTo(-100,-100);
+ol.document.layers["s"+i+"f"+fs].moveTo(-100,-100);
+}
+Time1=setTimeout("mainplot()",(Math.random()*500+100))
+}
+}
+
+function ningie()
+{ ark.style.visibility = "hidden";
+if (flash) document.bgColor=skyNorm;
+if (Math.random()*3>2) Time2=setTimeout("lightie()",(Math.random()*500+100)); else Time1=setTimeout("mainplot()",(Math.random()*500+100));
+}
+
+function format(f){ f+="";
+if (f.charAt(0)==".") f="0"+f;
+if (f.length==1) f+=".00";
+if (f.length==3) f+="0";
+return f;
+}
+
+function halt() {
+if (Time1) {clearTimeout(Time1); Time1=null;}
+if (Time2) {clearTimeout(Time2); Time2=null;}
+}
+
+swi=(ie4)? document.body.offsetWidth-17:window.innerWidth;
+shi=(ie4)? document.body.offsetHeight-4:window.innerHeight;
+cswi=swi/2;
+cshi=shi/2;
+
+ret="<DIV id='ark' style='position:absolute; left:0; top:0; width:"+swi+"; height:"+shi+"; visibility:visible; z-index=999; overflow:hidden; clip:rect(0,"+(swi)+","+(shi)+",0)'></DIV>";
+document.write(ret);
+
+</script>-->
+	
+	<!--HIỆU ỨNG NỔI BỌT-->
+	<!--<script language="JavaScript1.2">
+
+var no = 15; // image number or falling rate
+var speed = 2; // the lower the number the faster the image moves
+var snow = new Array();
+snow[0] = "images/bubble.gif"
+snow[1] = "images/bubble.gif"
+snow[2] = "images/bubble.gif"
+
+var ns4up = (document.layers) ? 1 : 0;  // browser sniffer
+var ie4up = (document.all) ? 1 : 0;
+var ns6up = (document.getElementById&&!document.all) ? 1 : 0;
+var dx, xp, yp;    // coordinate and position variables
+var am, stx, sty;  // amplitude and step variables
+var i, doc_width = 800, doc_height = 1800;
+
+if (ns4up||ns6up) {
+        doc_width = self.innerWidth;
+        doc_height = self.innerHeight;
+} else if (ie4up) {
+        doc_width = document.body.clientWidth;
+        doc_height = document.body.clientHeight;
+}
+
+dx = new Array();
+xp = new Array();
+yp = new Array();
+am = new Array();
+stx = new Array();
+sty = new Array();
+j = 0;
+
+for (i = 0; i < no; ++ i) {
+        dx[i] = 0;                        // set coordinate variables
+        xp[i] = Math.random()*(doc_width-50);  // set position variables
+        yp[i] = Math.random()*doc_height;
+        am[i] = Math.random()*20;         // set amplitude variables
+        stx[i] = 0.02 + Math.random()/10; // set step variables
+        sty[i] = 0.7 + Math.random();     // set step variables
+        if (ns4up) {                      // set layers
+                if (i == 0) {
+                        document.write("<layer name=\"dot"+ i +"\" left=\"15\" top=\"15\" visibility=\"show\"><img src=\""+ snow[j] + "\" border=\"0\"></layer>");
+                } else {
+                        document.write("<layer name=\"dot"+ i +"\" left=\"15\" top=\"15\" visibility=\"show\"><img src=\""+ snow[j] + "\" border=\"0\"></layer>");
+                }        } else if (ie4up||ns6up) {                if (i == 0) 
+{
+                        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"VISIBILITY: visible; TOP: 15px; LEFT: 15px; width:1;\"><img src=\"" + snow[j] + "\" border=\"0\"></div>");
+                } else {
+                        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"VISIBILITY: visible; TOP: 15px; LEFT: 15px; width:1;\"><img src=\"" + snow[j] + "\" border=\"0\"></div>");
+                }
+        }
+        if (j == (snow.length-1)) { j = 0; } else { j += 1; }
+}
+
+function snowNS() {  // Netscape main animation function
+        for (i = 0; i < no; ++ i) {  // iterate for every dot
+                yp[i] -= sty[i];                if (yp[i] < -50) {
+                        xp[i] = Math.random()*(doc_width-am[i]-30);
+                        yp[i] = doc_height;
+                        stx[i] = 0.02 + Math.random()/10;
+                        sty[i] = 0.7 + Math.random();
+                        doc_width = self.innerWidth;
+                        doc_height = self.innerHeight;                }
+                dx[i] += stx[i];
+                document.layers["dot"+i].top = yp[i]+pageYOffset;
+                document.layers["dot"+i].left = xp[i] + 
+am[i]*Math.sin(dx[i]);
+        }
+        setTimeout("snowNS()", speed);
+}
+
+function snowIE_NS6() {  // IE main animation function
+        for (i = 0; i < no; ++ i) {  // iterate for every dot
+                yp[i] -= sty[i];
+                if (yp[i] < -50) {
+                        xp[i] = Math.random()*(doc_width-am[i]-30);
+                        yp[i] = doc_height;
+                        stx[i] = 0.02 + Math.random()/10;
+                        sty[i] = 0.7 + Math.random();
+                        doc_width = ns6up?window.innerWidth-5:document.body.clientWidth;
+                        doc_height = ns6up?window.innerHeight-5:document.body.clientHeight;
+                }
+                dx[i] += stx[i];
+                if (ie4up){
+                document.all["dot"+i].style.pixelTop = yp[i]+document.body.scrollTop;
+                document.all["dot"+i].style.pixelLeft = xp[i] + am[i]*Math.sin(dx[i]);
+                }
+                else if (ns6up){
+                document.getElementById("dot"+i).style.top=yp[i]+pageYOffset;
+                document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i]);
+                }
+        }
+        setTimeout("snowIE_NS6()", speed);
+}
+
+if (ns4up) {
+        snowNS();
+} else if (ie4up||ns6up) {
+        snowIE_NS6();
+}
+</script>-->
+	
+	<!--HIỆU ỨNG PHÁO HOA-->
+	<!--<script language="JavaScript1.2">
+
+var ns=document.layers?1:0
+var ie4=document.all?1:0
+var ns6=document.getElementById&&!document.all?1:0
+
+amount=24;
+if (ns){
+for (i=0; i < amount; i++)
+document.write("<LAYER NAME='nsstars"+i+"' LEFT=0 TOP=0 BGCOLOR='#FFFFF0' CLIP='0,0,1,1'></LAYER>");
+}
+else if (ie4||ns6){
+document.write("<div id='ieCov' style='position:absolute;top:0px;left:0px'>");
+document.write("<div style='position:relative'>");
+for (i=0; i < amount; i++)
+document.write("<div id='iestars"+i+"' style='position:absolute;top:0px;left:0px;width:10;height:10;background:#ffffff;font-size:2;z-index:10'></div>");
+document.write("</div></div>");
+}
+Clrs=new Array('ff0000','00ff00','ffffff','ff00ff','ffa500','ffff00','00ff00','ffffff','ff00ff','red','blue','black','pink','green','orange','purple','violet','navy')
+sClrs=new Array('ffa500','00ff00','FFAAFF','fff000','fffffF')
+Xpos=300;
+Ypos=150;
+initialStarColor='00ff00';
+step=5;
+currStep=0;
+explosionSize=150;
+function Fireworks(){
+var WinHeight=(ns||ns6)?window.innerHeight-100:window.document.body.clientHeight-100;
+var WinWidth=(ns||ns6)?window.innerWidth-100:window.document.body.clientWidth-100;
+var Yscroll=(ns||ns6)?window.pageYOffset:document.body.scrollTop;
+for (i=0; i < amount; i++){
+if (ie4||ns6)
+var layer=ns6?document.getElementById("iestars"+i).style : eval("iestars"+i).style;
+else if (ns)
+var layer=document.layers["nsstars"+i]
+var randCol=Math.round(Math.random()*8);
+var randSz=Math.round(Math.random()*2);
+layer.top = Ypos + explosionSize*Math.sin((currStep+i*5)/3)*Math.sin(currStep/100)
+layer.left= Xpos + explosionSize*Math.cos((currStep+i*5)/3)*Math.sin(currStep/100)
+if (currStep < 110){
+ if (ns){layer.bgColor=initialStarColor;layer.clip.width=1;layer.clip.height=1}
+ else{layer.background=initialStarColor;layer.width=1;layer.height=1;layer.fontSize=1}
+ }
+else{
+ if (ns){layer.bgColor=Clrs[randCol];layer.clip.width=randSz;layer.clip.height=randSz}
+ else{layer.background=Clrs[randCol];layer.width=randSz;layer.height=randSz;layer.fontSize=randSz}
+ }
+}
+if (currStep > 220) 
+{
+ currStep=0;
+ Ypos = 50+Math.round(Math.random()*WinHeight)+Yscroll;
+ Xpos = 50+Math.round(Math.random()*WinWidth);
+ for (i=0; i < sClrs.length; i++)
+  {
+  var newIcol=Math.round(Math.random()*i);
+  }
+initialStarColor=sClrs[newIcol];
+explosionSize=Math.round(80*Math.random()+100);
+}
+currStep+=step;
+setTimeout("Fireworks()",20);
+}
+Fireworks();
+</script>-->
+	
+	<!--HIỆU ỨNG OPEN TỪ GIỮA SANG 2 BÊN, KẾT HỢP CSS Ở ĐẦU-->
+	<!--<div id="i1" class="intro"></div><div id="i2" class="intro"></div>
+<script language="JavaScript1.2">
+var speed=20;
+var temp=new Array();
+var temp2=new Array();
+
+var clipright=(window.innerWidth)?window.innerWidth/2:document.body.clientWidth/2,clipleft=0;
+for (i=1;i<=2;i++){
+temp[i]=document.getElementById("i"+i).style;
+temp[i].width=(window.innerWidth)?window.innerWidth/2 + 'px' :document.body.clientWidth/2 + 'px';
+temp[i].height=(window.innerHeight)?window.innerHeight + 'px': document.body.offsetHeight + 'px';
+temp[i].left=(i-1)*parseInt(temp[i].width) + 'px';
+}
+
+
+function openit(){
+
+clipright-=speed;
+temp[1].clip="rect(0 "+clipright+"px auto 0)";
+clipleft+=speed;
+temp[2].clip="rect(0 auto auto "+clipleft+"px)";
+if (clipright<=0){
+clearInterval(stopit);
+temp[1].display="none";
+temp[2].display="none";
+
+}
+}
+
+function gogo(){
+stopit=setInterval("openit()",100)
+}
+gogo();
+
+</script>-->
 	<script src="scripts/NCT_script.js"></script>
 	<script src="scripts/MH_DK.js"></script>
 </body>
