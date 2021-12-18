@@ -32,9 +32,11 @@
     padding: 15px;
 }
 .poster {
-    background-color: wheat;
     padding: 5px;
     border-radius: 15px;
+}
+.poster img{
+	border-radius: 50px;
 }
 .bx-microphone{
     margin-top: 1px;
