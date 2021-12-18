@@ -199,14 +199,14 @@ color:blue; overflow:clip; font-style:Times}
 		</div>
 		<div id="content"><!-- InstanceBeginEditable name="Content" -->
 			<div class="heading">
-				<p class="heading_here">Mới & Hot</p>
-				<p>Việt Nam</p>
-				<p>Âu Mỹ</p>
-				<p>Châu Á</p>
-				<p>Khác</p>
+				<p id="new_hot" onclick="return changeHeading('new_hot')" class="heading_here">Mới & Hot</p>
+				<p id="vietnam" onclick="return changeHeading('vietnam')" >Việt Nam</p>
+				<p id="aumy" onclick="return changeHeading('aumy')" >Âu Mỹ</p>
+				<p id="chaua" onclick="return changeHeading('chaua')" >Châu Á</p>
+				<p id="khac" onclick="return changeHeading('khac')" >Khác</p>
 			</div>
 			<div class="list_nhac">
-				<h2>Mới & Hot</h2>
+				<h2 id="title">Mới & Hot</h2>
 				<div class="video">
 					<div class="zoom_vd">
 						<img src="./images/video_1.jpg" height="170" width="300">
@@ -717,7 +717,7 @@ color:blue; overflow:clip; font-style:Times}
 			</div>	
 			
 			<br>
-			
+			<script src="./scripts/MH_Video.js"></script>
 			<!-- InstanceEndEditable -->
 				
 

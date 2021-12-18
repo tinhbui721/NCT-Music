@@ -220,16 +220,16 @@ color:blue; overflow:clip; font-style:Times}
 				<br>		
 			</div>
 			<div class="heading">
-				<p class="heading_here">Hot</p>
-				<p>Việt Nam</p>
-				<p>Âu Mỹ</p>
-				<p>Hàn Quốc</p>
+				<p id="hot" onclick="return changeHeading('hot')" class="heading_here">Hot</p>
+				<p id="vietnam" onclick="return changeHeading('vietnam')" >Việt Nam</p>
+				<p id="aumy" onclick="return changeHeading('aumy')" >Âu Mỹ</p>
+				<p id="hanquoc" onclick="return changeHeading('hanquoc')" >Hàn Quốc</p>
 			</div>
 			<br>	
 			<div class="option">
-				<p class="chose">Nam</p>
-				<p>Nữ</p>
-				<p>Nhóm nhạc</p>
+				<p id="nam" onclick="return changemales('nam')" class="chose">Nam</p>
+				<p id="nu" onclick="return changemales('nu')">Nữ</p>
+				<p id="nhomnhac" onclick="return changemales('nhomnhac')">Nhóm nhạc</p>
 				<select>
 					<option>All</option>
 					<option>A</option>
@@ -363,16 +363,17 @@ color:blue; overflow:clip; font-style:Times}
 			<br>
 			<div class="page">
 				<i class="fas fa-chevron-left"></i>
-				<p class="here_page">1</p>
-				<p>2</p>
-				<p>3</p>
-				<p>4</p>
-				<p>5</p>
-				<p>6</p>
+				<p onclick="return changeFooter('1')" id="1" class="here_page">1</p>
+				<p onclick="return changeFooter('2')" id="2" >2</p>
+				<p onclick="return changeFooter('3')" id="3" >3</p>
+				<p onclick="return changeFooter('4')" id="4" >4</p>
+				<p onclick="return changeFooter('5')" id="5" >5</p>
+				<p onclick="return changeFooter('6')" id="6" >6</p>
 				<i class="fas fa-chevron-right"></i>
 			</div>
 			
 			<br>		
+			<script src="./scripts/MH_NgheSi.js"></script>
 			<!-- InstanceEndEditable -->
 				
 
