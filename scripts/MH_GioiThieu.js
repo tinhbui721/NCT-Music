@@ -1,14 +1,14 @@
 //XỬ lý logo
 var colo = ["#0daded", "blue", "red", "dark", "white", "green", "pink", "orange"];
 var currentColo = 0;
-var lix = document.getElementById("logo-NCT-gt");
+var lix = document.getElementById("bannerpts");
 
 function changeBorderColor() {
   --currentColo;
   if (currentColo < 0) currentColo = colo.length - 1;
   for (var i = 0; i < 8; i++) {
-    lix.style.border = colo[(currentColo + i) % colo.length] + " 1px solid";
-    lix.parentElement.style.backgroundColor = colo[(currentColo + i) % colo.length];
+    lix.style.border = colo[(currentColo + i) % colo.length] + " 3px solid";
+    //lix.parentElement.style.backgroundColor = colo[(currentColo + i) % colo.length];
   }
 }
 
