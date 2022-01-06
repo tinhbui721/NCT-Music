@@ -218,8 +218,6 @@ function RenderTop100() {
 	}
 }
 RenderTop100();
-ChartRun();
-
 function ChartRun() {
     var chart = new CanvasJS.Chart("chartContainer", {
         animationEnabled: true,
