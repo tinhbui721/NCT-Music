@@ -1,9 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
-    color: #787E85;
+    color: black;
 }
 
 .footer-margin{
@@ -24,11 +24,11 @@ body {
 }
 
 .footer-a {
-    color: #787E85;
+    color: black;
     text-decoration: none;
 }
 .footer-a:hover{
-    color:#2B86B8;
+    color:black;
 }
 .footer-br{
     clear:both;
@@ -40,8 +40,8 @@ body {
     margin-left: 0;
     margin-right: 400px;
     bottom:0;
-    background-color: black;
-    border: 1px solid #4f5153;  
+    background-color: white;
+    border: 1px solid black;  
     position: relative;
 }
 
@@ -56,8 +56,7 @@ body {
 }
 .footer-hr {    
     background: none;
-    border: none;
-    border-top: 1px solid black;
+    border-top: 1px solid white;
 }
 .footer-mxh ul li{
     margin-left:10px;
@@ -75,7 +74,7 @@ body {
     margin:10px 40px 0 0;
 }
 .footer-h5 {
-    color: #DADDE0;
+    color: black;
     margin-bottom:30px;
 }
 .li_foot{
@@ -90,7 +89,7 @@ body {
 .footer-addr {
     width: 100%;
     height: 60px;
-    background-color: black;
+    background-color: white;
     margin-top:30px;
 }
 

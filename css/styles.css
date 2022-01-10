@@ -19,12 +19,13 @@ body{
 
 #left {
 	float: left;
-	width:170px;
+	width: 170px;
     height: 100%;
     background-color: #1D2631;
     position: fixed;
     padding: 15px;
     color: #B6BBBF;
+	/*background-image: linear-gradient(to right, lightskyblue, blue, purple);*/
 }
 
 #content {
@@ -38,23 +39,28 @@ body{
 
 #right {
 	float: right;
-	width:270px;
+	width: 270px;
     right: 0px;
     height: 100%;
     background-color: #1D2631;
     position: fixed;
     padding: 15px 25px;
 }
-
+.imglogo{
+	margin-left: -10px;
+	margin-top: -5px;
+}
 .nangcap{
-    width: 97px;
+    width: 80px;
     height: 25px;
     float: right;
+	margin-top: 5px;
     border: 1px #3b434b solid;
     border-radius: 20px;
     text-align: center;
     font-weight: bold;
     line-height: 25px;
+	font-size: 15px;
     color: #B6BBBF;
 }
 .nangcap:hover{

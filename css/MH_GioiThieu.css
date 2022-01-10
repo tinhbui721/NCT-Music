@@ -181,12 +181,14 @@
     font-weight: lighter;
     border: 1px solid gray;
     cursor: pointer;
+	border-radius: 15px;
 }
 .design-question #formlh button:hover{
     transform: scale(1.2);
     color: #2ca9ec;
     background: inherit;
     border: 1px solid #2ca9ec;
+	border-radius: 15px;
 }
 #lblnotif{
     margin-top: 10px;
